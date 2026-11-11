@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="tr"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cep Rehberi">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<script src="data.js"></script>
+<title>Orta Avrupa Cep Rehberi</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#173b49">
+
+<style>
+/* Layout: tek sütun cep rehberi; üstte koyu petrol başlık şeridi, altında kartsız liste satırları, harita tam genişlik. */
+:root{
+  --ink:#173b49; --accent:#20677b; --accent-soft:#e3eef1; --warn:#9a5b12; --warn-soft:#fbf0e1;
+  --bg:#f6f8f8; --surface:#ffffff; --fg:#1c2b31; --muted:#56666d; --line:#dbe3e6; --head-fg:#f2f7f8; --head-muted:#a9c3ca;
+  --mapbg:#ffffff;
+  --f-display: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --f-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ink:#0f2a34; --accent:#6fb6c8; --accent-soft:#163942; --warn:#e2a95b; --warn-soft:#3a2c17;
+  --bg:#0c1a1f; --surface:#122329; --fg:#e4edef; --muted:#9bb0b6; --line:#24393f; --head-fg:#eef6f8; --head-muted:#8fb0b9; --mapbg:#e9eef0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ink:#0f2a34; --accent:#6fb6c8; --accent-soft:#163942; --warn:#e2a95b; --warn-soft:#3a2c17;
+  --bg:#0c1a1f; --surface:#122329; --fg:#e4edef; --muted:#9bb0b6; --line:#24393f; --head-fg:#eef6f8; --head-muted:#8fb0b9; --mapbg:#e9eef0; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--f-body);-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--ink)}
+.wrap{max-width:640px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ink);color:var(--head-fg)}
+header.bar .wrap{display:flex;align-items:center;gap:12px;padding-block:12px;min-height:56px}
+.back{appearance:none;border:0;background:transparent;color:var(--head-fg);font:600 15px var(--f-body);padding:6px 8px 6px 0;cursor:pointer;display:flex;align-items:center;gap:4px}
+.back[hidden]{display:none!important}
+.bar h1{margin:0;font:700 18px/1.2 var(--f-display);letter-spacing:.01em;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .sub{margin-left:auto;font-size:13px;color:var(--head-muted);white-space:nowrap}
+main{padding-block:16px 40px;display:flex;flex-direction:column;gap:24px}
+h2{margin:0 0 8px;font:700 13px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.hero{background:var(--ink);color:var(--head-fg);padding-block:4px 22px}
+.hero .wrap{display:flex;flex-direction:column;gap:6px}
+.hero .t{font:800 30px/1.1 var(--f-display);text-wrap:balance;margin:0}
+.hero .d{color:var(--head-muted);font-size:14px}
+.today{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.today .when{font:700 16px var(--f-display);color:var(--fg)}
+.today .note{font-size:13px;color:var(--muted)}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.list li{border-bottom:1px solid var(--line)}
+.row{display:flex;align-items:center;gap:12px;padding:12px 2px;color:inherit;text-decoration:none;min-height:56px}
+.row:focus-visible,.btn:focus-visible,.back:focus-visible,.mapbox:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:8px}
+.row .tx{min-width:0;flex:1;display:flex;flex-direction:column}
+.row .n{font-weight:650;font-size:16px}
+.row .a{font-size:13px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .chev{color:var(--muted);font-size:20px;line-height:1}
+.pin{flex:none;width:30px;height:30px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:700 14px var(--f-body);font-variant-numeric:tabular-nums;box-shadow:0 0 0 2px var(--surface)}
+.city .pin{width:auto;min-width:44px;height:44px;border-radius:12px;padding:0 8px;font:800 15px var(--f-display);background:var(--accent-soft);color:var(--accent);box-shadow:none}
+.city .meta{font-size:13px;color:var(--muted)}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);margin-left:6px;vertical-align:1px}
+.search{display:flex;flex-direction:column;gap:8px}
+.search input{width:100%;font:16px var(--f-body);padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--fg)}
+.mapbox{display:block;width:100%;background:var(--mapbg);border:1px solid var(--line);border-radius:14px;overflow:auto;-webkit-overflow-scrolling:touch;padding:0;cursor:zoom-in;max-height:70vh}
+.mapbox img{display:block;width:100%;height:auto}
+.mapbox.zoom{cursor:zoom-out}
+.mapbox.zoom img{width:220%;max-width:none}
+.cap{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:6px}
+.info{font-size:14px;color:var(--muted);margin:0}
+.day{display:flex;flex-direction:column;gap:6px}
+.place-head{display:flex;gap:14px;align-items:flex-start}
+.place-head .pin{width:40px;height:40px;font-size:17px}
+.place-head h1{margin:0;font:800 26px/1.15 var(--f-display);text-wrap:balance}
+.place-head .loc{color:var(--muted);font-style:italic;margin-top:2px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:13px;padding:4px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:600}
+.warn{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:10px 12px;font-size:14px}
+.photo{margin:0;display:flex;flex-direction:column;gap:4px}
+.photo img{border-radius:14px;width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--line)}
+.photo figcaption{font-size:11.5px;color:var(--muted)}
+.notes{display:flex;flex-direction:column;gap:14px;max-width:65ch}
+.notes p{margin:0;font-size:16.5px;line-height:1.6}
+.pending{color:var(--muted);font-style:italic;margin:0}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn{appearance:none;flex:1 1 150px;display:inline-flex;justify-content:center;align-items:center;gap:6px;min-height:48px;padding:10px 16px;border-radius:12px;font:650 15px var(--f-body);text-decoration:none;border:1px solid var(--accent);color:var(--accent);background:transparent;cursor:pointer}
+.btn.primary{background:var(--accent);color:var(--surface)}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pager a{display:flex;flex-direction:column;gap:2px;padding:12px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:inherit;min-width:0}
+.pager a span{font-size:12px;color:var(--muted)}
+.pager a b{font-weight:650;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pager .nx{text-align:right}
+.pager .empty{visibility:hidden}
+.foot{font-size:12px;color:var(--muted);text-align:center}
+.offline{font-size:12px;color:var(--warn)}
+@media (prefers-reduced-motion:no-preference){main{animation:in .18s ease-out}@keyframes in{from{transform:translateY(4px)}to{transform:none}}}
+</style>
+
+</head><body>
+<header class="bar"><div class="wrap">
+  <button class="back" id="back" hidden aria-label="Geri">‹ Geri</button>
+  <h1 id="bartitle">Cep Rehberi</h1>
+  <span class="sub" id="barsub"></span>
+</div></header>
+<div id="view"></div>
+
+<script>
+(function(){
+const G = window.GEZI, D = G.duraklar;
+const AY=['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
+const GUN=['Pazar','Pazartesi','Salı','Çarşamba','Perşembe','Cuma','Cumartesi'];
+const parse=s=>{const [y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d)};
+const iso=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+const fmt=s=>{const d=parse(s);return `${d.getDate()} ${AY[d.getMonth()]} ${GUN[d.getDay()]}`};
+const fmtShort=s=>{const d=parse(s);return `${d.getDate()} ${AY[d.getMonth()].slice(0,3)}`};
+const span=a=>a.length===1?fmtShort(a[0]):(a.length===2&&+parse(a[1])-+parse(a[0])===864e5?`${parse(a[0]).getDate()}–${fmtShort(a[1])}`:a.map(fmtShort).join(' ve '));
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const dir=y=>`https://www.google.com/maps/dir/?api=1&destination=${y.konum[0]}%2C${y.konum[1]}`;
+const look=y=>`https://www.google.com/maps/search/?api=1&query=${y.konum[0]}%2C${y.konum[1]}`;
+const $=id=>document.getElementById(id);
+const view=$('view');
+
+function bar(title,sub,back){$('bartitle').textContent=title;$('barsub').textContent=sub||'';$('back').hidden=!back;document.title=title==='Cep Rehberi'?'Orta Avrupa Cep Rehberi':title+' · Cep Rehberi'}
+$('back').addEventListener('click',()=>{const h=location.hash.slice(1);const m=h.match(/^([a-z]+)-\d+$/);location.hash=m?m[1]:''});
+
+function placeRow(s,y,showCity){
+  return `<li><a class="row" href="#${s.id}-${y.no}"><span class="pin">${y.no}</span><span class="tx"><span class="n">${esc(y.ad)}${y.not?'':''}</span><span class="a">${showCity?esc(s.ad)+' · ':''}${esc(y.alt)}</span></span><span class="chev" aria-hidden="true">›</span></a></li>`;
+}
+
+function todayBlock(){
+  const t=iso(new Date()), b=G.gezi.baslangic, e=G.gezi.bitis;
+  let day, head, note='';
+  if(t<b){const n=Math.round((+parse(b)-+parse(t))/864e5);day=b;head=`Geziye ${n} gün kaldı`;note=`İlk gün: ${fmt(b)}`}
+  else if(t>e){return ''}
+  else {day=t;head=`Bugün · ${fmt(t)}`}
+  const rows=[];D.forEach(s=>s.yerler.forEach(y=>{if(y.gunler.includes(day))rows.push(placeRow(s,y,true))}));
+  return `<section><h2>Bugün</h2><div class="today"><div><div class="when">${head}</div>${note?`<div class="note">${note}</div>`:''}</div>
+  ${rows.length?`<ul class="list">${rows.join('')}</ul>`:'<p class="info">Bu gün için programda durak yok.</p>'}</div></section>`;
+}
+
+function home(){
+  bar('Cep Rehberi','',false);
+  const total=D.reduce((a,s)=>a+s.yerler.length,0);
+  const b=parse(G.gezi.baslangic), e=parse(G.gezi.bitis);
+  view.innerHTML=`<div class="hero"><div class="wrap"><p class="t">${esc(G.gezi.ad)}</p><div class="d">${b.getDate()}–${e.getDate()} ${AY[e.getMonth()]} ${e.getFullYear()} · ${D.length} durak · ${total} konum</div></div></div>
+  <main class="wrap">
+    ${todayBlock()}
+    <section class="search"><h2><label for="q">Ara</label></h2><input id="q" type="search" placeholder="Yer adı, örn. Karl Köprüsü" autocomplete="off"><ul class="list" id="res" hidden></ul></section>
+    <section><h2>Duraklar</h2><ul class="list">${D.map(s=>`<li><a class="row city" href="#${s.id}"><span class="pin">${s.yerler.length}</span><span class="tx"><span class="n">${esc(s.ad)}</span><span class="meta">${span(s.gunler)} · ${esc(s.ulke)}</span></span><span class="chev" aria-hidden="true">›</span></a></li>`).join('')}</ul></section>
+    <p class="foot">Sürüm ${esc(G.gezi.surum)} · Harita © OpenStreetMap katkıda bulunanlar<br><span id="net"></span></p>
+  </main>`;
+  const q=$('q'),res=$('res');
+  const norm=s=>s.toLocaleLowerCase('tr').normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ı/g,'i');
+  q.addEventListener('input',()=>{const v=norm(q.value.trim());if(!v){res.hidden=true;return}
+    const r=[];D.forEach(s=>s.yerler.forEach(y=>{if(norm(y.ad+' '+y.alt+' '+s.ad).includes(v))r.push(placeRow(s,y,true))}));
+    res.innerHTML=r.length?r.join(''):'<li class="info" style="padding:12px 2px">Sonuç yok.</li>';res.hidden=false});
+  netState();
+}
+
+function city(s){
+  bar(s.ad,span(s.gunler),true);
+  const days=[...new Set(s.yerler.flatMap(y=>y.gunler))].sort();
+  view.innerHTML=`<main class="wrap">
+    <section><button class="mapbox" id="map" aria-label="Haritayı büyüt veya küçült"><img src="${s.harita}" alt="${esc(s.ad)} haritası, numaralı işaretlerle"></button>
+    <div class="cap"><span>Haritaya dokun: büyüt / küçült</span><span>© OpenStreetMap</span></div></section>
+    ${s.bilgi?`<p class="info">${esc(s.bilgi)}</p>`:''}
+    ${days.map(d=>`<section class="day"><h2>${fmt(d)}</h2><ul class="list">${s.yerler.filter(y=>y.gunler.includes(d)).map(y=>placeRow(s,y,false)).join('')}</ul></section>`).join('')}
+  </main>`;
+  const m=$('map');m.addEventListener('click',()=>m.classList.toggle('zoom'));
+}
+
+function place(s,y){
+  const i=s.yerler.indexOf(y), pv=s.yerler[i-1], nx=s.yerler[i+1];
+  bar(s.ad,`${y.no} / ${s.yerler.length}`,true);
+  const g=y.gorsel;
+  view.innerHTML=`<main class="wrap">
+    <div class="place-head"><span class="pin">${y.no}</span><div><h1>${esc(y.ad)}</h1><div class="loc">${esc(y.alt)}</div></div></div>
+    <div class="chips">${y.gunler.map(d=>`<span class="chip">${fmt(d)}</span>`).join('')}</div>
+    ${y.temsili||y.uyari?`<div class="warn">${y.temsili?'<b>Temsilî konum.</b> ':''}${esc(y.uyari||'')}</div>`:''}
+    ${g?`<figure class="photo"><img src="${g.dosya}" alt="${esc(y.ad)}" loading="lazy"><figcaption>${esc(g.yazar||'')} · ${esc(g.lisans||'')} · ${esc(g.kaynak||'')}</figcaption></figure>`:''}
+    <div class="actions"><a class="btn primary" href="${dir(y)}" target="_blank" rel="noopener">Yol tarifi</a><a class="btn" href="${look(y)}" target="_blank" rel="noopener">Haritada gör</a></div>
+    <section class="notes"><h2>Bilgi notu</h2>${y.not&&y.not.length?y.not.map(p=>`<p>${esc(p)}</p>`).join(''):'<p class="pending">Bu yerin bilgi notu henüz eklenmedi.</p>'}</section>
+    <nav class="pager" aria-label="Diğer yerler">${pv?`<a href="#${s.id}-${pv.no}"><span>‹ Önceki</span><b>${pv.no}. ${esc(pv.ad)}</b></a>`:'<a class="empty" aria-hidden="true" tabindex="-1"></a>'}${nx?`<a class="nx" href="#${s.id}-${nx.no}"><span>Sonraki ›</span><b>${nx.no}. ${esc(nx.ad)}</b></a>`:'<a class="empty" aria-hidden="true" tabindex="-1"></a>'}</nav>
+    <p class="foot">Yol tarifi Google Haritalar'ı açar ve internet gerektirir.</p>
+  </main>`;
+}
+
+function netState(){const n=$('net');if(n)n.innerHTML=navigator.onLine?'':'<span class="offline">Çevrimdışısın; yol tarifi için internet gerekir.</span>'}
+addEventListener('online',netState);addEventListener('offline',netState);
+
+function route(){
+  const h=decodeURIComponent(location.hash.slice(1));
+  const m=h.match(/^([a-z]+)(?:-(\d+))?$/);
+  const s=m&&D.find(x=>x.id===m[1]);
+  if(s&&m[2]){const y=s.yerler.find(v=>v.no===+m[2]);if(y){place(s,y);scrollTo(0,0);return}}
+  if(s){city(s);scrollTo(0,0);return}
+  home();scrollTo(0,0);
+}
+addEventListener('hashchange',route);route();
+
+if('serviceWorker' in navigator && location.protocol==='https:' && !/claude|anthropic/.test(location.hostname)){
+  try{navigator.serviceWorker.register('sw.js').catch(()=>{})}catch(e){}
+}
+})();
+</script>
+</body></html>
