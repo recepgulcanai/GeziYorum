@@ -17,17 +17,17 @@
 <style>
 /* Layout: tek sütun cep rehberi; üstte koyu petrol başlık şeridi, altında kartsız liste satırları, harita tam genişlik. */
 :root{
-  --ink:#173b49; --accent:#20677b; --accent-soft:#e3eef1; --warn:#9a5b12; --warn-soft:#fbf0e1;
+  --ink:#173b49; --accent:#20677b; --accent-soft:#e3eef1; --warn:#9a5b12; --warn-soft:#fbf0e1; --ok:#2f7d4f; --ok-soft:#e3f2e8;
   --bg:#f6f8f8; --surface:#ffffff; --fg:#1c2b31; --muted:#56666d; --line:#dbe3e6; --head-fg:#f2f7f8; --head-muted:#a9c3ca;
-  --mapbg:#ffffff;
+  --mapbg:#ffffff; --notefs:16.5px;
   --f-display: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --f-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --ink:#0f2a34; --accent:#6fb6c8; --accent-soft:#163942; --warn:#e2a95b; --warn-soft:#3a2c17;
+  --ink:#0f2a34; --accent:#6fb6c8; --accent-soft:#163942; --warn:#e2a95b; --warn-soft:#3a2c17; --ok:#7fcb9b; --ok-soft:#173326;
   --bg:#0c1a1f; --surface:#122329; --fg:#e4edef; --muted:#9bb0b6; --line:#24393f; --head-fg:#eef6f8; --head-muted:#8fb0b9; --mapbg:#e9eef0; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --ink:#0f2a34; --accent:#6fb6c8; --accent-soft:#163942; --warn:#e2a95b; --warn-soft:#3a2c17;
+  --ink:#0f2a34; --accent:#6fb6c8; --accent-soft:#163942; --warn:#e2a95b; --warn-soft:#3a2c17; --ok:#7fcb9b; --ok-soft:#173326;
   --bg:#0c1a1f; --surface:#122329; --fg:#e4edef; --muted:#9bb0b6; --line:#24393f; --head-fg:#eef6f8; --head-muted:#8fb0b9; --mapbg:#e9eef0; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--f-body);-webkit-text-size-adjust:100%}
@@ -41,32 +41,47 @@ header.bar .wrap{display:flex;align-items:center;gap:12px;padding-block:12px;min
 .bar .sub{margin-left:auto;font-size:13px;color:var(--head-muted);white-space:nowrap}
 main{padding-block:16px 40px;display:flex;flex-direction:column;gap:24px}
 h2{margin:0 0 8px;font:700 13px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.sechead{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.sechead a,.linkbtn{font-size:14px;font-weight:600;color:var(--accent);text-decoration:none;background:none;border:0;padding:0;cursor:pointer;font-family:inherit}
 .hero{background:var(--ink);color:var(--head-fg);padding-block:4px 22px}
 .hero .wrap{display:flex;flex-direction:column;gap:6px}
 .hero .t{font:800 30px/1.1 var(--f-display);text-wrap:balance;margin:0}
 .hero .d{color:var(--head-muted);font-size:14px}
-.today{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
 .today .when{font:700 16px var(--f-display);color:var(--fg)}
 .today .note{font-size:13px;color:var(--muted)}
 .list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .list li{border-bottom:1px solid var(--line)}
 .row{display:flex;align-items:center;gap:12px;padding:12px 2px;color:inherit;text-decoration:none;min-height:56px}
-.row:focus-visible,.btn:focus-visible,.back:focus-visible,.mapbox:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:8px}
+.row:focus-visible,.btn:focus-visible,.back:focus-visible,.hot:focus-visible,input:focus-visible,textarea:focus-visible,.chipbtn:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:8px}
 .row .tx{min-width:0;flex:1;display:flex;flex-direction:column}
 .row .n{font-weight:650;font-size:16px}
 .row .a{font-size:13px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .row .chev{color:var(--muted);font-size:20px;line-height:1}
-.pin{flex:none;width:30px;height:30px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:700 14px var(--f-body);font-variant-numeric:tabular-nums;box-shadow:0 0 0 2px var(--surface)}
-.city .pin{width:auto;min-width:44px;height:44px;border-radius:12px;padding:0 8px;font:800 15px var(--f-display);background:var(--accent-soft);color:var(--accent);box-shadow:none}
+.row .dist{font-size:13px;color:var(--accent);font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+.pin{flex:none;width:30px;height:30px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:700 14px var(--f-body);font-variant-numeric:tabular-nums;box-shadow:0 0 0 2px var(--surface);position:relative}
+.pin.done{background:var(--ok)}
+.pin.done::after{content:"✓";position:absolute;right:-5px;bottom:-4px;width:15px;height:15px;border-radius:50%;background:var(--surface);color:var(--ok);font-size:11px;line-height:15px;text-align:center;box-shadow:0 0 0 1px var(--ok)}
+.thumb{flex:none;width:64px;height:48px;border-radius:10px;object-fit:cover;background:var(--line)}
 .city .meta{font-size:13px;color:var(--muted)}
-.tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);margin-left:6px;vertical-align:1px}
+.prog{display:flex;flex-direction:column}
+.slot{display:grid;grid-template-columns:88px 1fr;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
+.slot:first-child{border-top:0}
+.slot .time{font:700 14px var(--f-display);color:var(--accent);font-variant-numeric:tabular-nums}
+.slot .time.vague{color:var(--muted);font-weight:600}
+.slot .what{display:flex;flex-direction:column;gap:2px;min-width:0}
+.slot .what b{font-weight:650}
+.slot .what a{color:inherit;text-decoration:none;font-size:14px}
+.slot .what a span{color:var(--muted)}
 .search{display:flex;flex-direction:column;gap:8px}
 .search input{width:100%;font:16px var(--f-body);padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--fg)}
-.mapbox{display:block;width:100%;background:var(--mapbg);border:1px solid var(--line);border-radius:14px;overflow:auto;-webkit-overflow-scrolling:touch;padding:0;cursor:zoom-in;max-height:70vh}
-.mapbox img{display:block;width:100%;height:auto}
-.mapbox.zoom{cursor:zoom-out}
-.mapbox.zoom img{width:220%;max-width:none}
-.cap{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:6px}
+.mapwrap{position:relative;background:var(--mapbg);border:1px solid var(--line);border-radius:14px;overflow:auto;-webkit-overflow-scrolling:touch;max-height:72vh}
+.mapinner{position:relative;width:100%}
+.mapwrap.zoom .mapinner{width:220%}
+.mapinner img{display:block;width:100%;height:auto;max-width:none}
+.hot{position:absolute;width:44px;height:44px;transform:translate(-50%,-50%);border-radius:50%;display:block}
+.hot.done{box-shadow:0 0 0 3px var(--ok)}
+.cap{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-top:6px}
 .info{font-size:14px;color:var(--muted);margin:0}
 .day{display:flex;flex-direction:column;gap:6px}
 .place-head{display:flex;gap:14px;align-items:flex-start}
@@ -75,24 +90,44 @@ h2{margin:0 0 8px;font:700 13px var(--f-body);letter-spacing:.08em;text-transfor
 .place-head .loc{color:var(--muted);font-style:italic;margin-top:2px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{font-size:13px;padding:4px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:600}
+.chip.ok{background:var(--ok-soft);color:var(--ok)}
 .warn{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:10px 12px;font-size:14px}
 .photo{margin:0;display:flex;flex-direction:column;gap:4px}
 .photo img{border-radius:14px;width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--line)}
 .photo figcaption{font-size:11.5px;color:var(--muted)}.photo figcaption a{color:inherit}
+.minimap{position:relative;display:block;height:150px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--mapbg)}
+.minimap img{position:absolute;max-width:none}
+.minimap .dot{position:absolute;left:50%;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(32,103,123,.25)}
+.minimap .lbl{position:absolute;right:8px;bottom:8px;background:var(--surface);color:var(--fg);font-size:12px;font-weight:600;padding:3px 8px;border-radius:999px;border:1px solid var(--line)}
 .notes{display:flex;flex-direction:column;gap:14px;max-width:65ch}
-.notes p{margin:0;font-size:16.5px;line-height:1.6}
+.notes p{margin:0;font-size:var(--notefs);line-height:1.6}
+.tools{display:flex;gap:6px;align-items:center}
+.chipbtn{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--fg);font:600 14px var(--f-body);min-width:44px;height:36px;padding:0 10px;border-radius:10px;cursor:pointer}
+.chipbtn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
 .pending{color:var(--muted);font-style:italic;margin:0}
 .actions{display:flex;gap:10px;flex-wrap:wrap}
 .btn{appearance:none;flex:1 1 150px;display:inline-flex;justify-content:center;align-items:center;gap:6px;min-height:48px;padding:10px 16px;border-radius:12px;font:650 15px var(--f-body);text-decoration:none;border:1px solid var(--accent);color:var(--accent);background:transparent;cursor:pointer}
 .btn.primary{background:var(--accent);color:var(--surface)}
+.btn.okbtn[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:var(--surface)}
+.mine{display:flex;flex-direction:column;gap:8px}
+.mine textarea{width:100%;min-height:88px;font:15px/1.5 var(--f-body);padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--fg);resize:vertical}
+.mine .btn{flex:none}
+.mine .saved{font-size:12px;color:var(--muted);min-height:1em}
 .pager{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .pager a{display:flex;flex-direction:column;gap:2px;padding:12px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:inherit;min-width:0}
 .pager a span{font-size:12px;color:var(--muted)}
 .pager a b{font-weight:650;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .pager .nx{text-align:right}
 .pager .empty{visibility:hidden}
+.prac section{display:flex;flex-direction:column;gap:6px}
+.prac ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.phr{width:100%;border-collapse:collapse;font-size:14px}
+.phr th,.phr td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+.phr th{font-weight:600;color:var(--muted);width:30%}
+.phr td i{color:var(--muted);font-style:normal;font-size:13px;display:block}
 .foot{font-size:12px;color:var(--muted);text-align:center}
 .offline{font-size:12px;color:var(--warn)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 @media (prefers-reduced-motion:no-preference){main{animation:in .18s ease-out}@keyframes in{from{transform:translateY(4px)}to{transform:none}}}
 </style>
 
@@ -119,13 +154,64 @@ const dir=y=>`https://www.google.com/maps/dir/?api=1&destination=${y.konum[0]}%2
 const look=y=>`https://www.google.com/maps/search/?api=1&query=${y.konum[0]}%2C${y.konum[1]}`;
 const $=id=>document.getElementById(id);
 const view=$('view');
+const ALL=[];D.forEach(s=>s.yerler.forEach(y=>ALL.push({s,y,id:`${s.id}-${y.no}`})));
+const byId=id=>ALL.find(x=>x.id===id);
+
+/* --- kişisel kayıtlar (yalnızca bu telefonda) --- */
+const store={get(k,d){try{const v=localStorage.getItem('gy:'+k);return v==null?d:JSON.parse(v)}catch(e){return d}},
+  set(k,v){try{localStorage.setItem('gy:'+k,JSON.stringify(v))}catch(e){}}};
+let visited=new Set(store.get('ziyaret',[]));
+const isDone=id=>visited.has(id);
+function toggleDone(id){isDone(id)?visited.delete(id):visited.add(id);store.set('ziyaret',[...visited])}
+let fs=store.get('yazi',16.5);
+const applyFs=()=>document.documentElement.style.setProperty('--notefs',fs+'px');applyFs();
+
+/* --- konum --- */
+let pos=null, watchId=null, posErr='';
+const R=6371e3,rad=x=>x*Math.PI/180;
+function dist(a,b){const dl=rad(b[0]-a[0]),dn=rad(b[1]-a[1]);const h=Math.sin(dl/2)**2+Math.cos(rad(a[0]))*Math.cos(rad(b[0]))*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(h))}
+const fmtD=m=>m<1000?`${Math.round(m/10)*10} m`:m<10000?`${(m/1000).toFixed(1).replace('.',',')} km`:`${Math.round(m/1000)} km`;
+const distOf=y=>pos?fmtD(dist(pos,y.konum)):'';
+function startLoc(){
+  if(!('geolocation' in navigator)){posErr='Bu cihaz konum desteklemiyor.';route();return}
+  posErr='Konum alınıyor…';route();
+  try{watchId=navigator.geolocation.watchPosition(p=>{pos=[p.coords.latitude,p.coords.longitude];posErr='';refreshDist()},
+    e=>{posErr=e.code===1?'Konum izni verilmedi. Telefonun ayarlarından bu uygulamaya konum izni verebilirsin.':'Konum alınamadı; açık alanda tekrar dene.';refreshDist(true)},
+    {enableHighAccuracy:true,maximumAge:30000,timeout:20000})}catch(e){posErr='Konum alınamadı.';route()}
+}
+let lastDraw=0;
+function refreshDist(force){
+  document.querySelectorAll('[data-dist]').forEach(el=>{const x=byId(el.dataset.dist);el.textContent=x?distOf(x.y):'';if(pos)el.hidden=false});
+  const nb=$('near');if(nb&&(force||Date.now()-lastDraw>4000)){nb.innerHTML=nearHtml();lastDraw=Date.now()}
+}
 
 function bar(title,sub,back){$('bartitle').textContent=title;$('barsub').textContent=sub||'';$('back').hidden=!back;document.title=title==='GeziYorum'?'GeziYorum':title+' · GeziYorum'}
 $('back').addEventListener('click',()=>{const h=location.hash.slice(1);const m=h.match(/^([a-z]+)-\d+$/);location.hash=m?m[1]:''});
 
 function placeRow(s,y,showCity){
-  return `<li><a class="row" href="#${s.id}-${y.no}"><span class="pin">${y.no}</span><span class="tx"><span class="n">${esc(y.ad)}${y.not?'':''}</span><span class="a">${showCity?esc(s.ad)+' · ':''}${esc(y.alt)}</span></span><span class="chev" aria-hidden="true">›</span></a></li>`;
+  const id=`${s.id}-${y.no}`;
+  return `<li><a class="row" href="#${id}"><span class="pin${isDone(id)?' done':''}" aria-label="${y.no}${isDone(id)?', gezildi':''}">${y.no}</span><span class="tx"><span class="n">${esc(y.ad)}</span><span class="a">${showCity?esc(s.ad)+' · ':''}${esc(y.alt)}</span></span><span class="dist" data-dist="${id}">${distOf(y)}</span><span class="chev" aria-hidden="true">›</span></a></li>`;
 }
+
+/* --- günlük program --- */
+function dayPlan(day){
+  const ev=(G.program||[]).filter(e=>e.tarih===day);
+  const timed=new Set(ev.flatMap(e=>e.yerler));
+  const free=ALL.filter(x=>x.y.gunler.includes(day)&&!timed.has(x.id));
+  const slots=[];
+  if(free.length){
+    const cities=[...new Set(free.map(x=>x.s.ad))];
+    slots.push({saat:'Gün içinde',vague:true,ad:cities.join(', '),items:free});
+  }
+  ev.forEach(e=>slots.push({saat:e.saat,vague:!/\d/.test(e.saat),ad:e.ad,items:e.yerler.map(byId).filter(Boolean)}));
+  return slots;
+}
+function planHtml(day){
+  const sl=dayPlan(day);
+  if(!sl.length)return '<p class="info">Bu gün için programda durak yok.</p>';
+  return `<div class="prog">${sl.map(x=>`<div class="slot"><div class="time${x.vague?' vague':''}">${esc(x.saat)}</div><div class="what"><b>${esc(x.ad)}</b>${x.items.map(i=>`<a href="#${i.id}">${i.y.no}. ${esc(i.y.ad)}${new Set(x.items.map(j=>j.s.id)).size>1||x.ad.indexOf(i.s.ad)<0?` <span>· ${esc(i.s.ad)}</span>`:''}${isDone(i.id)?' <span>✓</span>':''}</a>`).join('')}</div></div>`).join('')}</div>`;
+}
+function tripDays(){const out=[];for(let d=parse(G.gezi.baslangic);d<=parse(G.gezi.bitis);d=new Date(d.getFullYear(),d.getMonth(),d.getDate()+1))out.push(iso(d));return out}
 
 function todayBlock(){
   const t=iso(new Date()), b=G.gezi.baslangic, e=G.gezi.bitis;
@@ -133,63 +219,120 @@ function todayBlock(){
   if(t<b){const n=Math.round((+parse(b)-+parse(t))/864e5);day=b;head=`Geziye ${n} gün kaldı`;note=`İlk gün: ${fmt(b)}`}
   else if(t>e){return ''}
   else {day=t;head=`Bugün · ${fmt(t)}`}
-  const rows=[];D.forEach(s=>s.yerler.forEach(y=>{if(y.gunler.includes(day))rows.push(placeRow(s,y,true))}));
-  return `<section><h2>Bugün</h2><div class="today"><div><div class="when">${head}</div>${note?`<div class="note">${note}</div>`:''}</div>
-  ${rows.length?`<ul class="list">${rows.join('')}</ul>`:'<p class="info">Bu gün için programda durak yok.</p>'}</div></section>`;
+  return `<section><div class="sechead"><h2>Bugün</h2><a href="#program">Tüm program ›</a></div><div class="card today"><div><div class="when">${head}</div>${note?`<div class="note">${note}</div>`:''}</div>${planHtml(day)}</div></section>`;
+}
+
+function nearHtml(){
+  if(!pos)return `<p class="info">${posErr?esc(posErr):'Konumuna göre en yakın yerleri ve her yere uzaklığı gösterir. Konum yalnızca telefonunda kullanılır, hiçbir yere gönderilmez.'}</p>${posErr==='Konum alınıyor…'?'':'<div class="actions"><button class="btn" id="locbtn" type="button">Konumumu kullan</button></div>'}`;
+  const near=ALL.map(x=>({...x,m:dist(pos,x.y.konum)})).sort((a,b)=>a.m-b.m).slice(0,4);
+  return `<ul class="list">${near.map(x=>placeRow(x.s,x.y,true)).join('')}</ul>`;
 }
 
 function home(){
   bar('GeziYorum','',false);
-  const total=D.reduce((a,s)=>a+s.yerler.length,0);
+  const total=ALL.length, done=ALL.filter(x=>isDone(x.id)).length;
   const b=parse(G.gezi.baslangic), e=parse(G.gezi.bitis);
-  view.innerHTML=`<div class="hero"><div class="wrap"><p class="t">${esc(G.gezi.ad)}</p><div class="d">${b.getDate()}–${e.getDate()} ${AY[e.getMonth()]} ${e.getFullYear()} · ${D.length} durak · ${total} konum</div></div></div>
+  view.innerHTML=`<div class="hero"><div class="wrap"><p class="t">${esc(G.gezi.ad)}</p><div class="d">${b.getDate()}–${e.getDate()} ${AY[e.getMonth()]} ${e.getFullYear()} · ${D.length} durak · ${total} konum${done?` · ${done} gezildi`:''}</div></div></div>
   <main class="wrap">
     ${todayBlock()}
+    <section><h2>Yakınımdakiler</h2><div class="card" id="near">${nearHtml()}</div></section>
     <section class="search"><h2><label for="q">Ara</label></h2><input id="q" type="search" placeholder="Yer adı, örn. Karl Köprüsü" autocomplete="off"><ul class="list" id="res" hidden></ul></section>
-    <section><h2>Duraklar</h2><ul class="list">${D.map(s=>`<li><a class="row city" href="#${s.id}"><span class="pin">${s.yerler.length}</span><span class="tx"><span class="n">${esc(s.ad)}</span><span class="meta">${span(s.gunler)} · ${esc(s.ulke)}</span></span><span class="chev" aria-hidden="true">›</span></a></li>`).join('')}</ul></section>
-    <p class="foot">Sürüm ${esc(G.gezi.surum)} · Harita © OpenStreetMap katkıda bulunanlar<br><span id="net"></span></p>
+    <section><h2>Duraklar</h2><ul class="list">${D.map(s=>{const dn=s.yerler.filter(y=>isDone(`${s.id}-${y.no}`)).length;return `<li><a class="row city" href="#${s.id}"><img class="thumb" src="${s.kapak}" alt="" loading="lazy"><span class="tx"><span class="n">${esc(s.ad)}</span><span class="meta">${span(s.gunler)} · ${s.yerler.length} yer${dn?` · ${dn} gezildi`:''}</span></span><span class="chev" aria-hidden="true">›</span></a></li>`}).join('')}</ul></section>
+    <section><ul class="list"><li><a class="row" href="#pratik"><span class="tx"><span class="n">Pratik bilgiler</span><span class="a">Para, priz, acil numara, bahşiş, temel ifadeler</span></span><span class="chev" aria-hidden="true">›</span></a></li></ul></section>
+    <p class="foot">Sürüm ${esc(G.gezi.surum)} · Harita © OpenStreetMap katkıda bulunanlar · Fotoğraflar Wikimedia Commons<br><span id="net"></span></p>
   </main>`;
   const q=$('q'),res=$('res');
   const norm=s=>s.toLocaleLowerCase('tr').normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ı/g,'i');
   q.addEventListener('input',()=>{const v=norm(q.value.trim());if(!v){res.hidden=true;return}
-    const r=[];D.forEach(s=>s.yerler.forEach(y=>{if(norm(y.ad+' '+y.alt+' '+s.ad).includes(v))r.push(placeRow(s,y,true))}));
+    const r=ALL.filter(x=>norm(x.y.ad+' '+x.y.alt+' '+x.s.ad).includes(v)).map(x=>placeRow(x.s,x.y,true));
     res.innerHTML=r.length?r.join(''):'<li class="info" style="padding:12px 2px">Sonuç yok.</li>';res.hidden=false});
   netState();
+}
+document.addEventListener('click',e=>{if(e.target&&e.target.id==='locbtn')startLoc()});
+
+function program(){
+  bar('Program',`${parse(G.gezi.baslangic).getDate()}–${fmtShort(G.gezi.bitis)}`,true);
+  const t=iso(new Date());
+  view.innerHTML=`<main class="wrap">${tripDays().map(d=>`<section><h2>${fmt(d)}${d===t?' · bugün':''}</h2><div class="card">${planHtml(d)}</div></section>`).join('')}
+  <p class="foot">Saati belirtilen etkinlikler tur programından alındı; diğer yerler için saat verilmedi.</p></main>`;
+}
+
+function pratik(){
+  bar('Pratik bilgiler','',true);
+  const P=G.pratik;
+  view.innerHTML=`<main class="wrap prac">${P.bolumler.map(b=>`<section><h2>${esc(b.baslik)}</h2><ul>${b.maddeler.map(m=>`<li>${esc(m)}</li>`).join('')}</ul></section>`).join('')}
+  <section><h2>Temel ifadeler</h2>${P.ifadeler.map(f=>`<div class="card"><b>${esc(f.dil)}</b><table class="phr"><tbody>${f.satirlar.map(r=>`<tr><th>${esc(r[0])}</th><td>${esc(r[1])}<i>okunuşu: ${esc(r[2])}</i></td></tr>`).join('')}</tbody></table></div>`).join('')}</section>
+  <p class="foot">Bilgiler ${esc(P.asof)} itibarıyla. Kurallar değişebilir; emin olmadığın durumda yerelde sor.</p></main>`;
 }
 
 function city(s){
   bar(s.ad,span(s.gunler),true);
   const days=[...new Set(s.yerler.flatMap(y=>y.gunler))].sort();
   view.innerHTML=`<main class="wrap">
-    <section><button class="mapbox" id="map" aria-label="Haritayı büyüt veya küçült"><img src="${s.harita}" alt="${esc(s.ad)} haritası, numaralı işaretlerle"></button>
-    <div class="cap"><span>Haritaya dokun: büyüt / küçült</span><span>© OpenStreetMap</span></div></section>
+    <section><div class="mapwrap" id="map"><div class="mapinner"><img src="${s.harita}" alt="${esc(s.ad)} haritası, numaralı işaretlerle">
+      ${s.yerler.filter(y=>y.harita_etiket).map(y=>`<a class="hot${isDone(`${s.id}-${y.no}`)?' done':''}" href="#${s.id}-${y.no}" style="left:${y.harita_etiket[0]}%;top:${y.harita_etiket[1]}%" aria-label="${y.no}. ${esc(y.ad)}"></a>`).join('')}
+    </div></div>
+    <div class="cap"><span>Numaraya dokun: yerin kartı açılır</span><button class="linkbtn" id="zoom" type="button" aria-pressed="false">Haritayı büyüt</button></div></section>
     ${s.bilgi?`<p class="info">${esc(s.bilgi)}</p>`:''}
     ${days.map(d=>`<section class="day"><h2>${fmt(d)}</h2><ul class="list">${s.yerler.filter(y=>y.gunler.includes(d)).map(y=>placeRow(s,y,false)).join('')}</ul></section>`).join('')}
+    <p class="foot">Harita © OpenStreetMap katkıda bulunanlar</p>
   </main>`;
-  const m=$('map');m.addEventListener('click',()=>m.classList.toggle('zoom'));
+  const m=$('map'),z=$('zoom');
+  z.addEventListener('click',()=>{const on=m.classList.toggle('zoom');z.setAttribute('aria-pressed',on);z.textContent=on?'Küçült':'Haritayı büyüt';if(on){m.scrollLeft=(m.scrollWidth-m.clientWidth)/2}});
+}
+
+/* --- sesli okuma --- */
+const canSpeak='speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+let speaking=false;
+function stopSpeak(){if(canSpeak){speechSynthesis.cancel()}speaking=false;const b=$('speak');if(b){b.setAttribute('aria-pressed','false');b.textContent='Dinle'}}
+function speak(texts){
+  if(!canSpeak)return;
+  if(speaking){stopSpeak();return}
+  speechSynthesis.cancel();speaking=true;
+  const v=speechSynthesis.getVoices().find(v=>/^tr/i.test(v.lang));
+  texts.forEach((t,i)=>{const u=new SpeechSynthesisUtterance(t);u.lang='tr-TR';if(v)u.voice=v;u.rate=1;if(i===texts.length-1)u.onend=stopSpeak;speechSynthesis.speak(u)});
+  const b=$('speak');if(b){b.setAttribute('aria-pressed','true');b.textContent='Durdur'}
 }
 
 function place(s,y){
-  const i=s.yerler.indexOf(y), pv=s.yerler[i-1], nx=s.yerler[i+1];
+  const i=s.yerler.indexOf(y), pv=s.yerler[i-1], nx=s.yerler[i+1], id=`${s.id}-${y.no}`;
   bar(s.ad,`${y.no} / ${s.yerler.length}`,true);
-  const g=y.gorsel;
+  const g=y.gorsel, done=isDone(id), mynote=store.get('not:'+id,'');
+  const texts=[y.ad+'. '+(y.alt||'')].concat(y.not||[]);
   view.innerHTML=`<main class="wrap">
-    <div class="place-head"><span class="pin">${y.no}</span><div><h1>${esc(y.ad)}</h1><div class="loc">${esc(y.alt)}</div></div></div>
-    <div class="chips">${y.gunler.map(d=>`<span class="chip">${fmt(d)}</span>`).join('')}</div>
+    <div class="place-head"><span class="pin${done?' done':''}">${y.no}</span><div><h1>${esc(y.ad)}</h1><div class="loc">${esc(y.alt)}</div></div></div>
+    <div class="chips">${y.gunler.map(d=>`<span class="chip">${fmt(d)}</span>`).join('')}<span class="chip" data-dist="${id}" ${pos?'':'hidden'}>${distOf(y)}</span>${done?'<span class="chip ok">Gezildi</span>':''}</div>
     ${y.temsili||y.uyari?`<div class="warn">${y.temsili?'<b>Temsilî konum.</b> ':''}${esc(y.uyari||'')}</div>`:''}
     ${g?`<figure class="photo"><img src="${g.dosya}" alt="${esc(y.ad)}" loading="lazy"><figcaption>Fotoğraf: ${esc(g.yazar||'')} · ${esc(g.lisans||'')} · ${g.sayfa?`<a href="${esc(g.sayfa)}" target="_blank" rel="noopener">${esc(g.kaynak||'Kaynak')}</a>`:esc(g.kaynak||'')}</figcaption></figure>`:''}
     <div class="actions"><a class="btn primary" href="${dir(y)}" target="_blank" rel="noopener">Yol tarifi</a><a class="btn" href="${look(y)}" target="_blank" rel="noopener">Haritada gör</a></div>
-    <section class="notes"><h2>Bilgi notu</h2>${y.not&&y.not.length?y.not.map(p=>`<p>${esc(p)}</p>`).join(''):'<p class="pending">Bu yerin bilgi notu henüz eklenmedi.</p>'}</section>
+    ${y.harita_nokta?`<a class="minimap" href="#${s.id}" id="mini" aria-label="${esc(s.ad)} haritasında göster"><img src="${s.harita}" alt="" id="miniimg"><span class="dot"></span><span class="lbl">${esc(s.ad)} haritası ›</span></a>`:''}
+    <section class="notes"><div class="sechead"><h2>Bilgi notu</h2><div class="tools">${canSpeak&&y.not&&y.not.length?'<button class="chipbtn" id="speak" type="button" aria-pressed="false">Dinle</button>':''}<button class="chipbtn" id="fsm" type="button" aria-label="Yazıyı küçült">A−</button><button class="chipbtn" id="fsp" type="button" aria-label="Yazıyı büyüt">A+</button></div></div>
+      ${y.not&&y.not.length?y.not.map(p=>`<p>${esc(p)}</p>`).join(''):'<p class="pending">Bu yerin bilgi notu henüz eklenmedi.</p>'}</section>
+    <section class="mine"><h2><label for="mynote">Kendi notum</label></h2>
+      <button class="btn okbtn" id="done" type="button" aria-pressed="${done}">${done?'Gezildi ✓':'Gezildi olarak işaretle'}</button>
+      <textarea id="mynote" placeholder="Bu yer hakkında aklında kalmasını istediklerin…">${esc(mynote)}</textarea>
+      <div class="saved" id="saved" aria-live="polite">İşaretlerin ve notların yalnızca bu telefonda saklanır.</div></section>
     <nav class="pager" aria-label="Diğer yerler">${pv?`<a href="#${s.id}-${pv.no}"><span>‹ Önceki</span><b>${pv.no}. ${esc(pv.ad)}</b></a>`:'<a class="empty" aria-hidden="true" tabindex="-1"></a>'}${nx?`<a class="nx" href="#${s.id}-${nx.no}"><span>Sonraki ›</span><b>${nx.no}. ${esc(nx.ad)}</b></a>`:'<a class="empty" aria-hidden="true" tabindex="-1"></a>'}</nav>
     <p class="foot">Yol tarifi Google Haritalar'ı açar ve internet gerektirir.</p>
   </main>`;
+  // harita kesiti: noktayı ortala
+  const mi=$('miniimg'),mn=$('mini');
+  if(mi){const fitMini=()=>{const W=mn.clientWidth*2.6;mi.style.width=W+'px';const H=W*mi.naturalHeight/mi.naturalWidth;mi.style.left=(mn.clientWidth/2-W*y.harita_nokta[0]/100)+'px';mi.style.top=(mn.clientHeight/2-H*y.harita_nokta[1]/100)+'px'};mi.complete?fitMini():mi.addEventListener('load',fitMini)}
+  const sp=$('speak');if(sp)sp.addEventListener('click',()=>speak(texts));
+  $('fsm').addEventListener('click',()=>{fs=Math.max(14,fs-1.5);applyFs();store.set('yazi',fs)});
+  $('fsp').addEventListener('click',()=>{fs=Math.min(24,fs+1.5);applyFs();store.set('yazi',fs)});
+  $('done').addEventListener('click',()=>{toggleDone(id);place(s,y)});
+  let t;$('mynote').addEventListener('input',e=>{clearTimeout(t);t=setTimeout(()=>{store.set('not:'+id,e.target.value);$('saved').textContent='Kaydedildi (bu telefonda).'},400)});
 }
 
 function netState(){const n=$('net');if(n)n.innerHTML=navigator.onLine?'':'<span class="offline">Çevrimdışısın; yol tarifi için internet gerekir.</span>'}
 addEventListener('online',netState);addEventListener('offline',netState);
 
 function route(){
+  stopSpeak();
   const h=decodeURIComponent(location.hash.slice(1));
+  if(h==='program'){program();scrollTo(0,0);return}
+  if(h==='pratik'){pratik();scrollTo(0,0);return}
   const m=h.match(/^([a-z]+)(?:-(\d+))?$/);
   const s=m&&D.find(x=>x.id===m[1]);
   if(s&&m[2]){const y=s.yerler.find(v=>v.no===+m[2]);if(y){place(s,y);scrollTo(0,0);return}}
@@ -197,6 +340,7 @@ function route(){
   home();scrollTo(0,0);
 }
 addEventListener('hashchange',route);route();
+if(canSpeak)speechSynthesis.onvoiceschanged=()=>{};
 
 if('serviceWorker' in navigator && location.protocol==='https:' && !/claude|anthropic/.test(location.hostname)){
   try{navigator.serviceWorker.register('sw.js').catch(()=>{})}catch(e){}

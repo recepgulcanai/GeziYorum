@@ -3,7 +3,7 @@ window.GEZI = {
   "ad": "Orta Avrupa",
   "baslangic": "2026-11-16",
   "bitis": "2026-11-20",
-  "surum": "1.0"
+  "surum": "1.1"
  },
  "duraklar": [
   {
@@ -41,7 +41,15 @@ window.GEZI = {
       "lisans": "CC BY 3.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Prague_old_town_square_panorama.jpg"
-     }
+     },
+     "harita_nokta": [
+      84.36,
+      57.55
+     ],
+     "harita_etiket": [
+      87.51,
+      50.72
+     ]
     },
     {
      "no": 2,
@@ -67,7 +75,15 @@ window.GEZI = {
       "lisans": "CC BY-SA 4.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Czech-2013-Prague-Astronomical_clock_face.jpg"
-     }
+     },
+     "harita_nokta": [
+      82.28,
+      59.86
+     ],
+     "harita_etiket": [
+      84.91,
+      66.95
+     ]
     },
     {
      "no": 3,
@@ -93,7 +109,15 @@ window.GEZI = {
       "lisans": "CC BY-SA 4.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Charles_Bridge_Covid.jpg"
-     }
+     },
+     "harita_nokta": [
+      55.88,
+      62.86
+     ],
+     "harita_etiket": [
+      55.86,
+      69.65
+     ]
     },
     {
      "no": 4,
@@ -119,7 +143,15 @@ window.GEZI = {
       "lisans": "CC BY-SA 4.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Prague_Mala_Strana_St._Nicholas-02.jpg"
-     }
+     },
+     "harita_nokta": [
+      29.04,
+      55.24
+     ],
+     "harita_etiket": [
+      26.4,
+      62.35
+     ]
     },
     {
      "no": 5,
@@ -145,7 +177,15 @@ window.GEZI = {
       "lisans": "CC BY-SA 3.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Hrad%C4%8Dany,_Hradschin,_Praha,_Prague,_Prag_-_panoramio.jpg"
-     }
+     },
+     "harita_nokta": [
+      20.2,
+      46.02
+     ],
+     "harita_etiket": [
+      13.9,
+      50.92
+     ]
     },
     {
      "no": 6,
@@ -171,9 +211,18 @@ window.GEZI = {
       "lisans": "CC BY-SA 4.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:St_Vitus_Prague_September_2016-5.jpg"
-     }
+     },
+     "harita_nokta": [
+      21.84,
+      40.97
+     ],
+     "harita_etiket": [
+      26.07,
+      34.71
+     ]
     }
-   ]
+   ],
+   "kapak": "img/yer/prag-1.webp"
   },
   {
    "id": "viyana",
@@ -210,7 +259,15 @@ window.GEZI = {
       "lisans": "CC BY 3.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Wiede%C5%84ski_spacer_-_panoramio_(2).jpg"
-     }
+     },
+     "harita_nokta": [
+      76.51,
+      70.16
+     ],
+     "harita_etiket": [
+      81.24,
+      75.17
+     ]
     },
     {
      "no": 2,
@@ -236,7 +293,15 @@ window.GEZI = {
       "lisans": "CC BY-SA 4.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Wien,_Stephansdom,_Blick_vom_S%C3%BCdturm_--_2018_--_3271-3.jpg"
-     }
+     },
+     "harita_nokta": [
+      74.28,
+      70.71
+     ],
+     "harita_etiket": [
+      75.33,
+      65.7
+     ]
     },
     {
      "no": 3,
@@ -262,7 +327,15 @@ window.GEZI = {
       "lisans": "CC BY-SA 4.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Wien_-_Graben_-_View_NW_on_Leopoldsbunnen_%26_Pests%C3%A4ule_1692.jpg"
-     }
+     },
+     "harita_nokta": [
+      61.77,
+      69.34
+     ],
+     "harita_etiket": [
+      58.08,
+      65.23
+     ]
     },
     {
      "no": 4,
@@ -288,7 +361,15 @@ window.GEZI = {
       "lisans": "CC0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7ade_nord_ch%C3%A2teau_Sch%C3%B6nbrunn_Vienna.jpg"
-     }
+     },
+     "harita_nokta": [
+      30.79,
+      30.16
+     ],
+     "harita_etiket": [
+      30.78,
+      25.87
+     ]
     },
     {
      "no": 5,
@@ -314,7 +395,15 @@ window.GEZI = {
       "lisans": "CC BY-SA 3.0 at",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Wien_-_Neue_Hofburg.JPG"
-     }
+     },
+     "harita_nokta": [
+      45.66,
+      80.2
+     ],
+     "harita_etiket": [
+      46.43,
+      75.57
+     ]
     },
     {
      "no": 6,
@@ -340,7 +429,15 @@ window.GEZI = {
       "lisans": "CC BY-SA 3.0 at",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Staatsoper_Wien_DSC_5273w.jpg"
-     }
+     },
+     "harita_nokta": [
+      60.46,
+      88.37
+     ],
+     "harita_etiket": [
+      63.08,
+      92.66
+     ]
     },
     {
      "no": 7,
@@ -366,7 +463,15 @@ window.GEZI = {
       "lisans": "CC0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Wien_01_Burgring_b.jpg"
-     }
+     },
+     "harita_nokta": [
+      38.15,
+      82.59
+     ],
+     "harita_etiket": [
+      31.82,
+      86.52
+     ]
     },
     {
      "no": 8,
@@ -392,7 +497,15 @@ window.GEZI = {
       "lisans": "CC BY-SA 4.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Pallas_Athene_Fountain_in_front_of_the_Austrian_Parliament_Building,_Vienna.jpg"
-     }
+     },
+     "harita_nokta": [
+      25.34,
+      71.17
+     ],
+     "harita_etiket": [
+      22.16,
+      67.07
+     ]
     },
     {
      "no": 9,
@@ -418,9 +531,18 @@ window.GEZI = {
       "lisans": "CC BY-SA 2.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:2019-02-23_AT_Wien_01_Innere_Stadt,_Universit%C3%A4tsring,_M%C3%B6lker_Bastei,_Universit%C3%A4t_Wien,_Liebenberg-Denkmal,_E1_4867_Vienna_Ring_Tram_(51541496966).jpg"
-     }
+     },
+     "harita_nokta": [
+      28.99,
+      55.17
+     ],
+     "harita_etiket": [
+      26.35,
+      51.06
+     ]
     }
-   ]
+   ],
+   "kapak": "img/yer/viyana-2.webp"
   },
   {
    "id": "budapeste",
@@ -457,7 +579,15 @@ window.GEZI = {
       "lisans": "CC BY-SA 4.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Heroes%27_Square_(Budapest)_20180824.jpg"
-     }
+     },
+     "harita_nokta": [
+      84.04,
+      30.52
+     ],
+     "harita_etiket": [
+      81.92,
+      24.3
+     ]
     },
     {
      "no": 2,
@@ -483,7 +613,15 @@ window.GEZI = {
       "lisans": "CC BY-SA 4.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:20190502_Zamek_w_Budapeszcie_0647_1862_DxO.jpg"
-     }
+     },
+     "harita_nokta": [
+      25.01,
+      73.75
+     ],
+     "harita_etiket": [
+      20.26,
+      79.46
+     ]
     },
     {
      "no": 3,
@@ -509,7 +647,15 @@ window.GEZI = {
       "lisans": "CC0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Fisherman%27s_Bastion_2014.jpg"
-     }
+     },
+     "harita_nokta": [
+      16.31,
+      58.46
+     ],
+     "harita_etiket": [
+      12.11,
+      52.5
+     ]
     },
     {
      "no": 4,
@@ -536,7 +682,15 @@ window.GEZI = {
       "lisans": "CC0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Hungarian_Parliament_Building_2023-9.jpg"
-     }
+     },
+     "harita_nokta": [
+      33.73,
+      48.81
+     ],
+     "harita_etiket": [
+      37.69,
+      42.61
+     ]
     },
     {
      "no": 5,
@@ -562,9 +716,18 @@ window.GEZI = {
       "lisans": "CC0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg"
-     }
+     },
+     "harita_nokta": [
+      40.05,
+      75.72
+     ],
+     "harita_etiket": [
+      44.78,
+      81.92
+     ]
     }
-   ]
+   ],
+   "kapak": "img/yer/budapeste-4.webp"
   },
   {
    "id": "bratislava",
@@ -600,7 +763,15 @@ window.GEZI = {
       "lisans": "CC BY-SA 4.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Bratislava_Castle,_20210727_1004_0250.jpg"
-     }
+     },
+     "harita_nokta": [
+      29.48,
+      59.0
+     ],
+     "harita_etiket": [
+      25.26,
+      52.18
+     ]
     },
     {
      "no": 2,
@@ -626,7 +797,15 @@ window.GEZI = {
       "lisans": "CC BY 3.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Roland_Fountain_Hlavn%C3%A9_n%C3%A1mestie_Bratislava_Slovakia_-_panoramio_(1).jpg"
-     }
+     },
+     "harita_nokta": [
+      73.03,
+      51.2
+     ],
+     "harita_etiket": [
+      75.67,
+      43.85
+     ]
     },
     {
      "no": 3,
@@ -652,9 +831,18 @@ window.GEZI = {
       "lisans": "CC BY-SA 4.0",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Estatua_Hombre_Trabajando,_Bratislava,_Eslovaquia,_2020-02-01,_DD_45.jpg"
-     }
+     },
+     "harita_nokta": [
+      75.17,
+      56.86
+     ],
+     "harita_etiket": [
+      79.37,
+      63.94
+     ]
     }
-   ]
+   ],
+   "kapak": "img/yer/bratislava-1.webp"
   },
   {
    "id": "parndorf",
@@ -690,9 +878,173 @@ window.GEZI = {
       "lisans": "Public domain",
       "kaynak": "Wikimedia Commons",
       "sayfa": "https://commons.wikimedia.org/wiki/File:Parndorf_Designer_Outlet_(3).jpg"
-     }
+     },
+     "harita_nokta": [
+      52.19,
+      62.36
+     ],
+     "harita_etiket": [
+      52.18,
+      55.01
+     ]
     }
+   ],
+   "kapak": "img/yer/parndorf-1.webp"
+  }
+ ],
+ "program": [
+  {
+   "tarih": "2026-11-17",
+   "saat": "Akşam",
+   "ad": "Viyana akşam yürüyüşü",
+   "yerler": [
+    "viyana-1",
+    "viyana-2",
+    "viyana-3"
+   ]
+  },
+  {
+   "tarih": "2026-11-18",
+   "saat": "20.30–22.00",
+   "ad": "Gece tekne turu",
+   "yerler": [
+    "budapeste-5"
+   ]
+  },
+  {
+   "tarih": "2026-11-19",
+   "saat": "14.30",
+   "ad": "Bratislava şehir turu",
+   "yerler": [
+    "bratislava-1",
+    "bratislava-2",
+    "bratislava-3"
+   ]
+  },
+  {
+   "tarih": "2026-11-19",
+   "saat": "17.00–20.00",
+   "ad": "Parndorf: alışveriş ve akşam yemeği",
+   "yerler": [
+    "parndorf-1"
    ]
   }
- ]
+ ],
+ "pratik": {
+  "asof": "12 Kasım 2026",
+  "bolumler": [
+   {
+    "baslik": "Para",
+    "maddeler": [
+     "Çekya: Çek korunası (CZK). Ülke avroya geçmedi; bazı turistik yerler avro kabul etse de kur genellikle elverişsizdir.",
+     "Macaristan: forint (HUF).",
+     "Avusturya ve Slovakya: avro (EUR).",
+     "Kartla ödeme dört ülkede de yaygındır. Kart makinesi ya da ATM \"kendi para biriminizle ödeyin\" diye sorarsa yerel para birimini seçmek genellikle daha ucuzdur."
+    ]
+   },
+   {
+    "baslik": "Elektrik",
+    "maddeler": [
+     "Dört ülkede de 230 V kullanılır.",
+     "Prizler Çekya ve Slovakya'da E, Avusturya ve Macaristan'da F tipidir; E ile F birbirine uyumludur. Türkiye'deki fişler adaptörsüz takılır."
+    ]
+   },
+   {
+    "baslik": "Acil durum",
+    "maddeler": [
+     "Dört ülkede de genel acil numarası 112'dir."
+    ]
+   },
+   {
+    "baslik": "Bahşiş",
+    "maddeler": [
+     "Viyana: Hesabın yaklaşık %5–15'i kadar yukarı yuvarlanır. Bahşiş masaya bırakılmaz; öderken garsona ödemek istediğin toplam tutar söylenir.",
+     "Budapeşte: Hesapta \"szervizdíj\" (servis ücreti) yazıyorsa ek bahşiş gerekmez. Yazmıyorsa %10–15 bırakılır; kartla ödemede tutar ödeme öncesinde söylenir.",
+     "Prag ve Bratislava: Genellikle %10 civarında yukarı yuvarlanır; yine toplam tutar garsona söylenir."
+    ]
+   }
+  ],
+  "ifadeler": [
+   {
+    "dil": "Çekçe (Prag)",
+    "satirlar": [
+     [
+      "Merhaba",
+      "Dobrý den",
+      "dobrı den"
+     ],
+     [
+      "Teşekkürler",
+      "Děkuji",
+      "dyekuyi"
+     ],
+     [
+      "Hesap lütfen",
+      "Účet, prosím",
+      "uçet prosim"
+     ]
+    ]
+   },
+   {
+    "dil": "Almanca (Viyana, Parndorf)",
+    "satirlar": [
+     [
+      "Merhaba",
+      "Grüß Gott / Hallo",
+      "grüs got / hallo"
+     ],
+     [
+      "Teşekkürler",
+      "Danke",
+      "danke"
+     ],
+     [
+      "Hesap lütfen",
+      "Zahlen, bitte",
+      "tsalen bite"
+     ]
+    ]
+   },
+   {
+    "dil": "Macarca (Budapeşte)",
+    "satirlar": [
+     [
+      "Merhaba",
+      "Jó napot",
+      "yo napot"
+     ],
+     [
+      "Teşekkürler",
+      "Köszönöm",
+      "kösönöm"
+     ],
+     [
+      "Hesap lütfen",
+      "A számlát, kérem",
+      "a saamlaat keerem"
+     ]
+    ]
+   },
+   {
+    "dil": "Slovakça (Bratislava)",
+    "satirlar": [
+     [
+      "Merhaba",
+      "Dobrý deň",
+      "dobri deny"
+     ],
+     [
+      "Teşekkürler",
+      "Ďakujem",
+      "dyakuyem"
+     ],
+     [
+      "Hesap lütfen",
+      "Účet, prosím",
+      "uçet prosim"
+     ]
+    ]
+   }
+  ]
+ }
 };
