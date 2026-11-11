@@ -1,6 +1,6 @@
 {
- "name": "Orta Avrupa Cep Rehberi",
- "short_name": "Cep Rehberi",
+ "name": "GeziYorum",
+ "short_name": "GeziYorum",
  "start_url": "./",
  "scope": "./",
  "display": "standalone",

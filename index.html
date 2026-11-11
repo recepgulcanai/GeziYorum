@@ -7,10 +7,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Cep Rehberi">
+<meta name="apple-mobile-web-app-title" content="GeziYorum">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <script src="data.js"></script>
-<title>Orta Avrupa Cep Rehberi</title>
+<title>GeziYorum</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="theme-color" content="#173b49">
 
@@ -99,7 +99,7 @@ h2{margin:0 0 8px;font:700 13px var(--f-body);letter-spacing:.08em;text-transfor
 </head><body>
 <header class="bar"><div class="wrap">
   <button class="back" id="back" hidden aria-label="Geri">‹ Geri</button>
-  <h1 id="bartitle">Cep Rehberi</h1>
+  <h1 id="bartitle">GeziYorum</h1>
   <span class="sub" id="barsub"></span>
 </div></header>
 <div id="view"></div>
@@ -120,7 +120,7 @@ const look=y=>`https://www.google.com/maps/search/?api=1&query=${y.konum[0]}%2C$
 const $=id=>document.getElementById(id);
 const view=$('view');
 
-function bar(title,sub,back){$('bartitle').textContent=title;$('barsub').textContent=sub||'';$('back').hidden=!back;document.title=title==='Cep Rehberi'?'Orta Avrupa Cep Rehberi':title+' · Cep Rehberi'}
+function bar(title,sub,back){$('bartitle').textContent=title;$('barsub').textContent=sub||'';$('back').hidden=!back;document.title=title==='GeziYorum'?'GeziYorum':title+' · GeziYorum'}
 $('back').addEventListener('click',()=>{const h=location.hash.slice(1);const m=h.match(/^([a-z]+)-\d+$/);location.hash=m?m[1]:''});
 
 function placeRow(s,y,showCity){
@@ -139,7 +139,7 @@ function todayBlock(){
 }
 
 function home(){
-  bar('Cep Rehberi','',false);
+  bar('GeziYorum','',false);
   const total=D.reduce((a,s)=>a+s.yerler.length,0);
   const b=parse(G.gezi.baslangic), e=parse(G.gezi.bitis);
   view.innerHTML=`<div class="hero"><div class="wrap"><p class="t">${esc(G.gezi.ad)}</p><div class="d">${b.getDate()}–${e.getDate()} ${AY[e.getMonth()]} ${e.getFullYear()} · ${D.length} durak · ${total} konum</div></div></div>
