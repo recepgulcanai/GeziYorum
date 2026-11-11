@@ -157,7 +157,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": null,
-     "not": null
+     "not": [
+      "Stephansplatz, Viyana'nın tarihî merkezinin tam ortasında yer alan ve şehrin sıfır noktası sayılan meydandır. Meydan, adını ortasında yükselen Aziz Stephan Katedrali'nden alır. Orta Çağ'da katedralin çevresi bir mezarlık olarak kullanılıyordu. Mezarlık 18. yüzyılda kaldırılmış ve alan bugünkü açık meydana dönüşmüştür. O döneme ait mezar mahzenleri, katedralin altındaki katakomplarda hâlâ görülebilir.",
+      "Stephansplatz, Viyana metrosunun U1 ve U3 hatlarının kesiştiği önemli bir istasyondur. İstasyon inşaatı sırasında bulunan Orta Çağ'dan kalma Virgil Şapeli, bugün istasyonun içinden görülebilir. Meydan, Graben ve Kärntner Straße gibi şehrin en işlek yaya caddelerinin buluştuğu yerdir. Kärntner Straße buradan güneye, Devlet Operası'na doğru uzanır. Meydanın batı köşesinde cam cepheli modern Haas Haus binası bulunur.",
+      "Mimar Hans Hollein'in tasarladığı bu yapı, 1990'da tamamlandığında tarihî dokuyla uyumu bakımından tartışma yaratmıştır. Haas Haus'un cam cephesinde katedralin yansımasını görmek, meydanın bilinen fotoğraf karelerindendir. Meydanda çoğu zaman Viyanalıların \"Fiaker\" dediği atlı faytonlar yolcu bekler. Kış aylarına doğru meydana açılan sokaklar Noel ışıklarıyla süslenmeye başlar. Meydan, akşam yürüyüşünde katedrale ve Graben'e geçmeden önce kolay bir buluşma noktasıdır."
+     ]
     },
     {
      "no": 2,
@@ -172,7 +176,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": null,
-     "not": null
+     "not": [
+      "Aziz Stephan Katedrali, Almanca adıyla Stephansdom, Viyana'nın en önemli dinî yapısı ve şehrin simgesidir. Bugünkü yapının yerindeki ilk Romanesk kilise 1147 yılında kutsanmıştır. Bu ilk dönemden batı cephesindeki Dev Kapı ile iki Pagan Kulesi günümüze ulaşmıştır. Yapının Gotik tarzda yeniden inşası, 14. yüzyılda Habsburg Dükü IV. Rudolf döneminde hız kazanmıştır. Güney kulesi yaklaşık 136 metre yüksekliğiyle katedralin en yüksek noktasıdır.",
+      "Viyanalılar bu kuleye sevgiyle \"Steffl\" der. Kuzey kulesi hiçbir zaman tamamlanmamış, 16. yüzyılda Rönesans tarzı bir başlıkla kapatılmıştır. Kuzey kulesinde, Avusturya'nın en büyük çanı olan Pummerin asılıdır. Katedralin dik çatısı, renkli sırlı kiremitlerden oluşan zikzak desenleriyle tanınır. Çatının güney yüzünde bu kiremitlerle Habsburg'ların çift başlı kartalı işlenmiştir.",
+      "Katedral, İkinci Dünya Savaşı'nın son günlerinde, 1945'te çıkan yangında ağır hasar görmüştür. Restorasyon Avusturya'nın eyaletlerinin katkısıyla yürütülmüş ve katedral 1952'de yeniden açılmıştır. İç mekândaki Gotik taş kürsü uzun süre usta Anton Pilgram'a atfedilmiştir. Kürsünün altında, pencereden dışarı bakan bir usta figürü yer alır. Ziyarette çatı desenlerini dışarıdan, kürsüyü ve sunakları içeriden incelemek için ayrı zaman ayırabilirsiniz."
+     ]
     },
     {
      "no": 3,
@@ -187,7 +195,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": null,
-     "not": null
+     "not": [
+      "Graben, Stephansplatz'tan batıya uzanan, Viyana'nın en tanınmış yaya caddelerinden biridir. Adı Almancada \"hendek\" anlamına gelir. Cadde, Roma dönemindeki Vindobona askerî kampının surlarını çevreleyen hendeğin yerinde bulunur. Hendek, şehir genişlerken 12. yüzyılın sonlarına doğru doldurulmuştur. Bu genişlemenin, Aslan Yürekli Richard için ödenen fidyeyle finanse edildiği anlatılır.",
+      "Doldurulan alan zamanla pazar yerine, ardından şehrin seçkin caddelerinden birine dönüşmüştür. Caddenin ortasında Barok Veba Sütunu yükselir. Sütun, 1679 veba salgınının ardından İmparator I. Leopold'ün adağıyla yaptırılmıştır. 1693'te tamamlanan anıt, bulutlar ve figürlerden oluşan zengin Barok heykel düzeniyle dikkat çeker. Heykel grubunun içinde diz çökmüş, dua eden İmparator Leopold figürü de yer alır.",
+      "Cadde boyunca 18. ve 19. yüzyıldan kalma zarif bina cepheleri sıralanır. Graben'in batı ucu, Kohlmarkt üzerinden Hofburg Sarayı'na doğru devam eder. Cadde; mağazaları, kafeleri ve köklü dükkânlarıyla şehrin alışveriş merkezlerinden biridir. Graben'deki tarihî yer altı tuvaletleri, mimar Adolf Loos'un tasarladığı Jugendstil iç düzeniyle şaşırtıcı bir ayrıntıdır. Akşam yürüyüşünde Veba Sütunu'nun önünde durup heykellerin ayrıntılarına bakabilirsiniz."
+     ]
     },
     {
      "no": 4,
@@ -202,7 +214,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": null,
-     "not": null
+     "not": [
+      "Schönbrunn Sarayı, Habsburg hanedanının yazlık sarayı olarak kullanılan Barok bir yapıdır. Alan, 1569 yılında Habsburglar tarafından satın alınmıştır. Sarayın adı, burada bulunduğu anlatılan \"güzel pınar\"dan, yani \"schöner Brunnen\"dan gelir. Buradaki eski av köşkü, 1683'teki Viyana kuşatması sırasında ağır hasar görmüştür. I. Leopold döneminde yeni bir saray tasarlama görevi mimar Johann Bernhard Fischer von Erlach'a verilmiştir.",
+      "Saray, 18. yüzyılda İmparatoriçe Maria Theresia döneminde genişletilerek bugünkü görünümünü almıştır. Sarayda toplam 1.441 oda bulunduğu kabul edilir. Genç Mozart, 1762'de altı yaşındayken burada Maria Theresia'nın huzurunda çalmıştır. İmparator Franz Joseph bu sarayda doğmuş ve 1916'da yine burada ölmüştür. Son imparator I. Karl, 1918'de devlet işlerinden çekildiğini bildiren belgeyi burada imzalamıştır.",
+      "Saray ve bahçeleri 1996'da UNESCO Dünya Mirası Listesi'ne alınmıştır. Bahçelerin en yüksek noktasında, tepeye kurulu Gloriette yer alır. 1775'te inşa edilen Gloriette, sarayın ve şehrin geniş bir manzarasını sunar. Bahçede Neptün Çeşmesi, yapay Roma Harabesi ve 1752'de kurulan, dünyanın en eski hayvanat bahçesi sayılan Tiergarten da bulunur. Kasım'da bahçe yürüyüşü uzun ve rüzgârlı olabileceği için rahat ayakkabı ve kat kat giysi tercih edebilirsiniz."
+     ]
     },
     {
      "no": 5,
@@ -217,7 +233,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": null,
-     "not": null
+     "not": [
+      "Hofburg, yüzyıllar boyunca Habsburg hükümdarlarının Viyana'daki kışlık sarayı ve yönetim merkezi olmuştur. Yapı topluluğunun en eski bölümleri 13. yüzyıla uzanır. Saray, sonraki yüzyıllarda hükümdarların eklediği kanatlarla büyümüştür. Bu nedenle kompleks, Gotik'ten 19. yüzyıl Historisizmine kadar farklı dönemlerin mimarisini bir araya getirir. En eski bölüm olan İsviçre Avlusu'na, Rönesans tarzı İsviçre Kapısı'ndan girilir.",
+      "Avlunun yanındaki İmparatorluk Hazinesi, Kutsal Roma İmparatorluğu'nun tacını barındırır. Kompleksin içinde İspanyol Binicilik Okulu da yer alır. Burada Lipizzaner atlarıyla klasik binicilik gösterileri yapılır. Avusturya Ulusal Kütüphanesi'nin Barok Devlet Salonu da Hofburg bünyesindedir. İmparatorluk Daireleri, Sisi Müzesi ve Gümüş Koleksiyonu tek bir ziyaret güzergâhında gezilebilir.",
+      "Kompleksin en yeni bölümü, yarım daire biçimiyle Heldenplatz'a bakan Neue Burg'dur. Neue Burg'un yapımı 1913'te büyük ölçüde tamamlanmıştır. Heldenplatz'ta Savoylu Prens Eugen ile Arşidük Karl'ın atlı heykelleri bulunur. Bugün Hofburg'un bir kanadı, Avusturya Cumhurbaşkanlığı makamı olarak kullanılır. Ziyarette bir müze seçip avlular arasında yürümek, kompleksin büyüklüğünü görmek için iyi bir başlangıçtır."
+     ]
     },
     {
      "no": 6,
@@ -232,7 +252,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": null,
-     "not": null
+     "not": [
+      "Viyana Devlet Operası, dünyanın en önemli opera sahnelerinden biridir. Bina, Ringstrasse üzerinde inşa edilen ilk büyük kamu yapılarından biridir. Mimarları August Sicard von Sicardsburg ve Eduard van der Nüll'dür. Yapı, Neo-Rönesans tarzında tasarlanmıştır. Opera, 25 Mayıs 1869'da Mozart'ın Don Giovanni eseriyle açılmıştır.",
+      "Bina ilk yıllarında halk ve basın tarafından ağır biçimde eleştirilmiştir. İki mimar da operanın açılışını göremeden hayatını kaybetmiştir. Opera binası, Mart 1945'teki bombardımanda ağır hasar görmüştür. Ön cephe, büyük merdiven ve çay salonu bu yıkımdan büyük ölçüde kurtulmuştur. Yeniden inşa edilen opera, 5 Kasım 1955'te Beethoven'ın Fidelio eseriyle yeniden açılmıştır.",
+      "Opera, bir sezon boyunca çok sayıda farklı eseri sahneleyen repertuvar sistemiyle çalışır. Orkestra çukurunda çalan müzisyenler, Viyana Filarmoni Orkestrası'nın da temelini oluşturur. Her yıl karnaval döneminde salonda ünlü Viyana Opera Balosu düzenlenir. Gösteri günlerinde uygun fiyatlı ayakta izleme biletleri satılır. Programa göre binanın rehberli turunu veya akşam ışıklandırmasını gezinize ekleyebilirsiniz."
+     ]
     },
     {
      "no": 7,
@@ -247,7 +271,11 @@ window.GEZI = {
      ],
      "temsili": true,
      "uyari": "Bulvar boyunca uzanır; işaret bir referans noktasıdır.",
-     "not": null
+     "not": [
+      "Ringstrasse, Viyana'nın tarihî merkezini çember gibi saran yaklaşık 5 kilometrelik bir bulvardır. Bulvar, yıkılan eski şehir surlarının yerine kurulmuştur. Surların kaldırılması kararını 1857'de İmparator Franz Joseph vermiştir. Bulvar, 1865 yılında resmî bir törenle açılmıştır. Yeni bulvar boyunca devlet yapıları, müzeler, tiyatrolar ve saraylar inşa edilmiştir.",
+      "Bu yapılarda geçmiş üslupları yeniden yorumlayan Historisizm akımı belirleyici olmuştur. Her yapının üslubu, büyük ölçüde işleviyle ilişkilendirilerek seçilmiştir. Parlamento için Antik Yunan, Belediye Binası için Gotik tarz tercih edilmiştir. Üniversite ise Rönesans dönemini çağrıştıran bir mimariyle inşa edilmiştir. Devlet Operası, Burgtheater, Sanat Tarihi ve Doğa Tarihi müzeleri de bulvar üzerinde yer alır.",
+      "Bulvarın bölümleri Opernring, Burgring ve Universitätsring gibi farklı adlar taşır. Geniş ve ağaçlıklı yolların, askerî birliklerin hızla hareket edebilmesi düşüncesiyle de planlandığı anlatılır. Tramvay hatları Ring boyunca ilerler ve bulvarı görmeyi kolaylaştırır. Haritadaki işaret bulvar üzerindeki bir referans noktasıdır; bulvarın tamamını göstermez. 20 Kasım turunda Opera, Hofburg, Parlamento ve Üniversite'yi aynı bulvar üzerinde art arda görebilirsiniz."
+     ]
     },
     {
      "no": 8,
@@ -262,7 +290,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": null,
-     "not": null
+     "not": [
+      "Avusturya Parlamento Binası, Ringstrasse üzerindeki en dikkat çekici yapılardan biridir. Bina, Danimarkalı mimar Theophil Hansen tarafından tasarlanmıştır. Yapımına 1874'te başlanmış ve bina 1883'te tamamlanmıştır. Hansen, demokrasinin beşiği kabul edilen Antik Yunan'a gönderme yaparak Neo-Klasik üslubu seçmiştir. Bina ilk olarak imparatorluğun Reichsrat adlı meclisi için yapılmıştır.",
+      "Bugün Avusturya'nın Ulusal Konsey ve Federal Konsey adlı iki meclisi burada toplanır. Girişin önünde, bilgelik tanrıçası Pallas Athena'nın büyük heykeliyle süslenmiş bir çeşme bulunur. Çeşmenin alt kısmındaki figürler, imparatorluğun başlıca nehirlerini temsil eder. Rampaların başında at terbiye eden figürlerden oluşan heykel grupları yer alır. Bina, İkinci Dünya Savaşı'nda ağır hasar görmüş ve savaştan sonra onarılmıştır.",
+      "2017–2022 yılları arasında kapsamlı bir restorasyon geçirmiştir. Restorasyonla birlikte genel kurul salonu cam bir tavan ve ziyaretçilere açık yeni alanlar kazanmıştır. Binanın ziyaretçi merkezi, parlamentonun işleyişini anlatan bir sergi sunar. Rehberli turlar, meclisin çalışma programına bağlı olarak düzenlenir. Ringstrasse turunda Athena Çeşmesi'nin önünde durmak, cepheyi bütün olarak görmek için iyi bir noktadır."
+     ]
     },
     {
      "no": 9,
@@ -277,7 +309,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": null,
-     "not": null
+     "not": [
+      "Viyana Üniversitesi, Almanca konuşulan dünyanın hâlâ faaliyette olan en eski üniversitesidir. Üniversite, 1365 yılında Habsburg Dükü IV. Rudolf tarafından kurulmuştur. Kurucusuna atfen \"Alma Mater Rudolphina\" olarak da anılır. Ana bina, Ringstrasse üzerindeki Universitätsring 1 adresinde bulunur. Binanın mimarı Heinrich von Ferstel'dir.",
+      "Ana bina 1884 yılında açılmıştır. Ferstel, bilimin yeniden doğuşunu simgelemek için İtalyan Rönesansı'ndan esinlenen bir üslup seçmiştir. Binanın merkezinde, kemerlerle çevrili büyük bir iç avlu bulunur. Avlunun kemerleri altında üniversitede görev yapmış ünlü bilim insanlarının büstleri ve anıtları sıralanır. Bu isimler arasında Sigmund Freud ve fizikçi Ludwig Boltzmann da yer alır.",
+      "Üniversite, tarihi boyunca birçok Nobel ödüllü bilim insanıyla bağlantılı olmuştur. Gustav Klimt'in üniversite için yaptığı Felsefe, Tıp ve Hukuk tavan resimleri döneminde büyük tartışma yaratmıştır. Bu özgün resimler, 1945'te bir şatoda çıkan yangında yok olmuştur. Avluya genellikle ziyaretçiler de girebilir; güncel giriş koşullarını gitmeden önce kontrol etmekte yarar var. Üniversite, Ringstrasse turunda Parlamento'nun hemen kuzeyinde kısa bir mola olarak eklenebilir."
+     ]
     }
    ]
   },

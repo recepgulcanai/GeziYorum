@@ -1,5 +1,5 @@
 // Cep Rehberi çevrimdışı önbellek. Sürüm, içerik değişince otomatik değişir.
-const CACHE='cep-rehberi-a8cb07e3';
+const CACHE='cep-rehberi-943f07bd';
 const FILES=["./", "index.html", "data.js", "manifest.webmanifest", "icon-192.png", "icon-512.png", "icon-180.png", "img/harita-bratislava.webp", "img/harita-budapeste.webp", "img/harita-parndorf.webp", "img/harita-prag.webp", "img/harita-viyana.webp"];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==CACHE).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});
