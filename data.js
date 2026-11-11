@@ -167,10 +167,10 @@ window.GEZI = {
      ],
      "gorsel": {
       "dosya": "img/yer/prag-6.webp",
-      "yazar": "Myrabella",
-      "lisans": "CC BY-SA 3.0",
+      "yazar": "Alvesgaspar",
+      "lisans": "CC BY-SA 4.0",
       "kaynak": "Wikimedia Commons",
-      "sayfa": "https://commons.wikimedia.org/wiki/File:Cathedrale_Saint-Guy_Prague_facade_sud_mosaique_Jugement_dernier.jpg"
+      "sayfa": "https://commons.wikimedia.org/wiki/File:St_Vitus_Prague_September_2016-5.jpg"
      }
     }
    ]
@@ -203,7 +203,14 @@ window.GEZI = {
       "Stephansplatz, Viyana'nın tarihî merkezinin tam ortasında yer alan ve şehrin sıfır noktası sayılan meydandır. Meydan, adını ortasında yükselen Aziz Stephan Katedrali'nden alır. Orta Çağ'da katedralin çevresi bir mezarlık olarak kullanılıyordu. Mezarlık 18. yüzyılda kaldırılmış ve alan bugünkü açık meydana dönüşmüştür. O döneme ait mezar mahzenleri, katedralin altındaki katakomplarda hâlâ görülebilir.",
       "Stephansplatz, Viyana metrosunun U1 ve U3 hatlarının kesiştiği önemli bir istasyondur. İstasyon inşaatı sırasında bulunan Orta Çağ'dan kalma Virgil Şapeli, bugün istasyonun içinden görülebilir. Meydan, Graben ve Kärntner Straße gibi şehrin en işlek yaya caddelerinin buluştuğu yerdir. Kärntner Straße buradan güneye, Devlet Operası'na doğru uzanır. Meydanın batı köşesinde cam cepheli modern Haas Haus binası bulunur.",
       "Mimar Hans Hollein'in tasarladığı bu yapı, 1990'da tamamlandığında tarihî dokuyla uyumu bakımından tartışma yaratmıştır. Haas Haus'un cam cephesinde katedralin yansımasını görmek, meydanın bilinen fotoğraf karelerindendir. Meydanda çoğu zaman Viyanalıların \"Fiaker\" dediği atlı faytonlar yolcu bekler. Kış aylarına doğru meydana açılan sokaklar Noel ışıklarıyla süslenmeye başlar. Meydan, akşam yürüyüşünde katedrale ve Graben'e geçmeden önce kolay bir buluşma noktasıdır."
-     ]
+     ],
+     "gorsel": {
+      "dosya": "img/yer/viyana-1.webp",
+      "yazar": "krysi@",
+      "lisans": "CC BY 3.0",
+      "kaynak": "Wikimedia Commons",
+      "sayfa": "https://commons.wikimedia.org/wiki/File:Wiede%C5%84ski_spacer_-_panoramio_(2).jpg"
+     }
     },
     {
      "no": 2,
@@ -277,10 +284,10 @@ window.GEZI = {
      ],
      "gorsel": {
       "dosya": "img/yer/viyana-4.webp",
-      "yazar": "MrPanyGoff",
-      "lisans": "CC BY-SA 3.0",
+      "yazar": "Jebulon",
+      "lisans": "CC0",
       "kaynak": "Wikimedia Commons",
-      "sayfa": "https://commons.wikimedia.org/wiki/File:Schonbrunn_Palace_fragment.jpg"
+      "sayfa": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7ade_nord_ch%C3%A2teau_Sch%C3%B6nbrunn_Vienna.jpg"
      }
     },
     {
@@ -352,7 +359,14 @@ window.GEZI = {
       "Ringstrasse, Viyana'nın tarihî merkezini çember gibi saran yaklaşık 5 kilometrelik bir bulvardır. Bulvar, yıkılan eski şehir surlarının yerine kurulmuştur. Surların kaldırılması kararını 1857'de İmparator Franz Joseph vermiştir. Bulvar, 1865 yılında resmî bir törenle açılmıştır. Yeni bulvar boyunca devlet yapıları, müzeler, tiyatrolar ve saraylar inşa edilmiştir.",
       "Bu yapılarda geçmiş üslupları yeniden yorumlayan Historisizm akımı belirleyici olmuştur. Her yapının üslubu, büyük ölçüde işleviyle ilişkilendirilerek seçilmiştir. Parlamento için Antik Yunan, Belediye Binası için Gotik tarz tercih edilmiştir. Üniversite ise Rönesans dönemini çağrıştıran bir mimariyle inşa edilmiştir. Devlet Operası, Burgtheater, Sanat Tarihi ve Doğa Tarihi müzeleri de bulvar üzerinde yer alır.",
       "Bulvarın bölümleri Opernring, Burgring ve Universitätsring gibi farklı adlar taşır. Geniş ve ağaçlıklı yolların, askerî birliklerin hızla hareket edebilmesi düşüncesiyle de planlandığı anlatılır. Tramvay hatları Ring boyunca ilerler ve bulvarı görmeyi kolaylaştırır. Haritadaki işaret bulvar üzerindeki bir referans noktasıdır; bulvarın tamamını göstermez. 20 Kasım turunda Opera, Hofburg, Parlamento ve Üniversite'yi aynı bulvar üzerinde art arda görebilirsiniz."
-     ]
+     ],
+     "gorsel": {
+      "dosya": "img/yer/viyana-7.webp",
+      "yazar": "Gugerell",
+      "lisans": "CC0",
+      "kaynak": "Wikimedia Commons",
+      "sayfa": "https://commons.wikimedia.org/wiki/File:Wien_01_Burgring_b.jpg"
+     }
     },
     {
      "no": 8,
