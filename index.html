@@ -78,7 +78,7 @@ h2{margin:0 0 8px;font:700 13px var(--f-body);letter-spacing:.08em;text-transfor
 .warn{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:10px 12px;font-size:14px}
 .photo{margin:0;display:flex;flex-direction:column;gap:4px}
 .photo img{border-radius:14px;width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--line)}
-.photo figcaption{font-size:11.5px;color:var(--muted)}
+.photo figcaption{font-size:11.5px;color:var(--muted)}.photo figcaption a{color:inherit}
 .notes{display:flex;flex-direction:column;gap:14px;max-width:65ch}
 .notes p{margin:0;font-size:16.5px;line-height:1.6}
 .pending{color:var(--muted);font-style:italic;margin:0}
@@ -177,7 +177,7 @@ function place(s,y){
     <div class="place-head"><span class="pin">${y.no}</span><div><h1>${esc(y.ad)}</h1><div class="loc">${esc(y.alt)}</div></div></div>
     <div class="chips">${y.gunler.map(d=>`<span class="chip">${fmt(d)}</span>`).join('')}</div>
     ${y.temsili||y.uyari?`<div class="warn">${y.temsili?'<b>Temsilî konum.</b> ':''}${esc(y.uyari||'')}</div>`:''}
-    ${g?`<figure class="photo"><img src="${g.dosya}" alt="${esc(y.ad)}" loading="lazy"><figcaption>${esc(g.yazar||'')} · ${esc(g.lisans||'')} · ${esc(g.kaynak||'')}</figcaption></figure>`:''}
+    ${g?`<figure class="photo"><img src="${g.dosya}" alt="${esc(y.ad)}" loading="lazy"><figcaption>Fotoğraf: ${esc(g.yazar||'')} · ${esc(g.lisans||'')} · ${g.sayfa?`<a href="${esc(g.sayfa)}" target="_blank" rel="noopener">${esc(g.kaynak||'Kaynak')}</a>`:esc(g.kaynak||'')}</figcaption></figure>`:''}
     <div class="actions"><a class="btn primary" href="${dir(y)}" target="_blank" rel="noopener">Yol tarifi</a><a class="btn" href="${look(y)}" target="_blank" rel="noopener">Haritada gör</a></div>
     <section class="notes"><h2>Bilgi notu</h2>${y.not&&y.not.length?y.not.map(p=>`<p>${esc(p)}</p>`).join(''):'<p class="pending">Bu yerin bilgi notu henüz eklenmedi.</p>'}</section>
     <nav class="pager" aria-label="Diğer yerler">${pv?`<a href="#${s.id}-${pv.no}"><span>‹ Önceki</span><b>${pv.no}. ${esc(pv.ad)}</b></a>`:'<a class="empty" aria-hidden="true" tabindex="-1"></a>'}${nx?`<a class="nx" href="#${s.id}-${nx.no}"><span>Sonraki ›</span><b>${nx.no}. ${esc(nx.ad)}</b></a>`:'<a class="empty" aria-hidden="true" tabindex="-1"></a>'}</nav>
