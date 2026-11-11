@@ -341,7 +341,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": null,
-     "not": null
+     "not": [
+      "Kahramanlar Meydanı, Budapeşte'nin en geniş ve en tanınmış meydanlarından biridir. Meydan, Andrássy Caddesi'nin sonunda, Városliget parkının girişinde yer alır. Anıt kompleksi, Macarların bölgeye yerleşmesinin bininci yılı kutlamaları için tasarlanmıştır. Yapımına 1896'da başlanmış, tamamlanması ise 1929'u bulmuştur. Meydanın ortasında yaklaşık 36 metre yüksekliğinde bir sütun yükselir.",
+      "Sütunun tepesinde, Macar kraliyet tacını ve çift haçı taşıyan Başmelek Cebrail heykeli bulunur. Sütunun dibinde, Macarları Karpat Havzası'na getiren yedi kabile reisinin atlı heykelleri yer alır. Bu grubun en önünde, efsanevi lider Árpád'ın heykeli öne çıkar. Sütunun arkasında, yarım daire biçiminde iki sütunlu galeri bulunur. Galerilerde, Macar tarihinin önemli kral ve devlet adamlarının heykelleri sıralanır.",
+      "Her heykelin altındaki kabartma, o kişinin hayatından bir sahneyi anlatır. Sütunun önünde, ulusal bağımsızlık uğruna hayatını kaybedenler için bir anma taşı bulunur. Meydanın iki yanında Güzel Sanatlar Müzesi ile Sanat Galerisi karşılıklı durur. Meydan, Andrássy Caddesi ile birlikte 2002'de UNESCO Dünya Mirası Listesi'ne eklenmiştir. Ziyarette atlı heykel grubunu önden, kral heykellerini ise galerilerin yakınından inceleyebilirsiniz."
+     ]
     },
     {
      "no": 2,
@@ -356,7 +360,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": null,
-     "not": null
+     "not": [
+      "Buda Kalesi, Tuna'nın batı yakasında, Kale Tepesi'nin güney ucunda yükselen büyük bir saray kompleksidir. Tepedeki ilk savunma yapıları, 1241–1242 Moğol istilasının ardından 13. yüzyılda kurulmuştur. Kral IV. Béla, şehri korumak için tepeyi surlarla çevirmiştir. 15. yüzyılda Kral Matthias Corvinus döneminde saray, Rönesans sanatının önemli merkezlerinden biri hâline gelmiştir. Buda, 1541'de Osmanlı yönetimine geçmiş ve yaklaşık 145 yıl Osmanlı idaresinde kalmıştır.",
+      "1686'daki kuşatmayla şehir Habsburg ordusunun eline geçmiş, saray bu sırada büyük ölçüde yıkılmıştır. 18. yüzyılda Maria Theresia döneminde yerine Barok bir saray yapılmıştır. Saray, 19. yüzyılın sonunda büyük ölçüde genişletilmiştir. İkinci Dünya Savaşı'nın sonundaki kuşatmada saray yeniden ağır hasar görmüştür. Savaş sonrası yeniden inşada iç mekânlar sadeleştirilmiş, kubbe de yeni bir biçim almıştır.",
+      "Bugün sarayda Macar Ulusal Galerisi ve Budapeşte Tarih Müzesi bulunur. Ulusal Széchényi Kütüphanesi de saray kompleksinin içindedir. Kalenin Tuna'ya bakan terasında, Macar mitolojisindeki Turul kuşunun heykeli yer alır. Kale Tepesi'ne, Clark Ádám Meydanı'ndan kalkan tarihî füniküler ile çıkılabilir. Saray terasından Zincirli Köprü'yü ve Peşte yakasındaki Parlamento'yu birlikte görebilirsiniz."
+     ]
     },
     {
      "no": 3,
@@ -371,7 +379,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": null,
-     "not": null
+     "not": [
+      "Balıkçılar Tabyası, Buda Kale Tepesi'nde Matthias Kilisesi'nin hemen yanında yer alan bir seyir terasıdır. Görünüşü kale surunu andırsa da savunma amacıyla değil, süsleme ve manzara için yapılmıştır. Yapı, 1895–1902 yılları arasında inşa edilmiştir. Mimarı, Matthias Kilisesi'nin restorasyonunu da yürüten Frigyes Schulek'tir. Tasarımda Neo-Romanesk ve Neo-Gotik öğeler bir arada kullanılmıştır.",
+      "Adının, Orta Çağ'da surların bu bölümünü savunan balıkçılar loncasından geldiği anlatılır. Bir başka açıklamaya göre ad, tepenin altındaki eski balıkçı mahallesiyle ilişkilidir. Tabyanın yedi kulesi, Macarları Karpat Havzası'na getiren yedi kabileyi simgeler. Kuleler, göçebe Macarların çadırlarını andıran sivri çatılarla tamamlanmıştır. Terasın önünde, Macaristan'ın ilk kralı Aziz İstvan'ın atlı bronz heykeli bulunur.",
+      "Hemen yanındaki Matthias Kilisesi, renkli Zsolnay kiremitleriyle kaplı çatısıyla dikkat çeker. Tabya, İkinci Dünya Savaşı'nda hasar görmüş ve savaştan sonra onarılmıştır. Teraslardan Tuna'yı, Margit Adası'nı ve karşı kıyıdaki Parlamento'yu görmek mümkündür. Üst teraslar için saate ve mevsime göre giriş ücreti alınabilir; alt bölümler genellikle ücretsizdir. Gün batımına doğru gelmek, Peşte yakasının ışıklarını izlemek için iyi bir zamandır."
+     ]
     },
     {
      "no": 4,
@@ -387,7 +399,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": null,
-     "not": null
+     "not": [
+      "Macaristan Parlamento Binası, Tuna'nın Peşte yakasında yükselen ve şehrin en tanınmış yapısıdır. Ülkenin en büyük binası olarak kabul edilir. Bina, 1873'te Buda, Óbuda ve Peşte'nin birleşmesinden sonra yeni başkentin simgesi olarak tasarlanmıştır. Mimarı İmre Steindl'dir. Yapımına 1885'te başlanmış ve bina 1904'te tamamlanmıştır.",
+      "Bina, 1896'daki bininci yıl kutlamaları sırasında kullanılmaya başlanmıştır. Steindl, binanın tamamlanmasından kısa süre önce hayatını kaybetmiş ve bitmiş hâlini görememiştir. Yapının cephesi Neo-Gotik, planı ve kubbesi ise Rönesans etkileri taşır. Merkezdeki kubbe 96 metre yüksekliğindedir. Bu yükseklik, geleneksel olarak 896 yılına tarihlenen Macar yerleşimine gönderme yapar.",
+      "Binanın içinde Macar Kutsal Tacı ve diğer taç mücevherleri sergilenir. Binanın biraz güneyinde, Tuna kıyısında İkinci Dünya Savaşı'nda öldürülen Yahudileri anan, demir ayakkabılardan oluşan bir anıt yer alır. 18 Kasım gece tekne turunda bina, ışıklandırılmış hâliyle nehirden görülebilir. Binanın önündeki Kossuth Meydanı, ulusal törenlerin yapıldığı geniş bir alandır. Parlamentoya rehberli turla girilebilir; turlar meclis programına bağlı olduğu için önceden kontrol etmek gerekir."
+     ]
     },
     {
      "no": 5,
@@ -402,7 +418,11 @@ window.GEZI = {
      ],
      "temsili": true,
      "uyari": "Nehir çevresini temsil eder; kalkış iskelesi değildir.",
-     "not": null
+     "not": [
+      "Tuna, Volga'dan sonra Avrupa'nın en uzun ikinci nehridir. Nehir, Almanya'daki Kara Orman'dan doğar ve Karadeniz'e dökülür. Yolculuğu boyunca on ülkeden geçer ya da sınır oluşturur. Viyana, Bratislava, Budapeşte ve Belgrad, Tuna kıyısında kurulmuş dört başkenttir. Bu gezideki Viyana, Bratislava ve Budapeşte aynı nehrin kıyısındadır.",
+      "Budapeşte'de nehir, şehri batıdaki Buda ve doğudaki Peşte yakası olarak ikiye ayırır. İki yaka, 1873'te Óbuda ile birlikte tek bir şehir hâlinde birleşmiştir. Şehrin nehir üzerindeki ilk kalıcı köprüsü, 1849'da açılan Széchenyi Zincirli Köprüsü'dür. Budapeşte'nin Tuna kıyıları ve Buda Kalesi semti, 1987'den beri UNESCO Dünya Mirası Listesi'ndedir. Gece tekne turunda Parlamento, Buda Kalesi ve köprüler ışıklandırılmış olarak görülür.",
+      "Nehrin ortasındaki Margit Adası, şehrin en büyük park alanlarından biridir. Gellért Tepesi ve üzerindeki Özgürlük Anıtı, nehrin güney kesiminden görülebilir. Haritadaki 5 numara nehir çevresini temsil eder; tekne kalkış iskelesini göstermez. Kalkış yeri ve rota programda belirtilmediği için rehberden teyit edilmelidir. Kasım akşamlarında güvertede hava soğuk ve rüzgârlı olabileceğinden kalın giyinmek iyi olur."
+     ]
     }
    ]
   },
@@ -429,7 +449,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": null,
-     "not": null
+     "not": [
+      "Bratislava Kalesi, Tuna'ya bakan bir tepede yükselen ve şehrin siluetini belirleyen dikdörtgen planlı bir yapıdır. Dört köşesindeki kuleleri nedeniyle halk arasında ters çevrilmiş bir masaya benzetilir. Kalenin bulunduğu tepe, tarih öncesi çağlardan beri yerleşim yeri olarak kullanılmıştır. 9. yüzyılda burada Büyük Moravya dönemine ait bir kale ve kilise bulunuyordu. Bugünkü yapının temelleri, 15. yüzyılda Kral Sigismund döneminde Gotik bir kale olarak atılmıştır.",
+      "Osmanlıların 1541'de Buda'yı almasının ardından şehir, Macar Krallığı'nın başkenti olmuştur. O dönemde şehir, Macarca Pozsony, Almanca Pressburg adlarıyla anılıyordu. 18. yüzyılda Maria Theresia döneminde kale, temsil amaçlı Barok bir saraya dönüştürülmüştür. Kale, 1811'de çıkan büyük bir yangında harap olmuş ve uzun süre yıkık kalmıştır. Yeniden inşa çalışmaları 1950'lerde başlamış ve kale 1968'de yeniden açılmıştır.",
+      "Bugün yapı, Slovak Ulusal Müzesi'nin sergilerine ve devlet törenlerine ev sahipliği yapar. Kalenin hemen yanında Slovakya parlamentosunun binası bulunur. Kalenin Barok bahçeleri, 2010'lardaki restorasyonla yeniden düzenlenmiştir. Teraslardan Tuna'yı, SNP Köprüsü'nü ve açık havalarda Avusturya ile Macaristan topraklarını görmek mümkündür. Programdaki fotoğraf molası için kalenin nehre bakan güney terası en uygun noktalardandır."
+     ]
     },
     {
      "no": 2,
@@ -444,7 +468,11 @@ window.GEZI = {
      ],
      "temsili": true,
      "uyari": "Tarihi merkez, Ana Meydan ile temsil ediliyor.",
-     "not": null
+     "not": [
+      "Bratislava'nın tarihî merkezi, kale tepesi ile Tuna arasındaki dar sokaklardan oluşan ve yürüyerek kolayca gezilebilen bir bölgedir. Haritadaki temsil noktası, Slovakça adıyla Hlavné námestie olan Ana Meydan'dır. Meydanın ortasında 1572'de tamamlanan Roland Çeşmesi bulunur. Çeşme, Kral II. Maximilian'ın emriyle yaptırılmıştır. Meydanın doğu yanında, farklı dönemlerden yapıların birleşmesiyle oluşan Eski Belediye Binası yer alır.",
+      "Bu bina bugün şehir müzesine ev sahipliği yapar. Belediye binasının cephesinde, 1809 Napolyon kuşatmasından kalma bir top güllesi gömülü olarak durur. Şehrin Orta Çağ surlarından günümüze ulaşan tek kapı Mihail Kapısı'dır. Kapının kulesinin tepesinde Başmelek Mikail'in heykeli bulunur. Tarihî merkezin batı kenarında Gotik Aziz Martin Katedrali yükselir.",
+      "1563–1830 yılları arasında Macar krallarının ve kraliçelerinin taç giyme törenleri bu katedralde yapılmıştır. Katedral kulesinin tepesinde, bu geçmişi hatırlatan yaldızlı bir taç yer alır. Yakındaki Primatial Sarayı, 1805'teki Pressburg Barışı'nın imzalandığı yer olarak bilinir. Sokaklardaki heykeller ve kafeler, kısa sürede çok şey görmek isteyenler için bölgeyi rahat bir yürüyüş alanı yapar. 14.30'da başlayan şehir turunda Ana Meydan'ı, Mihail Kapısı'nı ve katedrali aynı güzergâhta görebilirsiniz."
+     ]
     },
     {
      "no": 3,
@@ -459,7 +487,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": null,
-     "not": null
+     "not": [
+      "Čumil, Bratislava'nın tarihî merkezinde bir kanalizasyon kapağından başını çıkarmış işçiyi gösteren bronz bir heykeldir. Heykel, Panská ve Rybárska brána sokaklarının kesiştiği köşede bulunur. 1997 yılında yerine yerleştirilmiştir. Heykelin yaratıcısı Slovak heykeltıraş Viktor Hulík'tir. Adı, Slovakçada etrafı merakla seyreden birini anlatan bir sözcükten gelir.",
+      "Heykelin neyi temsil ettiğine dair farklı yorumlar anlatılır. Bazılarına göre o, işine ara verip yoldan geçenleri izleyen bir belediye işçisidir. Başka bir yoruma göre ise sokaktan geçenleri gizlice gözetleyen bir meraklıdır. Halk arasında, heykelin başına dokunan kişinin dileğinin gerçekleşeceğine inanılır. Yaya seviyesinde durduğu için şehrin en çok fotoğraflanan heykellerinden biridir.",
+      "Heykelin yanında \"işbaşında adam\" anlamına gelen bir uyarı levhası bulunur. Bu levhanın, heykelin araçlar tarafından hasar gördüğü anlatılan olaylardan sonra eklendiği söylenir. Čumil, 1990'larda tarihî merkezi canlandırmak için yerleştirilen esprili heykellerden biridir. Yakındaki Napolyon askeri ve şapkasını çıkaran Schöne Náci heykelleri de aynı dönemin örnekleridir. Fotoğraf çekerken heykelin yolda alçakta durduğunu hesaba katıp çevredeki yayalara dikkat etmekte yarar var."
+     ]
     }
    ]
   },
@@ -486,7 +518,11 @@ window.GEZI = {
      ],
      "temsili": false,
      "uyari": "İşaret kompleks içindeki referans konumudur; otopark girişini göstermeyebilir.",
-     "not": null
+     "not": [
+      "Designer Outlet Parndorf, Avusturya'nın Burgenland eyaletinde, Viyana ile Bratislava arasında yer alan büyük bir outlet alışveriş merkezidir. Merkez 1998 yılında açılmıştır. Viyana'dan da Bratislava'dan da kısa bir otoyol yolculuğuyla ulaşılabilir. Alışveriş merkezi, Viyana'yı Macaristan sınırına bağlayan A4 otoyolunun yakınında bulunur. Açık hava çarşısı düzeninde tasarlanmıştır; mağazalar küçük bir kasaba sokağını andıran yollar boyunca sıralanır.",
+      "Binaların mimarisi, bölgenin geleneksel köy evlerinden esinlenir. Merkezde moda, spor, ev eşyası ve aksesuar markalarının çok sayıda mağazası bulunur. Outlet mağazalarında genellikle önceki sezonların ürünleri indirimli fiyatlarla satılır. Avrupa Birliği dışında yaşayan ziyaretçiler, belirli bir tutarın üzerindeki alışverişlerde KDV iadesi alabilir. Bunun için ödeme sırasında mağazadan vergi iade formu istenmelidir.",
+      "Form, Avrupa Birliği'nden son çıkış noktasında gümrüğe onaylatılmalıdır. Dönüşte havalimanında bu işlem için ek zaman ayırmak gerekir. Merkezin içinde çeşitli kafeler ve restoranlar bulunur. Programdaki 17.00–20.00 molası, alışverişi ve akşam yemeğini birlikte kapsar. Molaya başlamadan önce buluşma saatini ve otobüsün park ettiği yeri not etmek iyi olur."
+     ]
     }
    ]
   }
