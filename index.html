@@ -101,6 +101,9 @@ h2{margin:0 0 8px;font:700 13px var(--f-body);letter-spacing:.08em;text-transfor
 .minimap .lbl{position:absolute;right:8px;bottom:8px;background:var(--surface);color:var(--fg);font-size:12px;font-weight:600;padding:3px 8px;border-radius:999px;border:1px solid var(--line)}
 .notes{display:flex;flex-direction:column;gap:14px;max-width:65ch}
 .notes p{margin:0;font-size:var(--notefs);line-height:1.6}
+.lore{border-left:3px solid var(--warn);padding-left:14px}
+.lore h2{margin:0}
+.lore p.lorenote{font-size:.85em;opacity:.7;font-style:italic}
 .tools{display:flex;gap:6px;align-items:center}
 .chipbtn{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--fg);font:600 14px var(--f-body);min-width:44px;height:36px;padding:0 10px;border-radius:10px;cursor:pointer}
 .chipbtn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
@@ -298,7 +301,7 @@ function place(s,y){
   const i=s.yerler.indexOf(y), pv=s.yerler[i-1], nx=s.yerler[i+1], id=`${s.id}-${y.no}`;
   bar(s.ad,`${y.no} / ${s.yerler.length}`,true);
   const g=y.gorsel, done=isDone(id), mynote=store.get('not:'+id,'');
-  const texts=[y.ad+'. '+(y.alt||'')].concat(y.not||[]);
+  const texts=[y.ad+'. '+(y.alt||'')].concat(y.not||[]).concat(y.anlati&&y.anlati.length?['Anlatılanlar.'].concat(y.anlati):[]);
   view.innerHTML=`<main class="wrap">
     <div class="place-head"><span class="pin${done?' done':''}">${y.no}</span><div><h1>${esc(y.ad)}</h1><div class="loc">${esc(y.alt)}</div></div></div>
     <div class="chips">${y.gunler.map(d=>`<span class="chip">${fmt(d)}</span>`).join('')}<span class="chip" data-dist="${id}" ${pos?'':'hidden'}>${distOf(y)}</span>${done?'<span class="chip ok">Gezildi</span>':''}</div>
@@ -308,6 +311,7 @@ function place(s,y){
     ${y.harita_nokta?`<a class="minimap" href="#${s.id}" id="mini" aria-label="${esc(s.ad)} haritasında göster"><img src="${s.harita}" alt="" id="miniimg"><span class="dot"></span><span class="lbl">${esc(s.ad)} haritası ›</span></a>`:''}
     <section class="notes"><div class="sechead"><h2>Bilgi notu</h2><div class="tools">${canSpeak&&y.not&&y.not.length?'<button class="chipbtn" id="speak" type="button" aria-pressed="false">Dinle</button>':''}<button class="chipbtn" id="fsm" type="button" aria-label="Yazıyı küçült">A−</button><button class="chipbtn" id="fsp" type="button" aria-label="Yazıyı büyüt">A+</button></div></div>
       ${y.not&&y.not.length?y.not.map(p=>`<p>${esc(p)}</p>`).join(''):'<p class="pending">Bu yerin bilgi notu henüz eklenmedi.</p>'}</section>
+    ${y.anlati&&y.anlati.length?`<section class="notes lore"><h2>Anlatılanlar</h2><p class="lorenote">Halk arasında anlatılan hikâyeler; tarihî bilgi değildir.</p>${y.anlati.map(p=>`<p>${esc(p)}</p>`).join('')}</section>`:''}
     <section class="mine"><h2><label for="mynote">Kendi notum</label></h2>
       <button class="btn okbtn" id="done" type="button" aria-pressed="${done}">${done?'Gezildi ✓':'Gezildi olarak işaretle'}</button>
       <textarea id="mynote" placeholder="Bu yer hakkında aklında kalmasını istediklerin…">${esc(mynote)}</textarea>

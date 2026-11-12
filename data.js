@@ -3,7 +3,7 @@ window.GEZI = {
   "ad": "Orta Avrupa",
   "baslangic": "2026-11-16",
   "bitis": "2026-11-20",
-  "surum": "1.1"
+  "surum": "1.2"
  },
  "duraklar": [
   {
@@ -49,6 +49,10 @@ window.GEZI = {
      "harita_etiket": [
       87.51,
       50.72
+     ],
+     "anlati": [
+      "Meydanın zeminindeki 27 beyaz haç, 1621'de burada idam edilen Çek soylularını anar; bu tarihî bir gerçektir.",
+      "Halk arasında, idam edilenlerin hayaletlerinin yıldönümlerinde meydanda dolaştığı anlatılır."
      ]
     },
     {
@@ -83,6 +87,11 @@ window.GEZI = {
      "harita_etiket": [
       84.91,
       66.95
+     ],
+     "anlati": [
+      "Saati yapan usta Hanuş'un, aynısını başka bir şehre yapmasın diye şehrin yöneticileri tarafından kör ettirildiği anlatılır. Usta da intikam almak için saatin mekanizmasına uzanıp onu durdurmuştur.",
+      "Halk arasında, saat uzun süre durursa şehrin başına bir felaket geleceğine inanılır.",
+      "Bu bir efsanedir: Saati gerçekte 1410'da Kadaňlı saatçi Mikuláš yapmıştır."
      ]
     },
     {
@@ -117,6 +126,11 @@ window.GEZI = {
      "harita_etiket": [
       55.86,
       69.65
+     ],
+     "anlati": [
+      "Köprüdeki Aziz Jan Nepomuk heykelinin kaidesinde bronz kabartmalar vardır. Bu kabartmalara dokunanın Prag'a yeniden geleceğine ya da dileğinin gerçekleşeceğine inanılır; parlamış yerler bu yüzdendir.",
+      "Köprünün sağlam olması için harcına yumurta katıldığı ve bunun için ülkenin dört bir yanından yumurta toplandığı anlatılır.",
+      "Köprü ayağındaki şövalye Bruncvík heykeliyle ilgili bir efsane daha var: Şövalyenin sihirli kılıcının köprünün taşları arasına gömülü olduğu ve şehir tehlikeye düştüğünde ortaya çıkacağı söylenir."
      ]
     },
     {
@@ -185,6 +199,10 @@ window.GEZI = {
      "harita_etiket": [
       13.9,
       50.92
+     ],
+     "anlati": [
+      "Kale kompleksindeki Daliborka Kulesi'nde hapsedilen şövalye Dalibor'un, hücresinde keman çalarak dışarıdaki halkı hüzünlendirdiği anlatılır.",
+      "Çekçedeki \"Dalibor'a kemanı açlık öğretti\" deyimi bu hikâyeden gelir; zorluğun insana yeni beceriler kazandırdığını anlatmak için kullanılır."
      ]
     },
     {
@@ -219,6 +237,10 @@ window.GEZI = {
      "harita_etiket": [
       26.07,
       34.71
+     ],
+     "anlati": [
+      "Katedralde saklanan Bohemya tacını hak etmeden başına takanın bir yıl içinde öleceğine inanılır.",
+      "İkinci Dünya Savaşı'nda Nazi yöneticisi Heydrich'in tacı denediği ve kısa süre sonra bir suikastte öldüğü anlatılır. Tacı denediğine dair kesin bir kanıt yoktur."
      ]
     }
    ],
@@ -267,6 +289,11 @@ window.GEZI = {
      "harita_etiket": [
       81.24,
       75.17
+     ],
+     "anlati": [
+      "Meydanın Graben köşesinde, cam arkasında yüzlerce çivi çakılmış bir ağaç gövdesi durur: Stock im Eisen.",
+      "Bir efsaneye göre gövdeyi şeytanın kendisi demirle sarmıştır ya da onu korumaktadır. Başka bir anlatıda bir çilingir çırağı, açılamayan bir kilit yapmayı şeytandan öğrenir ve karşılığında ruhunu vaat eder.",
+      "Şehirden geçen gezgin çilingirlerin uğur için bu gövdeye çivi çaktığı anlatılır. Gövdenin, Viyana'yı bir zamanlar çevreleyen ormandan kalan son ağaç olduğu da söylenir."
      ]
     },
     {
@@ -301,6 +328,11 @@ window.GEZI = {
      "harita_etiket": [
       75.33,
       65.7
+     ],
+     "anlati": [
+      "Katedralin dış duvarında \"Diş Ağrısı İsa'sı\" (Zahnwehherrgott) adı verilen bir heykel vardır. Bu heykelle alay eden gençlerin şiddetli bir diş ağrısına tutulduğu ve ancak heykelin önünde dua edince iyileştikleri anlatılır.",
+      "Kuzey kulesinin neden yarım kaldığına dair de bir efsane var: Usta Hans Puchsbaum kuleyi zamanında bitirmek için şeytanla anlaşmış, anlaşmayı bozunca da kuleden düşüp ölmüştür.",
+      "Büyük çan Pummerin'in 1683 kuşatmasında ele geçirilen Osmanlı toplarından döküldüğü ise tarihî bir bilgidir."
      ]
     },
     {
@@ -369,6 +401,10 @@ window.GEZI = {
      "harita_etiket": [
       30.78,
       25.87
+     ],
+     "anlati": [
+      "Sarayın adı \"güzel pınar\" anlamına gelir.",
+      "İmparator Matthias'ın bu bölgede ava çıktığında bir pınar bulduğu ve \"Ne güzel bir pınar!\" diye seslendiği anlatılır. Pınar bugün bahçedeki küçük bir köşkün içinde görülebilir."
      ]
     },
     {
@@ -437,6 +473,11 @@ window.GEZI = {
      "harita_etiket": [
       63.08,
       92.66
+     ],
+     "anlati": [
+      "Bu bir menkıbeden çok acı bir anekdottur.",
+      "Opera binası açıldığında beğenilmemiş, eleştirilere dayanamayan mimarlardan van der Nüll intihar etmiş, diğer mimar Sicardsburg da kısa süre sonra ölmüştür.",
+      "Binayı eleştirdiği söylenen İmparator Franz Joseph'in, bu olaydan sonra ömrü boyunca her şeye aynı kalıp ve tarafsız bir övgüyle karşılık verdiği anlatılır."
      ]
     },
     {
@@ -505,6 +546,10 @@ window.GEZI = {
      "harita_etiket": [
       22.16,
       67.07
+     ],
+     "anlati": [
+      "Binanın önünde Bilgelik tanrıçası Athena'nın heykeli durur.",
+      "Viyanalılar, Athena'nın binaya sırtını döndüğünü söyleyerek bilgeliğin parlamentonun dışında bırakıldığı esprisini yapar."
      ]
     },
     {
@@ -587,6 +632,10 @@ window.GEZI = {
      "harita_etiket": [
       81.92,
       24.3
+     ],
+     "anlati": [
+      "Meydandaki sütunun tepesinde, elinde Macar tacını tutan Cebrail heykeli bulunur.",
+      "Meleğin rüyada Macarların ilk kralı István'a görünüp tacı sunduğu anlatılır."
      ]
     },
     {
@@ -621,6 +670,11 @@ window.GEZI = {
      "harita_etiket": [
       20.26,
       79.46
+     ],
+     "anlati": [
+      "Kale terasında, kanatlarını açmış Turul kuşunun heykeli durur.",
+      "Efsaneye göre Turul, Emese'nin rüyasına girmiş ve Macarları bugünkü topraklara götürecek hanedanın kurucusu Álmos'un doğacağını haber vermiştir.",
+      "Kale avlusundaki Mátyás Çeşmesi de bir hikâye anlatır: Avcı kılığında dolaşan Kral Matyas'a âşık olan güzel İlonka, onun kral olduğunu öğrenince umutsuzluğa kapılır."
      ]
     },
     {
@@ -655,6 +709,9 @@ window.GEZI = {
      "harita_etiket": [
       12.11,
       52.5
+     ],
+     "anlati": [
+      "Tabyanın yedi kulesi, Macarları Karpat havzasına getiren yedi boyu temsil eder."
      ]
     },
     {
@@ -724,6 +781,11 @@ window.GEZI = {
      "harita_etiket": [
       44.78,
       81.92
+     ],
+     "anlati": [
+      "Tekne turunda görülen Zincirli Köprü'nün iki ucunda taş aslanlar durur.",
+      "Heykeltıraş János Marschalkó'nun aslanların dilini yapmayı unuttuğu, açılışta bunu fark eden birinin bağırması üzerine utancından kendini Tuna'ya attığı anlatılır.",
+      "Gerçekte aslanların dili vardır; yalnızca aşağıdan görünmez. Heykeltıraş da bu olaydan sonra onlarca yıl daha yaşamıştır."
      ]
     }
    ],
@@ -771,6 +833,10 @@ window.GEZI = {
      "harita_etiket": [
       25.26,
       52.18
+     ],
+     "anlati": [
+      "Dört köşe kulesi yüzünden kale, ters çevrilmiş bir masaya benzetilir.",
+      "Efsaneye göre bir dev, dinlenmek için kaleyi ters çevirip masa olarak kullanmıştır. O dönemde kalede yaşayanların sabahları eşyalarını dağınık, kendilerini de yerde bulduğu anlatılır."
      ]
     },
     {
@@ -805,6 +871,11 @@ window.GEZI = {
      "harita_etiket": [
       75.67,
       43.85
+     ],
+     "anlati": [
+      "Ana Meydan'daki Roland Çeşmesi'nin tepesindeki şövalye heykeli normalde eski belediye binasına bakar.",
+      "Yılda bir kez, yılbaşı gecesi tam yarısında, şehri kurtarmak için canını veren on iki meclis üyesinin anısına dönüp eğildiği anlatılır.",
+      "Bir başka anlatıya göre bunu yalnızca Bratislava'da doğmuş, iyi kalpli kişiler görebilir."
      ]
     },
     {
