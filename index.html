@@ -73,6 +73,9 @@ h2{margin:0 0 8px;font:700 13px var(--f-body);letter-spacing:.08em;text-transfor
 .slot .what b{font-weight:650}
 .slot .what a{color:inherit;text-decoration:none;font-size:14px}
 .slot .what a span{color:var(--muted)}
+.slot .what .sub{color:var(--muted);font-size:13px}
+.stay{margin-top:4px;padding:10px 12px;border-radius:10px;background:var(--accent-soft);font-size:14px}
+.stay b{margin-right:6px}
 .search{display:flex;flex-direction:column;gap:8px}
 .search input{width:100%;font:16px var(--f-body);padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--fg)}
 .mapwrap{position:relative;background:var(--mapbg);border:1px solid var(--line);border-radius:14px;overflow:auto;-webkit-overflow-scrolling:touch;max-height:72vh}
@@ -206,13 +209,13 @@ function dayPlan(day){
     const cities=[...new Set(free.map(x=>x.s.ad))];
     slots.push({saat:'Gün içinde',vague:true,ad:cities.join(', '),items:free});
   }
-  ev.forEach(e=>slots.push({saat:e.saat,vague:!/\d/.test(e.saat),ad:e.ad,items:e.yerler.map(byId).filter(Boolean)}));
+  ev.forEach(e=>slots.push({saat:e.saat,vague:!/\d/.test(e.saat),ad:e.ad,sub:e.not||'',items:e.yerler.map(byId).filter(Boolean)}));
   return slots;
 }
 function planHtml(day){
   const sl=dayPlan(day);
   if(!sl.length)return '<p class="info">Bu gün için programda durak yok.</p>';
-  return `<div class="prog">${sl.map(x=>`<div class="slot"><div class="time${x.vague?' vague':''}">${esc(x.saat)}</div><div class="what"><b>${esc(x.ad)}</b>${x.items.map(i=>`<a href="#${i.id}">${i.y.no}. ${esc(i.y.ad)}${new Set(x.items.map(j=>j.s.id)).size>1||x.ad.indexOf(i.s.ad)<0?` <span>· ${esc(i.s.ad)}</span>`:''}${isDone(i.id)?' <span>✓</span>':''}</a>`).join('')}</div></div>`).join('')}</div>`;
+  return `<div class="prog">${sl.map(x=>`<div class="slot"><div class="time${x.vague?' vague':''}">${esc(x.saat)}</div><div class="what"><b>${esc(x.ad)}</b>${x.sub?`<span class="sub">${esc(x.sub)}</span>`:''}${x.items.map(i=>`<a href="#${i.id}">${i.y.no}. ${esc(i.y.ad)}${new Set(x.items.map(j=>j.s.id)).size>1||x.ad.indexOf(i.s.ad)<0?` <span>· ${esc(i.s.ad)}</span>`:''}${isDone(i.id)?' <span>✓</span>':''}</a>`).join('')}</div></div>`).join('')}</div>${G.konaklama&&G.konaklama[day]?`<div class="stay"><b>Konaklama</b> ${esc(G.konaklama[day])}</div>`:''}`;
 }
 function tripDays(){const out=[];for(let d=parse(G.gezi.baslangic);d<=parse(G.gezi.bitis);d=new Date(d.getFullYear(),d.getMonth(),d.getDate()+1))out.push(iso(d));return out}
 
@@ -257,7 +260,7 @@ function program(){
   bar('Program',`${parse(G.gezi.baslangic).getDate()}–${fmtShort(G.gezi.bitis)}`,true);
   const t=iso(new Date());
   view.innerHTML=`<main class="wrap">${tripDays().map(d=>`<section><h2>${fmt(d)}${d===t?' · bugün':''}</h2><div class="card">${planHtml(d)}</div></section>`).join('')}
-  <p class="foot">Saati belirtilen etkinlikler tur programından alındı; diğer yerler için saat verilmedi.</p></main>`;
+  <p class="foot">Saatler gezi programından alınmıştır ve yerel saattir.</p></main>`;
 }
 
 function pratik(){

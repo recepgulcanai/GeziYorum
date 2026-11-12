@@ -3,7 +3,7 @@ window.GEZI = {
   "ad": "Orta Avrupa",
   "baslangic": "2026-11-16",
   "bitis": "2026-11-20",
-  "surum": "1.2"
+  "surum": "1.3"
  },
  "duraklar": [
   {
@@ -598,7 +598,7 @@ window.GEZI = {
     "2026-11-19"
    ],
    "harita": "img/harita-budapeste.webp",
-   "bilgi": "Gece tekne turu: 18 Kasım, 20.30–22.00. Kalkış iskelesi ve kesin tekne rotası programda belirtilmemiştir.",
+   "bilgi": "Gece tekne turu: 18 Kasım, 20.30–22.00. Kalkış iskelesi programda belirtilmemiştir; biletten ya da tekne şirketinden teyit edin.",
    "yerler": [
     {
      "no": 1,
@@ -765,7 +765,7 @@ window.GEZI = {
      "not": [
       "Tuna, Volga'dan sonra Avrupa'nın en uzun ikinci nehridir. Nehir, Almanya'daki Kara Orman'dan doğar ve Karadeniz'e dökülür. Yolculuğu boyunca on ülkeden geçer ya da sınır oluşturur. Viyana, Bratislava, Budapeşte ve Belgrad, Tuna kıyısında kurulmuş dört başkenttir. Bu gezideki Viyana, Bratislava ve Budapeşte aynı nehrin kıyısındadır.",
       "Budapeşte'de nehir, şehri batıdaki Buda ve doğudaki Peşte yakası olarak ikiye ayırır. İki yaka, 1873'te Óbuda ile birlikte tek bir şehir hâlinde birleşmiştir. Şehrin nehir üzerindeki ilk kalıcı köprüsü, 1849'da açılan Széchenyi Zincirli Köprüsü'dür. Budapeşte'nin Tuna kıyıları ve Buda Kalesi semti, 1987'den beri UNESCO Dünya Mirası Listesi'ndedir. Gece tekne turunda Parlamento, Buda Kalesi ve köprüler ışıklandırılmış olarak görülür.",
-      "Nehrin ortasındaki Margit Adası, şehrin en büyük park alanlarından biridir. Gellért Tepesi ve üzerindeki Özgürlük Anıtı, nehrin güney kesiminden görülebilir. Haritadaki 5 numara nehir çevresini temsil eder; tekne kalkış iskelesini göstermez. Kalkış yeri ve rota programda belirtilmediği için rehberden teyit edilmelidir. Kasım akşamlarında güvertede hava soğuk ve rüzgârlı olabileceğinden kalın giyinmek iyi olur."
+      "Nehrin ortasındaki Margit Adası, şehrin en büyük park alanlarından biridir. Gellért Tepesi ve üzerindeki Özgürlük Anıtı, nehrin güney kesiminden görülebilir. Haritadaki 5 numara nehir çevresini temsil eder; tekne kalkış iskelesini göstermez. Kalkış yeri ve rota programda belirtilmediği için biletten ya da tekne şirketinden teyit edilmelidir. Kasım akşamlarında güvertede hava soğuk ve rüzgârlı olabileceğinden kalın giyinmek iyi olur."
      ],
      "gorsel": {
       "dosya": "img/yer/budapeste-5.webp",
@@ -941,7 +941,7 @@ window.GEZI = {
      "not": [
       "Designer Outlet Parndorf, Avusturya'nın Burgenland eyaletinde, Viyana ile Bratislava arasında yer alan büyük bir outlet alışveriş merkezidir. Merkez 1998 yılında açılmıştır. Viyana'dan da Bratislava'dan da kısa bir otoyol yolculuğuyla ulaşılabilir. Alışveriş merkezi, Viyana'yı Macaristan sınırına bağlayan A4 otoyolunun yakınında bulunur. Açık hava çarşısı düzeninde tasarlanmıştır; mağazalar küçük bir kasaba sokağını andıran yollar boyunca sıralanır.",
       "Binaların mimarisi, bölgenin geleneksel köy evlerinden esinlenir. Merkezde moda, spor, ev eşyası ve aksesuar markalarının çok sayıda mağazası bulunur. Outlet mağazalarında genellikle önceki sezonların ürünleri indirimli fiyatlarla satılır. Avrupa Birliği dışında yaşayan ziyaretçiler, belirli bir tutarın üzerindeki alışverişlerde KDV iadesi alabilir. Bunun için ödeme sırasında mağazadan vergi iade formu istenmelidir.",
-      "Form, Avrupa Birliği'nden son çıkış noktasında gümrüğe onaylatılmalıdır. Dönüşte havalimanında bu işlem için ek zaman ayırmak gerekir. Merkezin içinde çeşitli kafeler ve restoranlar bulunur. Programdaki 17.00–20.00 molası, alışverişi ve akşam yemeğini birlikte kapsar. Molaya başlamadan önce buluşma saatini ve otobüsün park ettiği yeri not etmek iyi olur."
+      "Form, Avrupa Birliği'nden son çıkış noktasında gümrüğe onaylatılmalıdır. Dönüşte havalimanında bu işlem için ek zaman ayırmak gerekir. Merkezin içinde çeşitli kafeler ve restoranlar bulunur. Programdaki 17.00–20.00 molası, alışverişi ve akşam yemeğini birlikte kapsar. Molaya başlamadan önce aracı park ettiğiniz yeri ve buluşma saatini not etmek iyi olur."
      ],
      "gorsel": {
       "dosya": "img/yer/parndorf-1.webp",
@@ -965,9 +965,90 @@ window.GEZI = {
  ],
  "program": [
   {
+   "tarih": "2026-11-16",
+   "saat": "08.15",
+   "ad": "Evden hareket, Sabiha Gökçen Havalimanı",
+   "yerler": [],
+   "not": "09.00: dış hatlar check-in ve pasaport kontrolü"
+  },
+  {
+   "tarih": "2026-11-16",
+   "saat": "11.10–12.10",
+   "ad": "Uçuş: Sabiha Gökçen → Prag Václav Havel",
+   "yerler": [],
+   "not": "Saatler yerel saattir; uçuş yaklaşık 3 saat, saat farkı −2"
+  },
+  {
+   "tarih": "2026-11-16",
+   "saat": "13.30",
+   "ad": "Otele varış ve kısa dinlenme",
+   "yerler": [],
+   "not": "The Charles Hotel Prag"
+  },
+  {
+   "tarih": "2026-11-16",
+   "saat": "14.00",
+   "ad": "Prag gündüz şehir turu",
+   "yerler": [
+    "prag-1",
+    "prag-2",
+    "prag-3"
+   ]
+  },
+  {
+   "tarih": "2026-11-16",
+   "saat": "19.00",
+   "ad": "Çek mutfağı akşam yemeği",
+   "yerler": []
+  },
+  {
+   "tarih": "2026-11-16",
+   "saat": "20.00–22.00",
+   "ad": "Prag gece şehir turu",
+   "yerler": [],
+   "not": "Gece ışıklandırmaları altında yürüyüş ve otele dönüş"
+  },
+  {
    "tarih": "2026-11-17",
-   "saat": "Akşam",
-   "ad": "Viyana akşam yürüyüşü",
+   "saat": "08.30",
+   "ad": "Kahvaltı ve bagajların hazırlanması",
+   "yerler": []
+  },
+  {
+   "tarih": "2026-11-17",
+   "saat": "09.00",
+   "ad": "Prag Kalesi turu",
+   "yerler": [
+    "prag-4",
+    "prag-5",
+    "prag-6"
+   ],
+   "not": "Yürüyüş ayakkabısı önerilir"
+  },
+  {
+   "tarih": "2026-11-17",
+   "saat": "12.00",
+   "ad": "Otelden çıkış ve Prag Tren Garı'na transfer",
+   "yerler": []
+  },
+  {
+   "tarih": "2026-11-17",
+   "saat": "13.00–17.20",
+   "ad": "Tren: Prag → Viyana",
+   "yerler": [],
+   "not": "Süre 4 saat 20 dakika"
+  },
+  {
+   "tarih": "2026-11-17",
+   "saat": "17.30",
+   "ad": "Viyana Garı'na varış, kiralık aracı teslim alma ve otele geçiş",
+   "yerler": [],
+   "not": "Ibis Budget Wien Sankt Marx"
+  },
+  {
+   "tarih": "2026-11-17",
+   "saat": "18.30",
+   "ad": "Viyana akşam turu ve akşam yemeği",
    "yerler": [
     "viyana-1",
     "viyana-2",
@@ -975,12 +1056,70 @@ window.GEZI = {
    ]
   },
   {
+   "tarih": "2026-11-17",
+   "saat": "22.00",
+   "ad": "Otele dönüş",
+   "yerler": []
+  },
+  {
+   "tarih": "2026-11-18",
+   "saat": "08.30",
+   "ad": "Kahvaltı ve Viyana'dan ayrılış hazırlığı",
+   "yerler": []
+  },
+  {
+   "tarih": "2026-11-18",
+   "saat": "09.30",
+   "ad": "Araçla Budapeşte'ye hareket",
+   "yerler": [],
+   "not": "M1 otobanı, yaklaşık 240 km, 2,5–3 saat; Macaristan otoyol vinyetini kontrol edin"
+  },
+  {
+   "tarih": "2026-11-18",
+   "saat": "13.30",
+   "ad": "Budapeşte'ye varış, otele giriş ve dinlenme",
+   "yerler": [],
+   "not": "Ibis Styles Budapest City"
+  },
+  {
+   "tarih": "2026-11-18",
+   "saat": "14.30",
+   "ad": "Budapeşte şehir turu",
+   "yerler": [
+    "budapeste-1",
+    "budapeste-2",
+    "budapeste-3"
+   ]
+  },
+  {
+   "tarih": "2026-11-18",
+   "saat": "19.00",
+   "ad": "Macar gulaşı akşam yemeği",
+   "yerler": []
+  },
+  {
    "tarih": "2026-11-18",
    "saat": "20.30–22.00",
-   "ad": "Gece tekne turu",
+   "ad": "Işıklandırılmış Tuna tekne turu",
    "yerler": [
-    "budapeste-5"
+    "budapeste-5",
+    "budapeste-4"
    ]
+  },
+  {
+   "tarih": "2026-11-19",
+   "saat": "08.30–09.30",
+   "ad": "Kahvaltı ve Parlamento çevresinde sabah yürüyüşü",
+   "yerler": [
+    "budapeste-4"
+   ]
+  },
+  {
+   "tarih": "2026-11-19",
+   "saat": "12.00",
+   "ad": "Otelden ayrılış, Bratislava'ya hareket",
+   "yerler": [],
+   "not": "Yaklaşık 200 km; Slovakya sınır geçişi"
   },
   {
    "tarih": "2026-11-19",
@@ -994,11 +1133,72 @@ window.GEZI = {
   },
   {
    "tarih": "2026-11-19",
+   "saat": "16.30",
+   "ad": "Parndorf'a hareket",
+   "yerler": [],
+   "not": "Yaklaşık 35 km"
+  },
+  {
+   "tarih": "2026-11-19",
    "saat": "17.00–20.00",
    "ad": "Parndorf: alışveriş ve akşam yemeği",
    "yerler": [
     "parndorf-1"
    ]
+  },
+  {
+   "tarih": "2026-11-19",
+   "saat": "20.00–21.00",
+   "ad": "Viyana'ya hareket ve otele yerleşme",
+   "yerler": [],
+   "not": "Austria Trend Hotel Schloss"
+  },
+  {
+   "tarih": "2026-11-20",
+   "saat": "08.30",
+   "ad": "Kahvaltı ve çıkış",
+   "yerler": [],
+   "not": "Bagajlar araca yüklenir"
+  },
+  {
+   "tarih": "2026-11-20",
+   "saat": "09.00–14.00",
+   "ad": "Viyana geniş şehir turu",
+   "yerler": [
+    "viyana-4",
+    "viyana-5",
+    "viyana-6",
+    "viyana-7",
+    "viyana-8",
+    "viyana-9"
+   ],
+   "not": "Schönbrunn bahçeleri, Ringstrasse, Hofburg, Opera ve kahve molası. Viyana Üniversitesi programda yok, sonradan eklendi."
+  },
+  {
+   "tarih": "2026-11-20",
+   "saat": "14.00",
+   "ad": "Viyana Havalimanı'na geçiş ve aracın teslimi",
+   "yerler": [],
+   "not": "Teslimden önce yakıt deposunun dolu olduğunu ve otoyol vinyetlerini kontrol edin"
+  },
+  {
+   "tarih": "2026-11-20",
+   "saat": "14.30",
+   "ad": "Biniş kartı ve bagaj teslimi",
+   "yerler": []
+  },
+  {
+   "tarih": "2026-11-20",
+   "saat": "16.45",
+   "ad": "Uçuş: Viyana → İstanbul",
+   "yerler": [],
+   "not": "Yaklaşık 2,5 saat"
+  },
+  {
+   "tarih": "2026-11-20",
+   "saat": "21.10",
+   "ad": "İstanbul'a varış",
+   "yerler": []
   }
  ],
  "pratik": {
@@ -1117,5 +1317,11 @@ window.GEZI = {
     ]
    }
   ]
+ },
+ "konaklama": {
+  "2026-11-16": "The Charles Hotel Prag",
+  "2026-11-17": "Ibis Budget Wien Sankt Marx",
+  "2026-11-18": "Ibis Styles Budapest City",
+  "2026-11-19": "Austria Trend Hotel Schloss"
  }
 };
