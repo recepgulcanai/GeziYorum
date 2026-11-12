@@ -3,7 +3,7 @@ window.GEZI = {
   "ad": "Orta Avrupa",
   "baslangic": "2026-11-16",
   "bitis": "2026-11-20",
-  "surum": "1.4"
+  "surum": "1.5"
  },
  "duraklar": [
   {
@@ -1151,7 +1151,7 @@ window.GEZI = {
    "saat": "20.00–21.00",
    "ad": "Viyana'ya hareket ve otele yerleşme",
    "yerler": [],
-   "not": "Austria Trend Hotel Schloss"
+   "not": "Austria Trend Hotel Schloss Wilhelminenberg"
   },
   {
    "tarih": "2026-11-20",
@@ -1321,7 +1321,7 @@ window.GEZI = {
  "konaklama": {
   "2026-11-16": {
    "ad": "The Charles Hotel Prag",
-   "sorgu": "The Charles Hotel, Prague"
+   "sorgu": "The Charles Hotel, Josefská 1, 118 00 Praha 1"
   },
   "2026-11-17": {
    "ad": "Ibis Budget Wien Sankt Marx",
@@ -1332,15 +1332,32 @@ window.GEZI = {
     "lisans": "CC BY-SA 3.0",
     "kaynak": "Wikimedia Commons",
     "sayfa": "https://commons.wikimedia.org/wiki/File:Ibis_Budget_Wien_Sankt_Marx.jpg"
-   }
+   },
+   "site": "https://all.accor.com/hotel/3706/index.tr.shtml"
   },
   "2026-11-18": {
    "ad": "Ibis Styles Budapest City",
-   "sorgu": "ibis Styles Budapest City, Budapest"
+   "sorgu": "ibis Styles Budapest City, Budapest",
+   "site": "https://all.accor.com/hotel/2025/index.tr.shtml",
+   "gorsel": {
+    "dosya": "img/otel/ibis-styles-budapest.webp",
+    "yazar": "12akd",
+    "lisans": "CC BY-SA 4.0",
+    "kaynak": "Wikimedia Commons",
+    "sayfa": "https://commons.wikimedia.org/wiki/File:Soroks%C3%A1ri_%C3%BAt_%C3%A9p%C3%BCletek10.jpg"
+   }
   },
   "2026-11-19": {
-   "ad": "Austria Trend Hotel Schloss",
-   "sorgu": "Austria Trend Hotel Schloss, Wien"
+   "ad": "Austria Trend Hotel Schloss Wilhelminenberg",
+   "sorgu": "Austria Trend Hotel Schloss Wilhelminenberg, Savoyenstraße 2, 1160 Wien",
+   "gorsel": {
+    "dosya": "img/otel/schloss-wilhelminenberg.webp",
+    "yazar": "HeinzLW",
+    "lisans": "CC BY-SA 3.0 AT",
+    "kaynak": "Wikimedia Commons",
+    "sayfa": "https://commons.wikimedia.org/wiki/File:Schloss_Wilhelminenberg_Hotel.jpg"
+   },
+   "site": "https://austria-trend.at/en/hotels/schloss-wilhelminenberg"
   }
  }
 };
