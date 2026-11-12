@@ -3,7 +3,7 @@ window.GEZI = {
   "ad": "Orta Avrupa",
   "baslangic": "2026-11-16",
   "bitis": "2026-11-20",
-  "surum": "1.3"
+  "surum": "1.4"
  },
  "duraklar": [
   {
@@ -1319,9 +1319,28 @@ window.GEZI = {
   ]
  },
  "konaklama": {
-  "2026-11-16": "The Charles Hotel Prag",
-  "2026-11-17": "Ibis Budget Wien Sankt Marx",
-  "2026-11-18": "Ibis Styles Budapest City",
-  "2026-11-19": "Austria Trend Hotel Schloss"
+  "2026-11-16": {
+   "ad": "The Charles Hotel Prag",
+   "sorgu": "The Charles Hotel, Prague"
+  },
+  "2026-11-17": {
+   "ad": "Ibis Budget Wien Sankt Marx",
+   "sorgu": "ibis budget Wien Sankt Marx, Vienna",
+   "gorsel": {
+    "dosya": "img/otel/ibis-budget-wien.webp",
+    "yazar": "Funke",
+    "lisans": "CC BY-SA 3.0",
+    "kaynak": "Wikimedia Commons",
+    "sayfa": "https://commons.wikimedia.org/wiki/File:Ibis_Budget_Wien_Sankt_Marx.jpg"
+   }
+  },
+  "2026-11-18": {
+   "ad": "Ibis Styles Budapest City",
+   "sorgu": "ibis Styles Budapest City, Budapest"
+  },
+  "2026-11-19": {
+   "ad": "Austria Trend Hotel Schloss",
+   "sorgu": "Austria Trend Hotel Schloss, Wien"
+  }
  }
 };

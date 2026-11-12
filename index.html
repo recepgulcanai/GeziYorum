@@ -74,7 +74,8 @@ h2{margin:0 0 8px;font:700 13px var(--f-body);letter-spacing:.08em;text-transfor
 .slot .what a{color:inherit;text-decoration:none;font-size:14px}
 .slot .what a span{color:var(--muted)}
 .slot .what .sub{color:var(--muted);font-size:13px}
-.stay{margin-top:4px;padding:10px 12px;border-radius:10px;background:var(--accent-soft);font-size:14px}
+.stay{margin-top:4px;padding:12px;border-radius:12px;background:var(--accent-soft);font-size:14px;display:flex;flex-direction:column;gap:10px}
+.stay .btn{min-height:42px;font-size:14px;flex-basis:120px}
 .stay b{margin-right:6px}
 .search{display:flex;flex-direction:column;gap:8px}
 .search input{width:100%;font:16px var(--f-body);padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--fg)}
@@ -215,8 +216,10 @@ function dayPlan(day){
 function planHtml(day){
   const sl=dayPlan(day);
   if(!sl.length)return '<p class="info">Bu gün için programda durak yok.</p>';
-  return `<div class="prog">${sl.map(x=>`<div class="slot"><div class="time${x.vague?' vague':''}">${esc(x.saat)}</div><div class="what"><b>${esc(x.ad)}</b>${x.sub?`<span class="sub">${esc(x.sub)}</span>`:''}${x.items.map(i=>`<a href="#${i.id}">${i.y.no}. ${esc(i.y.ad)}${new Set(x.items.map(j=>j.s.id)).size>1||x.ad.indexOf(i.s.ad)<0?` <span>· ${esc(i.s.ad)}</span>`:''}${isDone(i.id)?' <span>✓</span>':''}</a>`).join('')}</div></div>`).join('')}</div>${G.konaklama&&G.konaklama[day]?`<div class="stay"><b>Konaklama</b> ${esc(G.konaklama[day])}</div>`:''}`;
+  return `<div class="prog">${sl.map(x=>`<div class="slot"><div class="time${x.vague?' vague':''}">${esc(x.saat)}</div><div class="what"><b>${esc(x.ad)}</b>${x.sub?`<span class="sub">${esc(x.sub)}</span>`:''}${x.items.map(i=>`<a href="#${i.id}">${i.y.no}. ${esc(i.y.ad)}${new Set(x.items.map(j=>j.s.id)).size>1||x.ad.indexOf(i.s.ad)<0?` <span>· ${esc(i.s.ad)}</span>`:''}${isDone(i.id)?' <span>✓</span>':''}</a>`).join('')}</div></div>`).join('')}</div>${G.konaklama&&G.konaklama[day]?stayHtml(G.konaklama[day]):''}`;
 }
+function stayHtml(k){const q=encodeURIComponent(k.sorgu||k.ad),g=k.gorsel;
+  return `<div class="stay"><div><b>Konaklama</b> ${esc(k.ad)}</div>${g?`<figure class="photo"><img src="${g.dosya}" alt="${esc(k.ad)}" loading="lazy"><figcaption>Fotoğraf: ${esc(g.yazar)} · ${esc(g.lisans)} · <a href="${esc(g.sayfa)}" target="_blank" rel="noopener">${esc(g.kaynak)}</a></figcaption></figure>`:''}<div class="actions"><a class="btn primary" href="https://www.google.com/maps/dir/?api=1&destination=${q}" target="_blank" rel="noopener">Yol tarifi</a><a class="btn" href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener">Haritada gör</a></div></div>`}
 function tripDays(){const out=[];for(let d=parse(G.gezi.baslangic);d<=parse(G.gezi.bitis);d=new Date(d.getFullYear(),d.getMonth(),d.getDate()+1))out.push(iso(d));return out}
 
 function todayBlock(){
