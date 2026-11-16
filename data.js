@@ -3,7 +3,7 @@ window.GEZI = {
   "ad": "Orta Avrupa",
   "baslangic": "2026-11-16",
   "bitis": "2026-11-20",
-  "surum": "1.5"
+  "surum": "1.6"
  },
  "duraklar": [
   {
@@ -244,7 +244,8 @@ window.GEZI = {
      ]
     }
    ],
-   "kapak": "img/yer/prag-1.webp"
+   "kapak": "img/yer/prag-1.webp",
+   "para": "CZK"
   },
   {
    "id": "viyana",
@@ -587,7 +588,8 @@ window.GEZI = {
      ]
     }
    ],
-   "kapak": "img/yer/viyana-2.webp"
+   "kapak": "img/yer/viyana-2.webp",
+   "para": "EUR"
   },
   {
    "id": "budapeste",
@@ -789,7 +791,8 @@ window.GEZI = {
      ]
     }
    ],
-   "kapak": "img/yer/budapeste-4.webp"
+   "kapak": "img/yer/budapeste-4.webp",
+   "para": "HUF"
   },
   {
    "id": "bratislava",
@@ -913,7 +916,8 @@ window.GEZI = {
      ]
     }
    ],
-   "kapak": "img/yer/bratislava-1.webp"
+   "kapak": "img/yer/bratislava-1.webp",
+   "para": "EUR"
   },
   {
    "id": "parndorf",
@@ -960,7 +964,8 @@ window.GEZI = {
      ]
     }
    ],
-   "kapak": "img/yer/parndorf-1.webp"
+   "kapak": "img/yer/parndorf-1.webp",
+   "para": "EUR"
   }
  ],
  "program": [
@@ -1358,6 +1363,16 @@ window.GEZI = {
     "sayfa": "https://commons.wikimedia.org/wiki/File:Schloss_Wilhelminenberg_Hotel.jpg"
    },
    "site": "https://austria-trend.at/en/hotels/schloss-wilhelminenberg"
+  }
+ },
+ "kur": {
+  "tarih": "2026-11-13",
+  "kaynak": "Avrupa Merkez Bankası",
+  "eur": {
+   "EUR": 1,
+   "TRY": 55.6667,
+   "CZK": 24.424,
+   "HUF": 365.6
   }
  }
 };

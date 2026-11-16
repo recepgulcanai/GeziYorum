@@ -132,6 +132,13 @@ h2{margin:0 0 8px;font:700 13px var(--f-body);letter-spacing:.08em;text-transfor
 .phr th,.phr td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}
 .phr th{font-weight:600;color:var(--muted);width:30%}
 .phr td i{color:var(--muted);font-style:normal;font-size:13px;display:block}
+.kurtop{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kurtop input{flex:1 1 120px;min-width:0;font:700 20px var(--f-body);padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--fg);font-variant-numeric:tabular-nums}
+.kurout{display:flex;flex-direction:column}
+.kurrow{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:8px 0;border-top:1px solid var(--line)}
+.kurrow span{color:var(--muted);font-size:14px}
+.kurrow b{font:700 19px var(--f-display);font-variant-numeric:tabular-nums}
+.kurtab td,.kurtab th{font-variant-numeric:tabular-nums}
 .foot{font-size:12px;color:var(--muted);text-align:center}
 .offline{font-size:12px;color:var(--warn)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
@@ -247,7 +254,7 @@ function home(){
     <section><h2>Yakınımdakiler</h2><div class="card" id="near">${nearHtml()}</div></section>
     <section class="search"><h2><label for="q">Ara</label></h2><input id="q" type="search" placeholder="Yer adı, örn. Karl Köprüsü" autocomplete="off"><ul class="list" id="res" hidden></ul></section>
     <section><h2>Duraklar</h2><ul class="list">${D.map(s=>{const dn=s.yerler.filter(y=>isDone(`${s.id}-${y.no}`)).length;return `<li><a class="row city" href="#${s.id}"><img class="thumb" src="${s.kapak}" alt="" loading="lazy"><span class="tx"><span class="n">${esc(s.ad)}</span><span class="meta">${span(s.gunler)} · ${s.yerler.length} yer${dn?` · ${dn} gezildi`:''}</span></span><span class="chev" aria-hidden="true">›</span></a></li>`}).join('')}</ul></section>
-    <section><ul class="list"><li><a class="row" href="#pratik"><span class="tx"><span class="n">Pratik bilgiler</span><span class="a">Para, priz, acil numara, bahşiş, temel ifadeler</span></span><span class="chev" aria-hidden="true">›</span></a></li></ul></section>
+    <section><ul class="list"><li><a class="row" href="#pratik"><span class="tx"><span class="n">Pratik bilgiler</span><span class="a">Kur çevirici, para, priz, acil numara, bahşiş, temel ifadeler</span></span><span class="chev" aria-hidden="true">›</span></a></li></ul></section>
     <p class="foot">Sürüm ${esc(G.gezi.surum)} · Harita © OpenStreetMap katkıda bulunanlar · Fotoğraflar Wikimedia Commons<br><span id="net"></span></p>
   </main>`;
   const q=$('q'),res=$('res');
@@ -269,9 +276,52 @@ function program(){
 function pratik(){
   bar('Pratik bilgiler','',true);
   const P=G.pratik;
-  view.innerHTML=`<main class="wrap prac">${P.bolumler.map(b=>`<section><h2>${esc(b.baslik)}</h2><ul>${b.maddeler.map(m=>`<li>${esc(m)}</li>`).join('')}</ul></section>`).join('')}
+  view.innerHTML=`<main class="wrap prac"><section><h2>Kur çevirici</h2>${kurBox(['EUR','CZK','HUF','TRY'])}</section>${P.bolumler.map(b=>`<section><h2>${esc(b.baslik)}</h2><ul>${b.maddeler.map(m=>`<li>${esc(m)}</li>`).join('')}</ul></section>`).join('')}
   <section><h2>Temel ifadeler</h2>${P.ifadeler.map(f=>`<div class="card"><b>${esc(f.dil)}</b><table class="phr"><tbody>${f.satirlar.map(r=>`<tr><th>${esc(r[0])}</th><td>${esc(r[1])}<i>okunuşu: ${esc(r[2])}</i></td></tr>`).join('')}</tbody></table></div>`).join('')}</section>
   <p class="foot">Bilgiler ${esc(P.asof)} itibarıyla. Kurallar değişebilir; emin olmadığın durumda yerelde sor.</p></main>`;
+  kurBind();
+}
+
+/* --- kur çevirici --- */
+const PARA={EUR:{ad:'Avro',sem:'€',ond:2},TRY:{ad:'Türk lirası',sem:'TL',ond:2},CZK:{ad:'Çek korunası',sem:'Kč',ond:0},HUF:{ad:'Macar forinti',sem:'Ft',ond:0}};
+const HIZLI={CZK:[100,500,1000,2000],HUF:[1000,5000,10000,20000],EUR:[5,10,50,100],TRY:[100,500,1000,5000]};
+let KUR=(()=>{const k=store.get('kur',null);return k&&k.eur&&k.tarih>G.kur.tarih?k:G.kur})();
+const nf=(v,c)=>new Intl.NumberFormat('tr-TR',{minimumFractionDigits:0,maximumFractionDigits:PARA[c].ond}).format(v);
+const money=(v,c)=>`${nf(v,c)} ${PARA[c].sem}`;
+const conv=(v,f,t)=>v/KUR.eur[f]*KUR.eur[t];
+function parseAmt(s){s=String(s).trim().replace(/\s/g,'');if(!s)return NaN;if(s.includes(','))s=s.replace(/\./g,'').replace(',','.');else if(/^\d{1,3}(\.\d{3})+$/.test(s))s=s.replace(/\./g,'');return parseFloat(s)}
+function kurTarih(){const d=parse(KUR.tarih);return `${d.getDate()} ${AY[d.getMonth()]} ${d.getFullYear()}`}
+function kurBox(list){
+  const from=list[0];
+  return `<div class="card kur" data-list="${list.join(',')}" data-from="${from}">
+    <div class="kurtop"><label class="sr" for="kurIn">Tutar</label><input id="kurIn" inputmode="decimal" autocomplete="off" value="${HIZLI[from][0]}"><div class="tools" role="group" aria-label="Çevrilecek para birimi">${list.map(c=>`<button class="chipbtn" type="button" data-cur="${c}" aria-pressed="${c===from}">${c==='TRY'?'TL':c}</button>`).join('')}</div></div>
+    <div class="kurout" aria-live="polite"></div>
+    <table class="phr kurtab"><tbody></tbody></table>
+    <p class="info kurnot"></p></div>`;
+}
+function kurDraw(){
+  const box=document.querySelector('.kur');if(!box)return;
+  const list=box.dataset.list.split(','),from=box.dataset.from,v=parseAmt($('kurIn').value);
+  const others=list.filter(c=>c!==from);
+  box.querySelector('.kurout').innerHTML=isNaN(v)?'<p class="info">Bir tutar yaz.</p>':others.map(c=>`<div class="kurrow"><span>${PARA[c].ad}</span><b>${money(conv(v,from,c),c)}</b></div>`).join('');
+  box.querySelectorAll('[data-cur]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.cur===from));
+  box.querySelector('.kurtab tbody').innerHTML=HIZLI[from].map(a=>`<tr><th>${money(a,from)}</th><td>${others.map(c=>money(conv(a,from,c),c)).join(' · ')}</td></tr>`).join('');
+  box.querySelector('.kurnot').textContent=`Kur: ${kurTarih()}, ${KUR.kaynak}. İnternet varken kendiliğinden güncellenir. Döviz bürosu, ATM ve kart kurları biraz farklı olabilir.`;
+}
+function kurBind(){
+  const box=document.querySelector('.kur');if(!box)return;
+  $('kurIn').addEventListener('input',kurDraw);
+  box.querySelectorAll('[data-cur]').forEach(b=>b.addEventListener('click',()=>{box.dataset.from=b.dataset.cur;$('kurIn').value=HIZLI[b.dataset.cur][0];kurDraw()}));
+  kurDraw();
+}
+async function kurGuncelle(){
+  if(!navigator.onLine)return;
+  const today=iso(new Date());
+  if(store.get('kurDenendi','')===today)return;
+  const srcs=[
+    async()=>{const j=await fetch('https://api.frankfurter.app/latest?from=EUR&to=TRY,CZK,HUF').then(r=>r.json());return {tarih:j.date,kaynak:'Avrupa Merkez Bankası',eur:{EUR:1,TRY:j.rates.TRY,CZK:j.rates.CZK,HUF:j.rates.HUF}}},
+    async()=>{const j=await fetch('https://open.er-api.com/v6/latest/EUR').then(r=>r.json());return {tarih:iso(new Date(j.time_last_update_unix*1000)),kaynak:'ExchangeRate-API',eur:{EUR:1,TRY:j.rates.TRY,CZK:j.rates.CZK,HUF:j.rates.HUF}}}];
+  for(const f of srcs){try{const k=await f();if(k.eur.TRY>0&&k.eur.CZK>0&&k.eur.HUF>0&&k.tarih>=KUR.tarih){KUR=k;store.set('kur',k);store.set('kurDenendi',today);kurDraw();return}}catch(e){}}
 }
 
 function city(s){
@@ -283,9 +333,11 @@ function city(s){
     </div></div>
     <div class="cap"><span>Numaraya dokun: yerin kartı açılır</span><button class="linkbtn" id="zoom" type="button" aria-pressed="false">Haritayı büyüt</button></div></section>
     ${s.bilgi?`<p class="info">${esc(s.bilgi)}</p>`:''}
+    ${s.para?`<section><h2>Para · ${esc(PARA[s.para].ad)}</h2>${kurBox(s.para==='EUR'?['EUR','TRY']:[s.para,'TRY','EUR'])}</section>`:''}
     ${days.map(d=>`<section class="day"><h2>${fmt(d)}</h2><ul class="list">${s.yerler.filter(y=>y.gunler.includes(d)).map(y=>placeRow(s,y,false)).join('')}</ul></section>`).join('')}
     <p class="foot">Harita © OpenStreetMap katkıda bulunanlar</p>
   </main>`;
+  kurBind();
   const m=$('map'),z=$('zoom');
   z.addEventListener('click',()=>{const on=m.classList.toggle('zoom');z.setAttribute('aria-pressed',on);z.textContent=on?'Küçült':'Haritayı büyüt';if(on){m.scrollLeft=(m.scrollWidth-m.clientWidth)/2}});
 }
@@ -350,6 +402,7 @@ function route(){
   home();scrollTo(0,0);
 }
 addEventListener('hashchange',route);route();
+kurGuncelle();addEventListener('online',kurGuncelle);
 if(canSpeak)speechSynthesis.onvoiceschanged=()=>{};
 
 if('serviceWorker' in navigator && location.protocol==='https:' && !/claude|anthropic/.test(location.hostname)){
