@@ -98,6 +98,7 @@ h2{margin:0 0 8px;font:700 13px var(--f-body);letter-spacing:.08em;text-transfor
 .warn{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:10px 12px;font-size:14px}
 .photo{margin:0;display:flex;flex-direction:column;gap:4px}
 .photo img{border-radius:14px;width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--line)}
+.mypics{display:flex;flex-direction:column;gap:10px}.mypics h2{margin:0}.mypics .photo img{aspect-ratio:auto;max-height:70vh;object-fit:contain;background:var(--line)}.chip.late{background:var(--line);color:var(--muted)}
 .photo figcaption{font-size:11.5px;color:var(--muted)}.photo figcaption a{color:inherit}
 .minimap{position:relative;display:block;height:150px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--mapbg)}
 .minimap img{position:absolute;max-width:none}
@@ -209,7 +210,8 @@ function placeRow(s,y,showCity){
 
 /* --- günlük program --- */
 function dayPlan(day){
-  const ev=(G.program||[]).filter(e=>e.tarih===day);
+  const mins=e=>{const m=/^(\d+)\.(\d+)/.exec(e.saat);return m?+m[1]*60+ +m[2]:-1};
+  const ev=(G.program||[]).filter(e=>e.tarih===day).map((e,i)=>({e,i})).sort((a,b)=>(mins(a.e)-mins(b.e))||(a.i-b.i)).map(o=>o.e);
   const timed=new Set(ev.flatMap(e=>e.yerler));
   const free=ALL.filter(x=>x.y.gunler.includes(day)&&!timed.has(x.id));
   const slots=[];
@@ -217,7 +219,7 @@ function dayPlan(day){
     const cities=[...new Set(free.map(x=>x.s.ad))];
     slots.push({saat:'Gün içinde',vague:true,ad:cities.join(', '),items:free});
   }
-  ev.forEach(e=>slots.push({saat:e.saat,vague:!/\d/.test(e.saat),ad:e.ad,sub:e.not||'',items:e.yerler.map(byId).filter(Boolean)}));
+  ev.forEach(e=>slots.push({saat:e.saat,vague:!/\d/.test(e.saat),ad:e.ad+(e.sonradan?' · sonradan eklendi':''),sub:e.not||'',items:e.yerler.map(byId).filter(Boolean)}));
   return slots;
 }
 function planHtml(day){
@@ -362,9 +364,10 @@ function place(s,y){
   const texts=[y.ad+'. '+(y.alt||'')].concat(y.not||[]).concat(y.anlati&&y.anlati.length?['Anlatılanlar.'].concat(y.anlati):[]);
   view.innerHTML=`<main class="wrap">
     <div class="place-head"><span class="pin${done?' done':''}">${y.no}</span><div><h1>${esc(y.ad)}</h1><div class="loc">${esc(y.alt)}</div></div></div>
-    <div class="chips">${y.gunler.map(d=>`<span class="chip">${fmt(d)}</span>`).join('')}<span class="chip" data-dist="${id}" ${pos?'':'hidden'}>${distOf(y)}</span>${done?'<span class="chip ok">Gezildi</span>':''}</div>
+    <div class="chips">${y.gunler.map(d=>`<span class="chip">${fmt(d)}</span>`).join('')}<span class="chip" data-dist="${id}" ${pos?'':'hidden'}>${distOf(y)}</span>${done?'<span class="chip ok">Gezildi</span>':''}${y.sonradan?'<span class="chip late">Sonradan eklendi</span>':''}</div>
     ${y.temsili||y.uyari?`<div class="warn">${y.temsili?'<b>Temsilî konum.</b> ':''}${esc(y.uyari||'')}</div>`:''}
     ${g?`<figure class="photo"><img src="${g.dosya}" alt="${esc(y.ad)}" loading="lazy"><figcaption>Fotoğraf: ${esc(g.yazar||'')} · ${esc(g.lisans||'')} · ${g.sayfa?`<a href="${esc(g.sayfa)}" target="_blank" rel="noopener">${esc(g.kaynak||'Kaynak')}</a>`:esc(g.kaynak||'')}</figcaption></figure>`:''}
+    ${y.gezi_foto&&y.gezi_foto.length?`<section class="mypics"><h2>Gezi fotoğraflarım</h2>${y.gezi_foto.map(f=>`<figure class="photo"><img src="${f.dosya}" alt="${esc(f.yazi||y.ad)}" loading="lazy"><figcaption>${esc(f.yazi||'')}</figcaption></figure>`).join('')}</section>`:''}
     <div class="actions"><a class="btn primary" href="${dir(y)}" target="_blank" rel="noopener">Yol tarifi</a><a class="btn" href="${look(y)}" target="_blank" rel="noopener">Haritada gör</a></div>
     ${y.harita_nokta?`<a class="minimap" href="#${s.id}" id="mini" aria-label="${esc(s.ad)} haritasında göster"><img src="${s.harita}" alt="" id="miniimg"><span class="dot"></span><span class="lbl">${esc(s.ad)} haritası ›</span></a>`:''}
     <section class="notes"><div class="sechead"><h2>Bilgi notu</h2><div class="tools">${canSpeak&&y.not&&y.not.length?'<button class="chipbtn" id="speak" type="button" aria-pressed="false">Dinle</button>':''}<button class="chipbtn" id="fsm" type="button" aria-label="Yazıyı küçült">A−</button><button class="chipbtn" id="fsp" type="button" aria-label="Yazıyı büyüt">A+</button></div></div>

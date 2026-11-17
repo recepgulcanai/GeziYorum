@@ -3,7 +3,7 @@ window.GEZI = {
   "ad": "Orta Avrupa",
   "baslangic": "2026-11-16",
   "bitis": "2026-11-20",
-  "surum": "1.6"
+  "surum": "1.7"
  },
  "duraklar": [
   {
@@ -17,6 +17,62 @@ window.GEZI = {
    "harita": "img/harita-prag.webp",
    "bilgi": "16 Kasım: 1, 2, 3. 17 Kasım: 4, 5, 6. İşaretler referans konumlarıdır; giriş kapısını göstermeyebilir.",
    "yerler": [
+    {
+     "no": 7,
+     "ad": "Václav Meydanı",
+     "alt": "Václavské náměstí",
+     "gunler": [
+      "2026-11-16"
+     ],
+     "konum": [
+      50.0804,
+      14.4285
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Václav Meydanı, Prag'ın Yeni Şehir (Nové Město) bölgesinde yer alan ve adı meydan olsa da geniş bir bulvarı andıran caddedir. Uzunluğu yaklaşık 750 metre, genişliği ise yaklaşık 60 metredir. Alan, 1348'de Kral IV. Karl'ın Yeni Şehir'i kurmasıyla birlikte at pazarı olarak planlanmıştır. Orta Çağ boyunca burada at ve hayvan ticareti yapılırdı. Meydan 1848'de, Çeklerin koruyucu azizi Aziz Václav'ın adını almıştır.",
+      "Meydanın üst ucunda 1885–1891 yılları arasında inşa edilen Ulusal Müze yükselir. Neo-Rönesans üslubundaki binanın mimarı Josef Schulz'dur. Müzenin önünde, Josef Václav Myslbek'in tasarladığı atlı Aziz Václav heykeli bulunur. Heykel 1912'de yerine konulmuştur ve etrafında diğer Çek azizlerinin figürleri yer alır. Heykelin önündeki kaide, buluşma noktası olarak Pragalılar arasında çok bilinir.",
+      "Meydan, Çekoslovakya'nın yakın tarihindeki birçok önemli olaya sahne olmuştur. 1918'de bağımsızlığın ilanı burada kutlanmıştır. 1969'da öğrenci Jan Palach, Sovyet müdahalesini protesto etmek için müzenin önünde kendini yakmıştır; anısına yere yerleştirilmiş bir anma işareti vardır. Kasım 1989'daki Kadife Devrim gösterileri de bu meydanda toplanan kalabalıklarla büyümüştür. Bugün caddenin iki yanında oteller, mağazalar ve kafeler sıralanır; Kasım'da kimi zaman burada küçük sahneler ve pazar tezgâhları kurulabilir."
+     ],
+     "sonradan": true,
+     "gezi_foto": [
+      {
+       "dosya": "img/gezi/vaclav-1.webp",
+       "yazi": "Meydanın üst ucundan Ulusal Müze, gece"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "ad": "Barut Kulesi",
+     "alt": "Prašná brána",
+     "gunler": [
+      "2026-11-16"
+     ],
+     "konum": [
+      50.0875,
+      14.4286
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Barut Kulesi, Prag'ın Eski Şehir sınırında duran ve adını bir dönem barut deposu olarak kullanılmasından alan Gotik bir kapı kulesidir. Yapımına 1475'te Kral II. Vladislav döneminde başlanmıştır. Kulenin ilk mimarının Matěj Rejsek olduğu kabul edilir. Kral 1483'te Prag Kalesi'ne taşınınca inşaat durmuş ve kule uzun süre yarım kalmıştır. Kule, Eski Şehir'i çevreleyen surlardaki on üç kapıdan biri olan Horská brána'nın yanındaki yeni bir kapı olarak tasarlanmıştır.",
+      "Kule, krallık merasimlerinin geçtiği Kraliyet Yolu'nun başlangıç noktasıdır. Bu yol buradan Eski Şehir Meydanı'na, oradan Karl Köprüsü'ne ve Prag Kalesi'ne uzanır. 17. yüzyılda yapı barut deposu olarak kullanılmaya başlanmış ve bugünkü adını almıştır. 1757'de Prusya kuşatması sırasında kule ağır hasar görmüştür. Bugünkü görünüşü, 1875–1886 yılları arasında Josef Mocker yönetiminde yapılan Neo-Gotik restorasyona dayanır.",
+      "Kule yaklaşık 65 metre yüksekliğindedir. Cephesi, Çek krallarını ve azizleri gösteren heykellerle süslüdür. İçindeki dar merdivenle yaklaşık 186 basamak çıkılarak yaklaşık 44 metredeki seyir terasına ulaşılır. Teras, Eski Şehir'in çatılarını ve Prag Kalesi'ni görmek için güzel bir noktadır; giriş ücretlidir ve çalışma saatleri mevsime göre değişir. Kulenin hemen yanında 1905–1912 yıllarında yapılan Art Nouveau Belediye Binası (Obecní dům) bulunur."
+     ],
+     "sonradan": true,
+     "gezi_foto": [
+      {
+       "dosya": "img/gezi/barut-1.webp",
+       "yazi": "Barut Kulesi, kapıdan yukarı bakış"
+      },
+      {
+       "dosya": "img/gezi/barut-2.webp",
+       "yazi": "Celetná Sokağı'ndan kuleye bakış"
+      }
+     ]
+    },
     {
      "no": 1,
      "ad": "Eski Şehir Meydanı",
@@ -53,6 +109,16 @@ window.GEZI = {
      "anlati": [
       "Meydanın zeminindeki 27 beyaz haç, 1621'de burada idam edilen Çek soylularını anar; bu tarihî bir gerçektir.",
       "Halk arasında, idam edilenlerin hayaletlerinin yıldönümlerinde meydanda dolaştığı anlatılır."
+     ],
+     "gezi_foto": [
+      {
+       "dosya": "img/gezi/prag-1-a.webp",
+       "yazi": "Týn Kilisesi ve Meryem Sütunu, gece"
+      },
+      {
+       "dosya": "img/gezi/prag-1-b.webp",
+       "yazi": "Astronomik Saat ve Týn Kilisesi"
+      }
      ]
     },
     {
@@ -92,6 +158,64 @@ window.GEZI = {
       "Saati yapan usta Hanuş'un, aynısını başka bir şehre yapmasın diye şehrin yöneticileri tarafından kör ettirildiği anlatılır. Usta da intikam almak için saatin mekanizmasına uzanıp onu durdurmuştur.",
       "Halk arasında, saat uzun süre durursa şehrin başına bir felaket geleceğine inanılır.",
       "Bu bir efsanedir: Saati gerçekte 1410'da Kadaňlı saatçi Mikuláš yapmıştır."
+     ],
+     "gezi_foto": [
+      {
+       "dosya": "img/gezi/prag-2-a.webp",
+       "yazi": "Astronomik Saat (Orloj), gece"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "ad": "Franz Kafka Heykeli",
+     "alt": "Dušní, Yahudi Mahallesi yakınları",
+     "gunler": [
+      "2026-11-16"
+     ],
+     "konum": [
+      50.0898,
+      14.4183
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Franz Kafka Heykeli, Prag'ın eski Yahudi Mahallesi'nin (Josefov) kenarında, Dušní Sokağı'ndaki İspanyol Sinagogu'nun yakınında durur. Heykel Çek sanatçı Jaroslav Róna'nın eseridir ve 2003'te açılmıştır. Bronz yapı yaklaşık 3,5 metre yüksekliğindedir. Heykelde başı olmayan, boş bir takım elbise dev bir gövde gibi ilerler. Bu elbisenin omuzlarında şapkalı küçük bir Kafka figürü oturur.",
+      "Heykelin fikri, Kafka'nın 'Bir Mücadelenin Tasviri' adlı erken dönem öyküsünden gelir. Öyküde anlatıcı, tanıdığı bir adamın omuzlarına çıkıp yolculuk eder. Bu sahne, heykelde kimliği belli olmayan bir taşıyıcı üzerinde oturan Kafka olarak yorumlanır. Heykelin, yazarın yabancılaşma ve belirsizlik duygusunu anlattığı söylenir. Heykelin yeri de anlamlıdır; çünkü bu sokaklar Kafka'nın doğup büyüdüğü çevrenin parçasıdır.",
+      "Franz Kafka 1883'te Prag'da, Yahudi bir ailenin çocuğu olarak dünyaya gelmiştir. Eserlerini Almanca yazmış, Dava, Şato ve Dönüşüm gibi eserlerle dünya edebiyatını etkilemiştir. 1924'te Avusturya'da tüberkülozdan hayatını kaybetmiş, Prag'daki Yeni Yahudi Mezarlığı'na gömülmüştür. Kafka'nın adı, yazdığı çıkışsız ve saçma durumları anlatan 'kafkaesk' sözcüğüne ilham vermiştir. Heykel dar bir sokak köşesinde durduğu için fotoğraf çekerken yoldan geçenlere yer bırakmak iyi olur."
+     ],
+     "sonradan": true,
+     "gezi_foto": [
+      {
+       "dosya": "img/gezi/kafka-1.webp",
+       "yazi": "Franz Kafka heykeli, gece"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "ad": "İspanyol Sinagogu",
+     "alt": "Španělská synagoga, Josefov",
+     "gunler": [
+      "2026-11-16"
+     ],
+     "konum": [
+      50.0902,
+      14.4189
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "İspanyol Sinagogu, Prag'ın eski Yahudi Mahallesi Josefov'da bulunan ve Mağrip (Neo-Moorish) üslubuyla yapılmış bir ibadethanedir. Yapı 1868'de, Prag'ın en eski sinagogu olan Eski Okul'un (Altschul) bulunduğu yerde inşa edilmiştir. Mimarları Vojtěch Ignác Ullmann ve Josef Niklas'tır. Adının, Endülüs'teki Mağrip mimarisini andıran tasarımdan geldiği söylenir. Cephedeki at nalı biçimli pencereler ve geometrik süslemeler, yapıyı çevresindeki sinagoglardan ayırır.",
+      "Binanın iç mekânı da altın, yeşil ve kırmızı tonlarda zengin geometrik süslemelerle kaplıdır. Sinagogun iç dekorasyonunda Alhambra Sarayı'ndan esinlenildiği anlatılır. Bu yapı, 19. yüzyılda Prag'daki Yahudi cemaatinin kendi mimari kimliğini gösterme çabasının bir örneğidir. Josefov adı, Habsburg İmparatoru II. Joseph'in 1780'lerdeki hoşgörü reformlarından gelir. Bu bölgede Eski-Yeni Sinagog, Eski Yahudi Mezarlığı ve Pinkas Sinagogu da bulunur.",
+      "Bugün sinagog, Prag Yahudi Müzesi'nin bir parçası olarak ziyaretçilere açıktır. İçinde Çek topraklarındaki Yahudi tarihini 18. yüzyıldan 20. yüzyıla kadar anlatan bir sergi bulunur. Yahudi Müzesi'ne ait yapılar genellikle cumartesi günleri ve Yahudi bayramlarında kapalıdır; saatler gitmeden kontrol edilmelidir. Gece ışıklandırması altında cephenin süslemeleri özellikle iyi görünür. Hemen yakındaki Franz Kafka heykeliyle birlikte aynı kısa yürüyüşte gezilebilir."
+     ],
+     "sonradan": true,
+     "gezi_foto": [
+      {
+       "dosya": "img/gezi/sinagog-1.webp",
+       "yazi": "İspanyol Sinagogu cephesi, gece"
+      }
      ]
     },
     {
@@ -131,6 +255,16 @@ window.GEZI = {
       "Köprüdeki Aziz Jan Nepomuk heykelinin kaidesinde bronz kabartmalar vardır. Bu kabartmalara dokunanın Prag'a yeniden geleceğine ya da dileğinin gerçekleşeceğine inanılır; parlamış yerler bu yüzdendir.",
       "Köprünün sağlam olması için harcına yumurta katıldığı ve bunun için ülkenin dört bir yanından yumurta toplandığı anlatılır.",
       "Köprü ayağındaki şövalye Bruncvík heykeliyle ilgili bir efsane daha var: Şövalyenin sihirli kılıcının köprünün taşları arasına gömülü olduğu ve şehir tehlikeye düştüğünde ortaya çıkacağı söylenir."
+     ],
+     "gezi_foto": [
+      {
+       "dosya": "img/gezi/prag-3-a.webp",
+       "yazi": "Malostranská köprü kulesi, gece"
+      },
+      {
+       "dosya": "img/gezi/prag-3-b.webp",
+       "yazi": "Karl Köprüsü'nden Prag Kalesi ve Aziz Vitus, gece"
+      }
      ]
     },
     {
@@ -1204,6 +1338,42 @@ window.GEZI = {
    "saat": "21.10",
    "ad": "İstanbul'a varış",
    "yerler": []
+  },
+  {
+   "tarih": "2026-11-16",
+   "saat": "17.15",
+   "ad": "Václav Meydanı ve Ulusal Müze",
+   "yerler": [
+    "prag-7"
+   ],
+   "sonradan": true
+  },
+  {
+   "tarih": "2026-11-16",
+   "saat": "17.35",
+   "ad": "Barut Kulesi",
+   "yerler": [
+    "prag-8"
+   ],
+   "sonradan": true
+  },
+  {
+   "tarih": "2026-11-16",
+   "saat": "19.05",
+   "ad": "Franz Kafka heykeli",
+   "yerler": [
+    "prag-9"
+   ],
+   "sonradan": true
+  },
+  {
+   "tarih": "2026-11-16",
+   "saat": "19.10",
+   "ad": "İspanyol Sinagogu (Yahudi Mahallesi)",
+   "yerler": [
+    "prag-10"
+   ],
+   "sonradan": true
   }
  ],
  "pratik": {
