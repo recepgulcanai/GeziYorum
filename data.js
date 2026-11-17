@@ -3,7 +3,7 @@ window.GEZI = {
   "ad": "Orta Avrupa",
   "baslangic": "2026-11-16",
   "bitis": "2026-11-20",
-  "surum": "1.7"
+  "surum": "1.8"
  },
  "duraklar": [
   {
@@ -15,7 +15,7 @@ window.GEZI = {
     "2026-11-17"
    ],
    "harita": "img/harita-prag.webp",
-   "bilgi": "16 Kasım: 1, 2, 3. 17 Kasım: 4, 5, 6. İşaretler referans konumlarıdır; giriş kapısını göstermeyebilir.",
+   "bilgi": "Haritadaki 1–6 numaralı işaretler planlanan duraklardır. 7–10 (16 Kasım) ve 11–18 (17 Kasım) sonradan eklenen duraklardır ve haritada işaretli değildir; konumları için yol tarifi düğmesini kullan. İşaretler referans konumlarıdır; giriş kapısını göstermeyebilir.",
    "yerler": [
     {
      "no": 7,
@@ -302,6 +302,66 @@ window.GEZI = {
      ]
     },
     {
+     "no": 11,
+     "ad": "Aziz Nikolaos Kilisesi",
+     "alt": "Kostel sv. Mikuláše, Malá Strana",
+     "gunler": [
+      "2026-11-17"
+     ],
+     "konum": [
+      50.0881,
+      14.4036
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Aziz Nikolaos Kilisesi, Malá Strana Meydanı'nın ortasında yükselen ve Prag'ın en önemli Barok yapılarından biri sayılan bir kilisedir. Yapı 1704–1755 yılları arasında Cizvit tarikatı için inşa edilmiştir. İnşaata Christoph Dientzenhofer başlamış, oğlu Kilian Ignaz Dientzenhofer devam etmiş, Anselmo Lurago çan kulesini tamamlamıştır. Kilise, Myra Piskoposu Aziz Nikolaos'a adanmıştır. Yeşil kubbesi Prag siluetinin tanınmış parçalarından biridir.",
+      "Kubbenin yüksekliği yaklaşık 70 metre, çan kulesinin yüksekliği ise yaklaşık 79 metredir. İç mekân, Barok dönemin gösterişli süslemeleriyle doludur. Tavanı kaplayan geniş fresk, Aziz Nikolaos'un yaşamını anlatır ve Avrupa'nın en büyük tavan resimlerinden biri olarak anılır. Heykeller arasında Ignaz Platzer'in eserleri öne çıkar. Kilisedeki orgun, Mozart'ın 1787'de Prag'ı ziyareti sırasında çalındığı anlatılır.",
+      "Cizvit tarikatı 1773'te kaldırılınca yapı farklı amaçlarla kullanılmıştır. Çan kulesi, komünist dönemde gizli polis tarafından yakındaki elçilikleri gözetlemek için kullanılmıştır. Bugün kuleye ücretli girişle yaklaşık 215 basamak çıkılarak Malá Strana çatılarının ve Prag Kalesi'nin manzarası izlenebilir. Kilise zaman zaman konserlere de ev sahipliği yapar. Rotada kale yokuşuna çıkmadan önce kısa bir iç mekân ziyareti için uygun bir duraktır."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 12,
+     "ad": "Nerudova Sokağı",
+     "alt": "Nerudova ulice, Kraliyet Yolu'nun yokuşu",
+     "gunler": [
+      "2026-11-17"
+     ],
+     "konum": [
+      50.0896,
+      14.4019
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Nerudova Sokağı, Malá Strana Meydanı'ndan Prag Kalesi'ne doğru dik bir yokuşla çıkan, taş döşemeli ve tarihî bir caddedir. Sokak, kralların taç giyme törenlerinde izlediği Kraliyet Yolu'nun kaleye çıkan son bölümlerinden biridir. Adını 19. yüzyıl Çek yazarı Jan Neruda'dan alır. Neruda'nın bu sokakta 47 numaralı evde yaşadığı anlatılır. Şilili ozan Pablo Neruda'nın mahlasını, bu Çek yazardan aldığı kabul edilir.",
+      "Sokağın evlerinin cephelerinde, kapı numaraları kullanılmadan önceki dönemden kalma ev işaretleri bulunur. Bu işaretler arasında Üç Küçük Keman, Altın Kadeh, Kırmızı Kartal ve İki Güneş gibi simgeler yer alır. Evler farklı dönemlerin Barok, Rönesans ve Gotik öğelerini birlikte taşır. Morzin Sarayı'nın girişini taşıyan Moors heykelleri, Ferdinand Brokoff'un eseridir. Sokakta bugün birkaç elçilik binası da bulunur.",
+      "Yokuş boyunca yürürken zaman zaman durup geriye bakmak, Malá Strana çatılarını ve Aziz Nikolaos kubbesini görmek için iyi bir fırsattır. Sokak boyunca küçük kafeler, hediyelik eşya dükkânları ve restoranlar sıralanır. Kasım'da taşlar ıslak veya kaygan olabilir; rahat ve tabanı tutan ayakkabı önerilir. Yokuşun üst ucu, Hradčany ve Kale'ye yaklaşan küçük bir merdivenle birleşir. Yaklaşık 400 metrelik bu yürüyüş, kale rotasının doğal başlangıcı sayılır."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 13,
+     "ad": "Hradčanské Meydanı Seyir Noktası",
+     "alt": "Hradčanské náměstí, Kale'nin ana kapısı önü",
+     "gunler": [
+      "2026-11-17"
+     ],
+     "konum": [
+      50.0903,
+      14.3989
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Hradčanské Meydanı, Prag Kalesi'nin ana girişinin hemen önündeki geniş ve tarihî bir meydandır. Meydan, Hradčany semtinin merkezidir; bu semt 1320'den 1784'e kadar ayrı bir kraliyet kenti olarak yönetilmiştir. Meydanın bir kenarından Malá Strana çatılarına, Vltava'ya ve Prag'ın geniş panoramasına bakılabilir. Meydanın ortasında, 1726'da dikilen ve veba salgınının bitişi için şükran amacıyla yapılan Meryem Sütunu bulunur. Sütunun heykelleri arasında Ferdinand Brokoff'un eserleri vardır.",
+      "Meydanı çevreleyen yapılar arasında Başpiskoposluk Sarayı, Schwarzenberg Sarayı ve Sternberg Sarayı öne çıkar. Schwarzenberg Sarayı'nın cephesi, Rönesans döneminde yaygın olan kazıma süslemelerle kaplıdır. Sternberg Sarayı ise bugün Ulusal Galeri'nin Avrupa sanatı koleksiyonuna ev sahipliği yapar. Kale kapısının üzerinde, Ignaz Platzer'in 1768–1770 arasında yaptığı Savaşan Devler heykellerinin kopyaları yer alır. Kapının iki yanında nöbet tutan muhafızlar, kale ziyaretçilerinin en çok fotoğraf çektiği noktalardan biridir.",
+      "Muhafızların nöbet değişimi her gün gerçekleşir; öğlen saatinde daha törensel bir değişim yapılır. Kale bahçelerine girmek için güvenlik kontrolünden geçmek gerekir. Sabah rotasında bu meydan, kalenin dışından başlayarak içine girişi gösteren bir eşiktir. Yokuştan çıkmanın ardından seyir noktasında kısa bir mola vermek, manzarayı toparlamak için uygundur. Kasım sabahlarında rüzgâr ve soğuk daha belirgin olabileceği için sıcak giyinmek iyi olur."
+     ],
+     "sonradan": true
+    },
+    {
      "no": 5,
      "ad": "Prag Kalesi",
      "alt": "Pražský hrad · Kale kompleksi",
@@ -376,6 +436,106 @@ window.GEZI = {
       "Katedralde saklanan Bohemya tacını hak etmeden başına takanın bir yıl içinde öleceğine inanılır.",
       "İkinci Dünya Savaşı'nda Nazi yöneticisi Heydrich'in tacı denediği ve kısa süre sonra bir suikastte öldüğü anlatılır. Tacı denediğine dair kesin bir kanıt yoktur."
      ]
+    },
+    {
+     "no": 14,
+     "ad": "Eski Kraliyet Sarayı",
+     "alt": "Starý královský palác, Prag Kalesi",
+     "gunler": [
+      "2026-11-17"
+     ],
+     "konum": [
+      50.091,
+      14.4012
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Eski Kraliyet Sarayı, Prag Kalesi'nin içinde bulunan ve Bohemya hükümdarlarının yüzyıllarca oturduğu tarihî saray yapısıdır. Yapının kökleri 12. yüzyıla kadar uzanır; bugünkü hâli farklı yüzyıllarda eklenen bölümlerle oluşmuştur. Sarayın en dikkat çekici bölümü, Vladislav Salonu'dur. Salon, 1493–1502 yılları arasında mimar Benedikt Ried tarafından Geç Gotik üslupta inşa edilmiştir. Uzunluğu yaklaşık 62 metre olan bu salon, tavanındaki karmaşık nervürlü kemerlerle ünlüdür.",
+      "Vladislav Salonu geçmişte taç giyme törenleri, ziyafetler ve hatta şövalye gösterileri için kullanılmıştır. Salona atlıların girebilmesi için tasarlanan bir Süvari Merdiveni de bulunur. Bugün salonda Çekya'da cumhurbaşkanlığı seçimleri ve önemli devlet törenleri yapılır. Sarayın yan kanadında, Bohemya Şansölyeliği'nin bulunduğu bölümde, 1618'de Prag Defenestrasyonu olayı yaşanmıştır. Bu olay, Otuz Yıl Savaşları'nın başlangıcı olarak kabul edilir.",
+      "Defenestrasyon, iki Katolik soylunun ve bir katibin pencereden aşağı atılması anlamına gelir. Sarayın salonlarında Gotik, Rönesans ve Barok öğeleri birlikte görülür. Giriş, kale bilet türüne göre farklı turlara dahil edilmiştir; bilet kapsamları değişebilir, bu nedenle gitmeden güncel bilgi kontrol edilmelidir. Salon büyük olduğundan fotoğraf için geniş açılı bir bakış açısı daha uygundur. Sabah saatlerinde sarayda genelde daha az kalabalık olur."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 15,
+     "ad": "Altın Sokak",
+     "alt": "Zlatá ulička, Prag Kalesi",
+     "gunler": [
+      "2026-11-17"
+     ],
+     "konum": [
+      50.0917,
+      14.4046
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Altın Sokak, Prag Kalesi'nin kuzey surlarına yaslanan küçük ve rengârenk evlerden oluşan dar bir sokaktır. Evler, 16. yüzyılın sonlarında kale muhafızları için inşa edilmiştir. Sokağın adı, 17. yüzyılda burada yaşayan kuyumculardan gelir. Evlerin çoğu çok küçüktür ve alçak tavanlıdır. 20. yüzyılın ortalarına kadar sokakta farklı meslekten insanlar oturmuştur.",
+      "Sokağın en bilinen sakinlerinden biri yazar Franz Kafka'dır. Kafka'nın 1916–1917 kışında kız kardeşi Ottla'nın kiraladığı 22 numaralı evde kısa süre çalıştığı anlatılır. Şair Jaroslav Seifert de bu sokakta yaşamıştır. Sokağın sonunda, Dalibor Kulesi'nin yer aldığı sur bölümü bulunur. Dalibor Kulesi, bir dönem hapishane olarak kullanılmış ve adını burada tutulan şövalye Dalibor'dan almıştır.",
+      "Bugün evlerde küçük dükkânlar ve sergi alanları bulunur. Bazı evler dönemin yaşam biçimini gösteren küçük müze odaları olarak düzenlenmiştir. Sokağın üst katında kale silahlarının sergilendiği bir bölüm de bulunur. Altın Sokak'a giriş genellikle kale biletine dahildir; giriş koşulları değişebileceğinden kontrol etmek gerekir. Sokak çok dar olduğu için kalabalık saatlerde ilerlemek zor olabilir ve sabah erken gitmek avantaj sağlar."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 16,
+     "ad": "Prague View Point",
+     "alt": "Na Opyši, Kale'nin doğu kenarı",
+     "gunler": [
+      "2026-11-17"
+     ],
+     "konum": [
+      50.0913,
+      14.4083
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Prague View Point, Prag Kalesi'nin doğu kenarındaki Na Opyši Sokağı yakınında bulunan bir seyir noktasıdır. Buradan Vltava Nehri'nin kıvrımını, Malá Strana'nın kırmızı kiremitli çatılarını ve karşı yakadaki Eski Şehir'i görmek mümkündür. Nehrin ötesinde Letná Tepesi ve Prag'ın farklı semtleri de panoramaya girer. Nokta, kale avlularındaki kalabalıktan uzak ve daha sakin bir fotoğraf molası sunar. Sabah ışığında şehir ve nehir, gece fotoğraflarından farklı bir görünüm kazanır.",
+      "Seyir noktası, rotada kaleden çıkış ve aşağıdaki Malá Strana'ya geri iniş arasında bir durak görevi görür. Buradan kale surlarının yamaçtan nasıl yükseldiğini görmek de mümkündür. Prag şehir panoramasında Karl Köprüsü, Aziz Nikolaos kubbesi ve Petřín Tepesi gibi tanınan noktalar bulunur. Bu noktaları gözlemleyerek şehrin coğrafyasını daha kolay anlamak mümkündür. Uzaktan görünen yapıları telefondaki haritayla eşleştirmek için iyi bir yerdir.",
+      "Seyir noktasına kale içinden veya Eski Kale Merdivenleri'nin üst ucundan ulaşılır. Alan açıktır ve rüzgâra karşı korunak sınırlıdır. Kasım'da sabah sisi ve hava durumu manzarayı etkileyebilir. Çıkış ve iniş için yakınındaki merdivenler kullanılabilir. Burada kısa bir mola, rotanın en sakin ve manzaralı bölümlerinden biri olur."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 17,
+     "ad": "Eski Kale Merdivenleri",
+     "alt": "Staré zámecké schody, Kale'den Klárov'a",
+     "gunler": [
+      "2026-11-17"
+     ],
+     "konum": [
+      50.0916,
+      14.4093
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Eski Kale Merdivenleri, Prag Kalesi'nin doğu yanını Malá Strana'nın alçak kesimiyle birleştiren açık hava merdivenleridir. Merdivenin üst ucu kale girişine ve Prague View Point'e yakındır. Alt ucu ise Klárov bölgesinde, Malostranská metro istasyonu çevresine iner. Bu geçit, kaleye çıkış veya kaleden iniş için en doğrudan yürüyüş yollarından biridir. Rotada kale ziyareti bittikten sonra şehre inmek için kullanılır.",
+      "Merdivenin iki yanında duvarlar ve yeşil alanlar bulunur. İniş sırasında Prag Kalesi'nin eteklerinden Vltava Nehri'ne doğru değişen manzara görülür. Basamaklar taştır ve Kasım'da yaprak ve nem nedeniyle kaygan olabilir. İnişte korkuluktan destek almak ve acele etmemek gerekir. Bu yol, kale yokuşunu tersten kullanmak isteyenler için de bir alternatiftir.",
+      "Merdivenin alt ucunda metro, tramvay ve nehir kıyısı arasında kolay bir bağlantı bulunur. Rotanın sonraki durağı olan Franz Kafka Müzesi, nehir kenarında bu bölgeden yürüyerek ulaşılabilir uzaklıktadır. Merdivenin ücretsiz ve herkese açık olduğu bilinir; kısıtlamalar için yerinde işaretlere bakmak iyi olur. Yürüyüş yaşlı veya diz problemi olan ziyaretçiler için yorucu olabilir. Dönüş için tramvay hattı alternatif olarak kullanılabilir."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 18,
+     "ad": "Franz Kafka Müzesi",
+     "alt": "Cihelná 2b, Malá Strana (Vltava kıyısı)",
+     "gunler": [
+      "2026-11-17"
+     ],
+     "konum": [
+      50.0877,
+      14.4092
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Franz Kafka Müzesi, Prag'da Malá Strana'nın nehir kıyısında, Karl Köprüsü'ne yakın bir yerde bulunur. Müzenin sergisi, yazarın hayatını ve eserlerini Prag şehriyle ilişkilendirerek anlatır. Sergi iki bölümden oluşur; biri Kafka'nın yaşadığı çevreyi, diğeri yazdıklarında şehrin nasıl yansıdığını ele alır. Sergide el yazmaları, mektuplar, ilk baskılar, fotoğraflar ve çok kanallı sesli ve görsel düzenlemeler bulunur. Müze, Kafka'nın dünyasını gizemli ve baskıcı bir atmosferle yansıtacak şekilde tasarlanmıştır.",
+      "Kafka eserlerinin büyük bölümünü hayattayken yayımlamamıştır. Ölümünden sonra arkadaşı Max Brod, Kafka'nın eserlerini yakılmasını istemesine rağmen onları yayımlamıştır. Dava 1925'te, Şato ise 1926'da basılmıştır. Dönüşüm hikâyesi 1915'te yayımlanmıştır. Kafka, geçimini sağlamak için bir sigorta kurumunda çalışmış ve yazmayı bu işin yanında sürdürmüştür.",
+      "Müzenin avlusunda sanatçı David Černý'nin yaptığı, birbirine karşı duran iki figürlü bir heykel bulunur. Heykelin, mekanik bir hareketle Çek Cumhuriyeti haritasını andıran bir havuza işediği anlatılır. Müze ücretli girişlidir ve genellikle günlük açıktır; saatler mevsime göre değişebilir. Sergi loş ve atmosferik olduğundan fotoğraf çekimine kısıtlama getirilmiş olabilir. Ziyaret yaklaşık bir saat sürer ve nehir manzaralı kısa bir yürüyüşle devam edebilir."
+     ],
+     "sonradan": true
     }
    ],
    "kapak": "img/yer/prag-1.webp",
@@ -1159,10 +1319,18 @@ window.GEZI = {
    "ad": "Prag Kalesi turu",
    "yerler": [
     "prag-4",
+    "prag-11",
+    "prag-12",
+    "prag-13",
     "prag-5",
-    "prag-6"
+    "prag-6",
+    "prag-14",
+    "prag-15",
+    "prag-16",
+    "prag-17",
+    "prag-18"
    ],
-   "not": "Yürüyüş ayakkabısı önerilir"
+   "not": "Sabah rotası Google Haritalar'dan eklendi (11–18 sonradan eklenen duraklar). Yürüyüş ayakkabısı önerilir"
   },
   {
    "tarih": "2026-11-17",
