@@ -3,7 +3,7 @@ window.GEZI = {
   "ad": "Orta Avrupa",
   "baslangic": "2026-11-16",
   "bitis": "2026-11-20",
-  "surum": "1.8"
+  "surum": "1.9"
  },
  "duraklar": [
   {
@@ -15,7 +15,7 @@ window.GEZI = {
     "2026-11-17"
    ],
    "harita": "img/harita-prag.webp",
-   "bilgi": "Haritadaki 1–6 numaralı işaretler planlanan duraklardır. 7–10 (16 Kasım) ve 11–18 (17 Kasım) sonradan eklenen duraklardır ve haritada işaretli değildir; konumları için yol tarifi düğmesini kullan. İşaretler referans konumlarıdır; giriş kapısını göstermeyebilir.",
+   "bilgi": "Haritadaki 1–6 numaralı işaretler planlanan duraklardır. 7–10 ve 19–22 (16 Kasım) ile 11–18 (17 Kasım) sonradan eklenen duraklardır ve haritada işaretli değildir; konumları için yol tarifi düğmesini kullan. İşaretler referans konumlarıdır; giriş kapısını göstermeyebilir.",
    "yerler": [
     {
      "no": 7,
@@ -219,6 +219,88 @@ window.GEZI = {
      ]
     },
     {
+     "no": 20,
+     "ad": "Pařížská Caddesi",
+     "alt": "Pařížská třída, Josefov",
+     "gunler": [
+      "2026-11-16"
+     ],
+     "konum": [
+      50.0907,
+      14.4193
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Pařížská Caddesi, Eski Şehir Meydanı'ndan Vltava Nehri'ne uzanan, iki yanı ağaçlı geniş bir bulvardır. Adı 'Paris Caddesi' anlamına gelir ve Paris bulvarlarından esinlenilmiştir. Cadde, 19. yüzyılın sonunda Yahudi Mahallesi Josefov'un büyük yenileme (asanace) çalışmalarıyla açılmıştır. Bu çalışmalarda eski ve sağlıksız mahalle yıkılmış, sinagoglar ile mezarlık korunmuştur. Caddenin yeni binaları 1890'lardan 1900'lerin başına kadar yapılmıştır.",
+      "Binalar Art Nouveau, Neo-Rönesans ve Neo-Barok üsluplarını bir arada taşır. Cephelerde kabartmalar, heykeller, çıkmalar ve kule benzeri köşe yapıları dikkat çeker. Fotoğraftaki binalardan birinin cephesinde yapım yılı olarak 1905–1906 yazılıdır. Caddenin iki yanında lüks moda markalarının mağazaları sıralanır. Bu nedenle Pařížská, Prag'ın en şık alışveriş caddelerinden biri sayılır.",
+      "Caddenin bir ucu Eski Şehir Meydanı'na, diğer ucu Čech Köprüsü'ne bağlanır. Köprüden Vltava Nehri ve Letná Tepesi görülebilir. Cadde, Kafka Heykeli ve İspanyol Sinagogu'nun bulunduğu sokaklara çok yakındır. Gece ışıklandırmasında binaların süslemeleri sıcak sarı tonlarda parlar. Vitrinler ve kafeler yüzünden rotayı kolayca uzatan bir yürüyüş caddesidir."
+     ],
+     "sonradan": true,
+     "gezi_foto": [
+      {
+       "dosya": "img/gezi/parizska-1.webp",
+       "yazi": "Pařížská Caddesi, gece"
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "ad": "Yeni Belediye Binası",
+     "alt": "Nová radnice, Mariánské náměstí",
+     "gunler": [
+      "2026-11-16"
+     ],
+     "konum": [
+      50.087,
+      14.4175
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Yeni Belediye Binası (Nová radnice), Prag Belediyesi'nin yönetim yapılarından biridir ve Mariánské náměstí'nde bulunur. Yapı 1908–1911 yıllarında inşa edilmiştir. Mimarı Osvald Polívka'dır. Polívka, Prag'daki Belediye Binası'nın (Obecní dům) tasarımında da görev almıştır. Bina, dönemin Art Nouveau ve Neo-Rönesans etkilerini taşır.",
+      "Cephenin ortasında büyük, kemerli bir giriş ve iki yanında insan figürlerini gösteren kabartmalar yer alır. Üst balkonun iki yanında oturan ve ayakta duran figürler bulunur. Kapının üzerinde 'Nová radnice' yazısı okunur. Bina, Eski Şehir Meydanı'ndaki Astronomik Saat'in bulunduğu Eski Belediye Binası ile karıştırılmamalıdır. Meydanda ayrıca Prag Şehir Kütüphanesi bulunur.",
+      "Meydan, Eski Şehir'in dar sokakları arasında nispeten sakin bir açık alandır. Kasım'da meydandaki ağaçlar yapraksızdır. Akşam ışıklandırması binayı sarı ve altın tonlarla aydınlatır. Bina bugün de kamu hizmetleri için kullanıldığından iç mekâna giriş sınırlı olabilir. Hemen yakınında Clementinum'a ve Karl Köprüsü'ne giden yollar bulunur."
+     ],
+     "sonradan": true,
+     "gezi_foto": [
+      {
+       "dosya": "img/gezi/radnice-1.webp",
+       "yazi": "Yeni Belediye Binası, gece"
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "ad": "Clam-Gallas Sarayı",
+     "alt": "Clam-Gallasův palác, Husova 20",
+     "gunler": [
+      "2026-11-16"
+     ],
+     "konum": [
+      50.0858,
+      14.4182
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Clam-Gallas Sarayı, Prag'ın Eski Şehir bölgesinde Husova Sokağı'nda bulunan Barok bir saraydır. Saray 1713–1730 yıllarında Gallas ailesi için inşa edilmiştir. Tasarımı dönemin ünlü mimarı Johann Bernhard Fischer von Erlach'a atfedilir. Sarayın girişini iki yanında taşıyan, güçlü gövdeli dört erkek figür çok ünlüdür. Bu atlas figürlerinin heykeltıraş Matthias Braun'un eseri olduğu kabul edilir.",
+      "Figürler, balkonu omuzlarında taşıyormuş gibi tasarlanmıştır. Kapının üzerindeki demir parmaklıkta bir taç ve monogram bulunur. Balkon korkuluğunun ortasında ailenin arması yer alır. Sarayın adı, sonradan sahip olan Clam-Gallas ailesinden gelir. Saray 20. yüzyılda belediyeye geçmiştir ve bugün Prag Şehir Arşivi tarafından kullanılır.",
+      "Fotoğrafta kapıdaki bir notta sarayın 'ara verdiği' yazıyor; içeri girmek için açık olup olmadığı kontrol edilmelidir. Husova Sokağı'nda Sigmund Freud'u çatıdan sarkarken gösteren David Černý heykeli de bulunur. Saray, Karl Köprüsü'ne yürüyerek yaklaşık beş ila on dakikalık mesafededir. Cephe detaylarını görmek için başı yukarı kaldırmak gerekir. Gece sıcak ışıkta heykellerin kasları ve kıvrımlı kumaş detayları öne çıkar."
+     ],
+     "sonradan": true,
+     "gezi_foto": [
+      {
+       "dosya": "img/gezi/clam-1.webp",
+       "yazi": "Clam-Gallas Sarayı giriş portali, gece"
+      },
+      {
+       "dosya": "img/gezi/clam-2.webp",
+       "yazi": "Atlas figürlerinden ayrıntı"
+      }
+     ]
+    },
+    {
      "no": 3,
      "ad": "Karl Köprüsü",
      "alt": "Karlův most",
@@ -266,6 +348,26 @@ window.GEZI = {
        "yazi": "Karl Köprüsü'nden Prag Kalesi ve Aziz Vitus, gece"
       }
      ]
+    },
+    {
+     "no": 19,
+     "ad": "Dönen Kafka Başı",
+     "alt": "Národní, Quadrio önü (David Černý)",
+     "gunler": [
+      "2026-11-16"
+     ],
+     "konum": [
+      50.0807,
+      14.4203
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Dönen Kafka Başı, Prag'da Národní Sokağı'ndaki Quadrio alışveriş merkezinin önünde duran dev bir kinetik heykeldir. Eser Çek sanatçı David Černý'ye aittir ve 2014'te yerleştirilmiştir. Başın yüksekliği yaklaşık 10 metre, ağırlığı ise yaklaşık 39 tondur. Yapı, paslanmaz çelikten yapılmış 42 hareketli katmandan oluşur. Her katman kendi ekseninde bağımsız olarak döner.",
+      "Katmanlar aynı hizaya geldiğinde yüz bütünleşir, kaydığında ise parçalanıp dağılır. Ayna gibi parlak yüzey çevredeki binaları ve gökyüzünü yansıtır. Başın Franz Kafka'yı temsil ettiği kabul edilir. Sürekli değişen yüz, yazarın eserlerindeki kimlik ve bütünlük temalarını çağrıştırır. Heykel, Prag'ın en çok fotoğraflanan çağdaş sanat eserlerinden biridir.",
+      "Černý, Prag'daki başka eserleriyle de tanınır; Franz Kafka Müzesi'nin avlusundaki heykel de ona aittir. Heykel, Národní třída metro istasyonunun hemen yanında yer alır. Bakım veya program nedeniyle başın dönüşü zaman zaman durabilir. Gece ışıklarında yansımalar daha belirgin görünür. Yakınındaki Ulusal Tiyatro yürüyerek kısa sürede ulaşılabilecek bir durak olarak değerlendirilebilir."
+     ],
+     "sonradan": true
     },
     {
      "no": 4,
@@ -1540,6 +1642,33 @@ window.GEZI = {
    "ad": "İspanyol Sinagogu (Yahudi Mahallesi)",
    "yerler": [
     "prag-10"
+   ],
+   "sonradan": true
+  },
+  {
+   "tarih": "2026-11-16",
+   "saat": "19.15",
+   "ad": "Pařížská Caddesi",
+   "yerler": [
+    "prag-20"
+   ],
+   "sonradan": true
+  },
+  {
+   "tarih": "2026-11-16",
+   "saat": "19.25",
+   "ad": "Yeni Belediye Binası",
+   "yerler": [
+    "prag-21"
+   ],
+   "sonradan": true
+  },
+  {
+   "tarih": "2026-11-16",
+   "saat": "19.30",
+   "ad": "Clam-Gallas Sarayı",
+   "yerler": [
+    "prag-22"
    ],
    "sonradan": true
   }
