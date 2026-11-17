@@ -3,7 +3,7 @@ window.GEZI = {
   "ad": "Orta Avrupa",
   "baslangic": "2026-11-16",
   "bitis": "2026-11-20",
-  "surum": "1.9"
+  "surum": "2.0"
  },
  "duraklar": [
   {
@@ -652,8 +652,28 @@ window.GEZI = {
     "2026-11-20"
    ],
    "harita": "img/harita-viyana.webp",
-   "bilgi": "4 numara genel haritada, diğer noktalar merkez ayrıntısında gösterilir. 9 numara sonradan eklenen duraktır; 20 Kasım Ringstrasse gezisine eklenebilir.",
+   "bilgi": "4 numara genel haritada, diğer noktalar merkez ayrıntısında gösterilir. 9 numara sonradan eklenen duraktır; 20 Kasım Ringstrasse gezisine eklenebilir. 10–14 numaralı duraklar 17 Kasım akşam rotasından sonradan eklendi; haritada işaretli değildir, konum için yol tarifi düğmesini kullan.",
    "yerler": [
+    {
+     "no": 10,
+     "ad": "Karlskirche (Karl Kilisesi)",
+     "alt": "Karlsplatz, Wien",
+     "gunler": [
+      "2026-11-17"
+     ],
+     "konum": [
+      48.1983,
+      16.3719
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Karlskirche, Viyana'nın en önemli Barok kiliselerinden biridir ve Karlsplatz'ın kenarında yükselir. İmparator VI. Karl, 1713'teki veba salgınının ardından şehri korumaları için Aziz Carlo Borromeo'ya adak olarak bu kiliseyi yaptırmıştır. Kilisenin yapımı 1716'da başlamış ve 1737'de tamamlanmıştır. Tasarım Johann Bernhard Fischer von Erlach'a aittir. Fischer von Erlach inşaat sürerken hayatını kaybedince yapıyı oğlu Joseph Emanuel tamamlamıştır.",
+      "Cephenin ortasında, Yunan tapınağını andıran sütunlu bir giriş revağı bulunur. Revağın iki yanında, Roma'daki Trajan Sütunu'ndan esinlenen iki büyük sütun yükselir. Bu sütunların üzerinde Aziz Carlo Borromeo'nun yaşamını anlatan kabartmalar yer alır. Yapının üzerindeki yeşil bakır kubbe Viyana siluetinin tanınmış parçalarından biridir. Kilise Roma, Yunan ve Barok etkilerini tek bir yapıda bir araya getirdiği için dikkat çeker.",
+      "Kubbenin iç yüzeyini Johann Michael Rottmayr'ın freskleri süsler. Kilisenin önünde uzun bir havuz ve Henry Moore'un bir heykeli bulunur; havuzda yansıyan kilise geceleri iyi fotoğraf verir. Yakınlarda Otto Wagner'in tasarladığı Karlsplatz istasyon pavyonları ve Secession Sarayı bulunur. Musikverein salonu da buraya yürüyerek ulaşılabilecek mesafededir. İç mekân ve kubbe asansörü için ziyaret saatleri ve giriş ücreti değişebilir; geceleri kapalı olabileceğinden dıştan görmek yeterlidir."
+     ],
+     "sonradan": true
+    },
     {
      "no": 1,
      "ad": "Stephansplatz",
@@ -765,6 +785,86 @@ window.GEZI = {
       58.08,
       65.23
      ]
+    },
+    {
+     "no": 11,
+     "ad": "Am Hof",
+     "alt": "Am Hof, Innere Stadt",
+     "gunler": [
+      "2026-11-17"
+     ],
+     "konum": [
+      48.2111,
+      16.3667
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Am Hof, Viyana'nın tarihî merkezindeki en geniş meydandır. Alan, Roma döneminde Vindobona kampının çevresinde kalmıştır. Orta Çağ'da burada şövalye turnuvaları yapılırdı. Meydanın adı, bir dönem Babenberg hanedanının sarayının burada bulunmasından gelir. Bugün meydan, çevresindeki Barok ve Klasik cepheli yapılarla sakin bir görünüm sunar.",
+      "Meydanın ortasında, 1667'de dikilen Meryem Sütunu (Mariensäule) bulunur. Sütunun dibindeki çocuk figürleri, savaş, kıtlık, veba ve sapkınlığı simgeleyen yaratıklarla mücadele eder. Meydanın bir kenarında Dokuz Melek Korosu Kilisesi'nin Barok cephesi yükselir. Bu kilisenin balkonunda, 1806'da Kutsal Roma İmparatorluğu'nun sona erdiğinin ilan edildiği anlatılır. Meydandaki Merkez İtfaiye binasında itfaiye müzesi de bulunur.",
+      "Yakınındaki Palais Collalto'da çocuk yaştaki Mozart'ın çaldığı anlatılır. Kasım sonundan itibaren meydanda küçük bir Noel pazarı kurulabilir; açılış tarihlerini kontrol etmek gerekir. Meydan, Graben'den Freyung'a giden yürüyüşün doğal bir durağıdır. Geceleri cepheler hafifçe aydınlatıldığından meydan sakin ve fotoğraf için uygundur. Çevresinde kafeler ve küçük restoranlar bulunur."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 12,
+     "ad": "Freyung",
+     "alt": "Freyung, Innere Stadt",
+     "gunler": [
+      "2026-11-17"
+     ],
+     "konum": [
+      48.2115,
+      16.364
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Freyung, Viyana'nın tarihî merkezinde, Skoç Manastırı'nın (Schottenstift) önündeki üçgene yakın bir meydandır. Adı, Orta Çağ'da burada sığınma hakkı bulunmasından gelir. Schottenstift, 1155'te Dük II. Heinrich Jasomirgott tarafından kurulmuştur. Manastırın ilk keşişleri İrlandalı Benedikt rahipleriydi ve bu yüzden 'Skoç' adı verilmiştir. Bitişikteki Schottenkirche kilisesi, 18. yüzyılda Barok üslupta yeniden yapılmıştır.",
+      "Meydanın ortasında, 1846'da yapılan Austriabrunnen çeşmesi bulunur. Çeşmedeki dört figür, imparatorluğun dört nehrini simgeler: Tuna, Elbe, Po ve Vistül. Meydanın bir kenarında Palais Ferstel ve içindeki ünlü Café Central bulunur. Café Central, 19. yüzyılın sonu ve 20. yüzyılın başında Viyanalı yazar ve düşünürlerin buluşma noktası olarak bilinir. Meydanın çevresinde Palais Harrach ve Palais Kinsky gibi soylu sarayları da yer alır.",
+      "Kasım ortasından itibaren meydanda Noel pazarı kurulur; açık olup olmadığını kontrol etmek gerekir. Meydan Am Hof ve Herrengasse'ye kısa bir yürüyüşle bağlanır. Ferstel Pasajı, Freyung'dan Michaelerplatz'a kadar uzanan şık bir yürüyüş geçididir. Akşam saatlerinde kafeler ve restoranlar genellikle açıktır. Rotada Freyung, Am Hof'tan sonra Rathausplatz yönüne ilerlemeden önceki son tarihî meydandır."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 13,
+     "ad": "Rathausplatz (Viyana Belediye Sarayı)",
+     "alt": "Rathausplatz, Innere Stadt",
+     "gunler": [
+      "2026-11-17"
+     ],
+     "konum": [
+      48.2108,
+      16.3578
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Rathausplatz, Viyana Belediye Sarayı'nın (Rathaus) önündeki geniş meydandır. Belediye Sarayı, 1872–1883 yıllarında mimar Friedrich von Schmidt tarafından Neo-Gotik üslupta yapılmıştır. Yapının ortasındaki kule yaklaşık 98 metre yüksekliğindedir. Kulenin tepesinde, yaklaşık 3,4 metrelik bayraklı bir şövalye heykeli olan Rathausmann yer alır. Bina, aynı zamanda Viyana'nın belediye ve eyalet yönetiminin merkezidir.",
+      "Meydanın çevresinde Burgtheater, Parlamento ve Viyana Üniversitesi gibi Ringstrasse'nin önemli yapıları bulunur. Belediye Sarayı'nın önündeki Rathauspark'ta her yıl Noel pazarı kurulur. Pazar genellikle Kasım ortasında açılır; açılış ve kapanış saatlerini kontrol etmek gerekir. Yaz aylarında meydanda büyük bir açık hava film festivali düzenlenir. Kışın ise parkta buz pateni alanı kurulabilir.",
+      "Bina, Neo-Gotik kuleleri ve kemerli pencereleriyle geceleri aydınlatıldığında çok etkileyici görünür. İçindeki büyük Arkadenhof avlusu, belirli günlerde ziyaretçilere açılır. Rehberli turlar belirli günlerde yapılır; tarihleri önceden öğrenmek gerekir. Ringstrasse üzerindeki durak, Hofburg ve Opera ile birlikte 20 Kasım'daki Ringstrasse gezisiyle de bağlantılıdır. Meydandaki pazar kalabalık olabilir; değerli eşyalara dikkat etmekte yarar var."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 14,
+     "ad": "Spittelberg",
+     "alt": "Spittelberg, Neubau (7. bölge)",
+     "gunler": [
+      "2026-11-17"
+     ],
+     "konum": [
+      48.2037,
+      16.3533
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Spittelberg, Viyana'nın 7. bölgesinde (Neubau), MuseumsQuartier'nin hemen yakınındaki tarihî bir mahalledir. Adı, bir dönem burada bulunan 'Spital' yani hastane arazisinden gelir. Mahalle, 18. ve 19. yüzyıllarda sıradan halkın yaşadığı, eğlence mekânlarıyla da bilinen bir bölgeydi. Sokakların çoğu Barok ve Biedermeier üslubunda evlerle çevrilidir. Taş döşemeli dar sokakları, Viyana'nın en romantik yürüyüş alanlarından biri olarak anılır.",
+      "Mahalle 20. yüzyılda yıkılma tehlikesi yaşamış ancak 1970'lerden itibaren restore edilerek korunmuştur. Bugün sokaklarda kafeler, restoranlar, galeriler ve küçük hediyelik dükkânlar bulunur. Gutenberggasse, Spittelberggasse ve Siebensterngasse mahallenin başlıca sokakları arasındadır. Kasım ortasından itibaren Spittelberg'de el sanatları ürünleriyle bilinen bir Noel pazarı kurulur. Pazarın tarihlerini ve saatlerini gitmeden kontrol etmek iyi olur.",
+      "Akşam saatlerinde sokak lambaları ve vitrinler mahalleye sıcak bir görünüm kazandırır. Mahalle, Opera'ya ve Ringstrasse'ye yürüyerek ulaşılabilecek mesafededir. Rotanın bu son durağında bir kafede kısa mola vermek yürüyüşü tamamlamak için uygundur. Dar sokaklarda kalabalık az olduğundan fotoğraf çekmek kolaydır. Dönüş yolunda Opera Garage'a yürüyerek veya metro ile ulaşılabilir."
+     ],
+     "sonradan": true
     },
     {
      "no": 4,
@@ -1459,10 +1559,16 @@ window.GEZI = {
    "saat": "18.30",
    "ad": "Viyana akşam turu ve akşam yemeği",
    "yerler": [
+    "viyana-10",
     "viyana-1",
     "viyana-2",
-    "viyana-3"
-   ]
+    "viyana-3",
+    "viyana-11",
+    "viyana-12",
+    "viyana-13",
+    "viyana-14"
+   ],
+   "not": "Rota Google Haritalar'dan eklendi: Opera Garage → L'Opera Restaurant-Café (yemek) → Karlskirche → Stephansplatz → Am Hof → Freyung → Rathausplatz → Spittelberg → Opera Garage. Yaklaşık 6,1 km, 1 sa. 25 dk. yürüyüş"
   },
   {
    "tarih": "2026-11-17",
