@@ -3,7 +3,7 @@ window.GEZI = {
   "ad": "Orta Avrupa",
   "baslangic": "2026-11-16",
   "bitis": "2026-11-20",
-  "surum": "2.0"
+  "surum": "2.1"
  },
  "duraklar": [
   {
@@ -1096,7 +1096,7 @@ window.GEZI = {
     "2026-11-19"
    ],
    "harita": "img/harita-budapeste.webp",
-   "bilgi": "Gece tekne turu: 18 Kasım, 20.30–22.00. Kalkış iskelesi programda belirtilmemiştir; biletten ya da tekne şirketinden teyit edin.",
+   "bilgi": "Gece tekne turu: 18 Kasım, 20.30–22.00. Kalkış iskelesi programda belirtilmemiştir; biletten ya da tekne şirketinden teyit edin. 6–13 numaralı duraklar 18 Kasım yürüyüş rotasından sonradan eklendi; haritada işaretli değildir, konum için yol tarifi düğmesini kullan.",
    "yerler": [
     {
      "no": 1,
@@ -1213,41 +1213,6 @@ window.GEZI = {
      ]
     },
     {
-     "no": 4,
-     "ad": "Macaristan Parlamentosu",
-     "alt": "18 Kasım nehirden, 19 Kasım çevre gezisi",
-     "gunler": [
-      "2026-11-18",
-      "2026-11-19"
-     ],
-     "konum": [
-      47.50694,
-      19.04556
-     ],
-     "temsili": false,
-     "uyari": null,
-     "not": [
-      "Macaristan Parlamento Binası, Tuna'nın Peşte yakasında yükselen ve şehrin en tanınmış yapısıdır. Ülkenin en büyük binası olarak kabul edilir. Bina, 1873'te Buda, Óbuda ve Peşte'nin birleşmesinden sonra yeni başkentin simgesi olarak tasarlanmıştır. Mimarı İmre Steindl'dir. Yapımına 1885'te başlanmış ve bina 1904'te tamamlanmıştır.",
-      "Bina, 1896'daki bininci yıl kutlamaları sırasında kullanılmaya başlanmıştır. Steindl, binanın tamamlanmasından kısa süre önce hayatını kaybetmiş ve bitmiş hâlini görememiştir. Yapının cephesi Neo-Gotik, planı ve kubbesi ise Rönesans etkileri taşır. Merkezdeki kubbe 96 metre yüksekliğindedir. Bu yükseklik, geleneksel olarak 896 yılına tarihlenen Macar yerleşimine gönderme yapar.",
-      "Binanın içinde Macar Kutsal Tacı ve diğer taç mücevherleri sergilenir. Binanın biraz güneyinde, Tuna kıyısında İkinci Dünya Savaşı'nda öldürülen Yahudileri anan, demir ayakkabılardan oluşan bir anıt yer alır. 18 Kasım gece tekne turunda bina, ışıklandırılmış hâliyle nehirden görülebilir. Binanın önündeki Kossuth Meydanı, ulusal törenlerin yapıldığı geniş bir alandır. Parlamentoya rehberli turla girilebilir; turlar meclis programına bağlı olduğu için önceden kontrol etmek gerekir."
-     ],
-     "gorsel": {
-      "dosya": "img/yer/budapeste-4.webp",
-      "yazar": "Pierre Blaché",
-      "lisans": "CC0",
-      "kaynak": "Wikimedia Commons",
-      "sayfa": "https://commons.wikimedia.org/wiki/File:Hungarian_Parliament_Building_2023-9.jpg"
-     },
-     "harita_nokta": [
-      33.73,
-      48.81
-     ],
-     "harita_etiket": [
-      37.69,
-      42.61
-     ]
-    },
-    {
      "no": 5,
      "ad": "Tuna Nehri / tekne turu",
      "alt": "Gece tekne turu · 20.30–22.00",
@@ -1285,6 +1250,201 @@ window.GEZI = {
       "Heykeltıraş János Marschalkó'nun aslanların dilini yapmayı unuttuğu, açılışta bunu fark eden birinin bağırması üzerine utancından kendini Tuna'ya attığı anlatılır.",
       "Gerçekte aslanların dili vardır; yalnızca aşağıdan görünmez. Heykeltıraş da bu olaydan sonra onlarca yıl daha yaşamıştır."
      ]
+    },
+    {
+     "no": 6,
+     "ad": "Vigadó Meydanı",
+     "alt": "Vigadó tér, Tuna kıyısı (Pest)",
+     "gunler": [
+      "2026-11-18"
+     ],
+     "konum": [
+      47.4957,
+      19.0489
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Vigadó Meydanı, Budapeşte'de Pest yakasında Tuna kıyısındaki yaya promenadının başlangıç noktalarından biridir. Meydana adını veren Vigadó Konser Salonu, 1859–1865 yılları arasında mimar Frigyes Feszl tarafından yapılmıştır. Yapı, Romantik üslupta Macar halk motiflerini bir araya getirir. Bina İkinci Dünya Savaşı'nda ağır hasar görmüş ve sonradan onarılmıştır. Bugün konserlere ve etkinliklere ev sahipliği yapar.",
+      "Meydanın önündeki nehir kıyısı, Tuna'da gezi yapan teknelerin birçok iskelesinin bulunduğu bir bölgedir. Programdaki gece tekne turunun kalkış noktası belirtilmediği için bilet üzerinden teyit edilmelidir. Promenadda, tramvay korkuluğunun üzerinde oturan Küçük Prenses (Kiskirálylány) heykeli bulunur. Heykel, 1990'larda yerleştirilmiş küçük bir bronz figürdür ve yoldan geçenlerin en çok fotoğraf çektiği yerlerden biridir. Buradan karşı kıyıdaki Buda Kalesi'nin ve Zincir Köprüsü'nün manzarası izlenebilir.",
+      "Meydan, 2 numaralı tramvay hattının güzergâhı üzerindedir. Akşamları nehir boyunca Buda yakasının ışıkları suya yansır. Rotanın başlangıcında Tuna kıyısını tanımak ve yönünü bulmak için iyi bir noktadır. Yakındaki Párisi Passage Restaurant'a yürüyerek kısa sürede ulaşılır. Kasım akşamlarında nehir kıyısında rüzgâr ve soğuk daha belirgin olabilir."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 7,
+     "ad": "Vörösmarty Meydanı",
+     "alt": "Vörösmarty tér, Pest merkezi",
+     "gunler": [
+      "2026-11-18"
+     ],
+     "konum": [
+      47.4965,
+      19.0507
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Vörösmarty Meydanı, Budapeşte'nin Pest yakasının merkezinde bulunan ve şehrin en bilinen meydanlarından biridir. Meydan, adını 19. yüzyıl Macar şairi Mihály Vörösmarty'den alır. Ortasındaki beyaz mermer anıt, şairi ve eserlerinden figürleri anar. Meydan, Váci Sokağı'nın başladığı yerin yakınındadır. Váci Sokağı, Budapeşte'nin en bilinen yaya alışveriş sokaklarından biridir.",
+      "Meydanın kenarındaki Gerbeaud Pastanesi, 19. yüzyılın ortalarında kurulmuştur. Pastane, adını 1880'lerde işletmeyi devralan İsviçreli pastacı Emil Gerbeaud'dan alır. Gerbeaud, Macar tatlıları ve kahve kültürüyle tanınan en eski kafelerden biridir. Meydanda her yıl Kasım ortasından itibaren Budapeşte Noel Pazarı kurulur. Pazarın açılış tarihlerini ve saatlerini gitmeden kontrol etmek gerekir.",
+      "Meydanın altından geçen M1 metro hattı, 1896'da açılan Millennium Yeraltı Treni'dir. Bu hat, Avrupa kıtasındaki ilk yeraltı metro hattı olarak bilinir. Akşam saatlerinde meydan ışıklandırmalarla ve pazar tezgâhlarıyla canlı olur. Kalabalıkta cüzdan ve telefon gibi eşyalara dikkat etmek iyi olur. Meydan rotada, nehir kıyısından Erzsébet Meydanı'na doğru ilk durak görevi görür."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 8,
+     "ad": "Erzsébet Meydanı",
+     "alt": "Erzsébet tér, Deák Ferenc tér yanı",
+     "gunler": [
+      "2026-11-18"
+     ],
+     "konum": [
+      47.4982,
+      19.0527
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Erzsébet Meydanı, Budapeşte'nin Pest yakasında Deák Ferenc Meydanı'nın hemen yanındaki park biçimli bir meydandır. Meydanın adı, Habsburg İmparatoriçesi ve Macar Kraliçesi Elisabeth'ten gelir. Meydan, şehrin merkezinde yeşil bir mola alanı sunar. Ortasında 19. yüzyıldan kalma Danubius Çeşmesi bulunur. Çeşmedeki figürler Tuna Nehri'ni ve onun kollarını simgeler.",
+      "Meydanın hemen yanındaki Deák Ferenc Meydanı, üç metro hattının kesiştiği önemli bir aktarma noktasıdır. Bu yüzden meydan şehrin hemen her yerine kolayca bağlanır. Çevresinde kafeler ve restoranlar bulunur. Meydanın bir bölümünde modern bir cam yapı yer alır ve bu yapıda sergi ve etkinlikler düzenlenir. Akşamları meydan, çevredeki binaların ışıklarıyla sakin bir görünüm kazanır.",
+      "Rotada Vörösmarty Meydanı'ndan Aziz Stefan Bazilikası'na giderken uğranan kısa bir duraktır. Kış aylarında meydanda geçici sanat veya eğlence uygulamaları kurulabilir. Bu tür etkinliklerin tarihleri yıldan yıla değişir; ziyaretten önce kontrol edilmelidir. Meydandan birkaç dakikalık yürüyüşle bazilikaya ulaşılır. Soğuk akşamlarda yürüyüş temposu yüksek tutulursa rotayı üşümeden tamamlamak kolaylaşır."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 9,
+     "ad": "Aziz Stefan Bazilikası",
+     "alt": "Szent István-bazilika, Szent István tér",
+     "gunler": [
+      "2026-11-18"
+     ],
+     "konum": [
+      47.5009,
+      19.054
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Aziz Stefan Bazilikası, Budapeşte'nin en büyük kilisesidir. Yapı, Macaristan'ın ilk kralı Aziz İstvan'a (Stefan) adanmıştır. Kilise yaklaşık 8.500 kişi alabilecek kapasitedeki iç mekânıyla bilinir. Neo-Klasik üslupta inşa edilmiştir ve yapımı 1851'den 1905'e kadar sürmüştür. İnşaata mimar József Hild başlamış, sonrasında Miklós Ybl ve József Kauser devam etmiştir.",
+      "1868'de kubbenin çökmesi inşaatın uzun süre gecikmesine yol açmıştır. Bugünkü kubbenin yüksekliği yaklaşık 96 metredir. Aynı yükseklik Parlamento Binası'nda da bulunur ve devlet ile kilisenin eşit önem taşıdığını simgeler. Kilisenin içinde Aziz İstvan'ın mumyalanmış sağ elini barındıran bir şapel yer alır. Bu kutsal emanet Macaristan'da büyük saygı görür.",
+      "Kubbeye çıkan ziyaretçiler, şehri 360 derece görebilecekleri bir seyir terasına ulaşır. Bazilikanın önündeki meydanda Kasım sonunda Noel pazarı ve ışık gösterisi düzenlenebilir. Pazarın tarihleri değişebileceğinden kontrol etmek gerekir. Kilisede zaman zaman orgun da çalındığı konserler yapılır. Akşam saatlerinde bazilika ve çevresi ışıklandırılır; iç mekân ve kule saatleri değişebilir."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 10,
+     "ad": "Macar Devlet Operası",
+     "alt": "Magyar Állami Operaház, Andrássy út 22",
+     "gunler": [
+      "2026-11-18"
+     ],
+     "konum": [
+      47.5027,
+      19.0583
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Macar Devlet Operası, Budapeşte'nin en güzel yapılarından biridir ve Andrássy Caddesi üzerindedir. Bina, mimar Miklós Ybl tarafından Neo-Rönesans üslupta tasarlanmıştır. İnşaatı 1875'te başlamış ve opera 1884'te açılmıştır. Açılışa dönemin kralı Franz Joseph de katılmıştır. Salonun yaklaşık 1.260 kişilik kapasitesi vardır.",
+      "Cephenin giriş bölümünde besteciler Ferenc Erkel ve Franz Liszt'in heykelleri yer alır. İç mekân altın yaldız süslemeler, freskler ve at nalı biçimli bir salonla ünlüdür. Besteci Gustav Mahler, 1888–1891 yılları arasında operanın müzik direktörlüğünü yapmıştır. Opera, 2017–2022 yılları arasında büyük bir restorasyondan geçmiştir. Rehberli turlar düzenli olarak yapılır; saatleri ve ücretleri önceden kontrol etmek gerekir.",
+      "Andrássy Caddesi, 2002'den beri UNESCO Dünya Mirası Listesi'ndedir. Operanın çevresinde kafeler ve restoranlar bulunur. Akşam gösterisi olan günlerde giriş kısıtlanabilir. Cephe geceleri ışıklandırılır ve fotoğraf için uygundur. Rotada Bazilika'dan sonra Özgürlük Meydanı'na giderken bu caddeden geçilir."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 11,
+     "ad": "Özgürlük Meydanı",
+     "alt": "Szabadság tér, Lipótváros",
+     "gunler": [
+      "2026-11-18"
+     ],
+     "konum": [
+      47.5039,
+      19.0505
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Özgürlük Meydanı, Budapeşte'nin Pest yakasında Lipótváros semtinde bulunan büyük ve sakin bir meydandır. Meydan, 19. yüzyılın sonunda eski bir kışlanın yerine açılmıştır. O kışla, 1849 Macar Devrimi sırasında kullanılan bir hapishane görevi de görmüştür. Başbakan Lajos Batthyány'nin 1849'da burada idam edildiği anlatılır; anısına bir ebedî alev yanar. Meydanın çevresinde Neo-Klasik, Eklektik ve Art Nouveau üslubunda büyük yapılar bulunur.",
+      "Meydanda Macaristan Ulusal Bankası ve Borsa Sarayı gibi önemli binalar yer alır. Bir köşede Amerika Birleşik Devletleri Büyükelçiliği bulunur. Meydanın ortasında 1945'te dikilen Sovyet Anıtı yükselir. Meydanda ayrıca Alman işgal anıtı gibi tartışmalı anıtlar da vardır. Bu anıtlar, Macaristan'ın yakın tarihindeki farklı yorumları yansıtır.",
+      "Meydanda Ronald Reagan'ın heykeli de bulunur. Amerikalı general Harry Hill Bandholtz'un 1919'daki bir olayı anan bir anıtı da buradadır. Çevresindeki ağaçlı park alanı kısa bir dinlenme için uygundur. Akşam saatlerinde meydan sakin ve kalabalık azdır. Rotada Aziz Stefan Bazilikası ve Opera'dan sonra Tuna kıyısına inmeden önceki son meydandır."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 12,
+     "ad": "Tuna Kıyısındaki Ayakkabılar",
+     "alt": "Cipők a Duna-parton, Pest yakası",
+     "gunler": [
+      "2026-11-18"
+     ],
+     "konum": [
+      47.5039,
+      19.0472
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Tuna Kıyısındaki Ayakkabılar, Budapeşte'de Pest yakasında nehir kıyısına yerleştirilmiş bir anıttır. Anıt, 2005'te film yönetmeni Can Togay ve heykeltıraş Gyula Pauer tarafından yapılmıştır. Kıyıda sıralanmış 60 çift demir ayakkabı yer alır. Ayakkabılar, 1940'lardaki dönemin modasını yansıtır; arasında çocuk ayakkabıları da vardır. Anıt, Parlamento Binası'nın hemen güneyinde, nehir kıyısındadır.",
+      "Anıt, 1944–1945 kışında Nyilas (Ok Haçlılar) milisleri tarafından Tuna kıyısında vurulan Yahudi kurbanları anar. Kurbanlardan ayakkabılarını çıkarmaları istenmiş ve sonra nehre atılmışlardır. Boş duran ayakkabılar bu yüzden kurbanların yokluğunu simgeler. Ziyaretçiler bazen ayakkabıların içine mum veya çiçek bırakır. Bu bir anma yeridir; yüksek sesle konuşmamak ve ayakkabıların üzerine basmamak gerekir.",
+      "Anıt, rotadaki en sade ama en etkileyici duraklardan biridir. Fotoğraf çekerken anıtın anlamına saygı göstermek önemlidir. Hemen arkasındaki nehir kıyısından Buda yakasının manzarası görülür. Rotada Özgürlük Meydanı'ndan Parlamento Binası'na giderken bu kıyıdan geçilir. Kasım akşamlarında kıyıda rüzgâr sert olabilir."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 4,
+     "ad": "Macaristan Parlamentosu",
+     "alt": "18 Kasım nehirden, 19 Kasım çevre gezisi",
+     "gunler": [
+      "2026-11-18",
+      "2026-11-19"
+     ],
+     "konum": [
+      47.50694,
+      19.04556
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Macaristan Parlamento Binası, Tuna'nın Peşte yakasında yükselen ve şehrin en tanınmış yapısıdır. Ülkenin en büyük binası olarak kabul edilir. Bina, 1873'te Buda, Óbuda ve Peşte'nin birleşmesinden sonra yeni başkentin simgesi olarak tasarlanmıştır. Mimarı İmre Steindl'dir. Yapımına 1885'te başlanmış ve bina 1904'te tamamlanmıştır.",
+      "Bina, 1896'daki bininci yıl kutlamaları sırasında kullanılmaya başlanmıştır. Steindl, binanın tamamlanmasından kısa süre önce hayatını kaybetmiş ve bitmiş hâlini görememiştir. Yapının cephesi Neo-Gotik, planı ve kubbesi ise Rönesans etkileri taşır. Merkezdeki kubbe 96 metre yüksekliğindedir. Bu yükseklik, geleneksel olarak 896 yılına tarihlenen Macar yerleşimine gönderme yapar.",
+      "Binanın içinde Macar Kutsal Tacı ve diğer taç mücevherleri sergilenir. Binanın biraz güneyinde, Tuna kıyısında İkinci Dünya Savaşı'nda öldürülen Yahudileri anan, demir ayakkabılardan oluşan bir anıt yer alır. 18 Kasım gece tekne turunda bina, ışıklandırılmış hâliyle nehirden görülebilir. Binanın önündeki Kossuth Meydanı, ulusal törenlerin yapıldığı geniş bir alandır. Parlamentoya rehberli turla girilebilir; turlar meclis programına bağlı olduğu için önceden kontrol etmek gerekir."
+     ],
+     "gorsel": {
+      "dosya": "img/yer/budapeste-4.webp",
+      "yazar": "Pierre Blaché",
+      "lisans": "CC0",
+      "kaynak": "Wikimedia Commons",
+      "sayfa": "https://commons.wikimedia.org/wiki/File:Hungarian_Parliament_Building_2023-9.jpg"
+     },
+     "harita_nokta": [
+      33.73,
+      48.81
+     ],
+     "harita_etiket": [
+      37.69,
+      42.61
+     ]
+    },
+    {
+     "no": 13,
+     "ad": "Zincir Köprüsü",
+     "alt": "Széchenyi Lánchíd",
+     "gunler": [
+      "2026-11-18"
+     ],
+     "konum": [
+      47.499,
+      19.0434
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Zincir Köprüsü (Széchenyi Lánchíd), Tuna Nehri üzerinde Buda ve Pest yakalarını birleştiren ilk kalıcı köprüdür. Köprü 1849'da hizmete açılmıştır. Yapımını Kont István Széchenyi başlatmıştır. Tasarım İngiliz mühendis William Tierney Clark'a aittir; inşaatı İskoç mühendis Adam Clark yönetmiştir. Köprünün ana açıklığı yaklaşık 202 metredir.",
+      "Köprünün her iki ucunda taş aslan heykelleri bulunur. Aslanları 1852'de heykeltıraş János Marschalkó yapmıştır. Aslanların dilsiz olduğuna dair yaygın bir söylenti vardır, ancak aslanların dili vardır. Köprü, İkinci Dünya Savaşı'nın sonunda geri çekilen Alman birlikleri tarafından havaya uçurulmuştur. Savaştan sonra yeniden inşa edilmiş ve 1949'da tekrar açılmıştır.",
+      "Köprünün Buda ucunda Adam Clark Meydanı ve Kale Tepesi füniküleri bulunur. Gece köprü ışıklandırılır ve Parlamento ile Buda Kalesi'nin manzarasıyla birlikte öne çıkar. Köprü yayalara açıktır ve yürüyerek geçilebilir. Rotanın sonunda bu köprüden Buda yakasına doğru bakmak, günün güzel bir kapanışı olur. Kasım akşamlarında köprü üzerinde rüzgâr ve soğuk daha belirgin olabilir."
+     ],
+     "sonradan": true
     }
    ],
    "kapak": "img/yer/budapeste-4.webp",
@@ -1777,6 +1937,24 @@ window.GEZI = {
     "prag-22"
    ],
    "sonradan": true
+  },
+  {
+   "tarih": "2026-11-18",
+   "saat": "19.30",
+   "ad": "Yürüyüş rotası: Vigadó tér → Párisi Passage Restaurant (yemek) → Vörösmarty tér → Erzsébet tér → Bazilika → Opera → Özgürlük Meydanı → Tuna kıyısındaki ayakkabılar → Parlamento → Zincir Köprüsü",
+   "yerler": [
+    "budapeste-6",
+    "budapeste-7",
+    "budapeste-8",
+    "budapeste-9",
+    "budapeste-10",
+    "budapeste-11",
+    "budapeste-12",
+    "budapeste-4",
+    "budapeste-13"
+   ],
+   "sonradan": true,
+   "not": "Rota Google Haritalar'dan eklendi; saat tahminidir, gerçek saati yaz."
   }
  ],
  "pratik": {
