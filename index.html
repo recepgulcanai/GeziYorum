@@ -54,11 +54,9 @@ button:disabled{opacity:.6}
   function decrypt(raw,blob){
     return crypto.subtle.importKey('raw',raw,'AES-GCM',false,['decrypt']).then(function(k){
       return crypto.subtle.decrypt({name:'AES-GCM',iv:blob.slice(16,28)},k,blob.slice(28));
-    }).then(function(pt){
-      var s=new Blob([pt]).stream().pipeThrough(new DecompressionStream('gzip'));
-      return new Response(s).text();
     });
   }
+  function toText(pt){return new TextDecoder('utf-8').decode(pt)}
   function open(html){
     if(location.hash==='#ipucu')history.replaceState(null,'',location.pathname);
     document.open();document.write(html);document.close();
@@ -67,7 +65,7 @@ button:disabled{opacity:.6}
   // Kayıtlı anahtar varsa şifre sormadan aç (çevrimdışı da çalışır).
   var saved=null;try{saved=localStorage.getItem(KEY)}catch(e){}
   if(saved){
-    getBlob().then(function(blob){return decrypt(unb64(saved),blob)}).then(open)
+    getBlob().then(function(blob){return decrypt(unb64(saved),blob)}).then(function(pt){open(toText(pt))})
       .catch(function(){try{localStorage.removeItem(KEY)}catch(e){}});
   }
   $('f').addEventListener('submit',function(e){
@@ -76,12 +74,12 @@ button:disabled{opacity:.6}
     $('msg').textContent='';$('b').disabled=true;$('pw').disabled=true;
     getBlob().then(function(blob){
       return deriveRaw(pw,blob.slice(0,16)).then(function(raw){
-        return decrypt(raw,blob).then(function(html){
+        return decrypt(raw,blob).then(function(pt){
           try{localStorage.setItem(KEY,b64(raw))}catch(e){}
-          open(html);
+          try{open(toText(pt))}catch(err){fail('Açılamadı: '+err.message)}
         },function(){fail('Şifre yanlış.')});
       });
-    }).catch(function(){fail('Yüklenemedi. İnternet bağlantını kontrol et.')});
+    }).catch(function(err){fail('Hata: '+(err&&err.message||err))});
   });
 })();
 </script>
