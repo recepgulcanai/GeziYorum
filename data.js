@@ -3,7 +3,7 @@ window.GEZI = {
   "ad": "Orta Avrupa",
   "baslangic": "2026-11-16",
   "bitis": "2026-11-20",
-  "surum": "2.1"
+  "surum": "2.2"
  },
  "duraklar": [
   {
@@ -1096,45 +1096,47 @@ window.GEZI = {
     "2026-11-19"
    ],
    "harita": "img/harita-budapeste.webp",
-   "bilgi": "Gece tekne turu: 18 Kasım, 20.30–22.00. Kalkış iskelesi programda belirtilmemiştir; biletten ya da tekne şirketinden teyit edin. 6–13 numaralı duraklar 18 Kasım yürüyüş rotasından sonradan eklendi; haritada işaretli değildir, konum için yol tarifi düğmesini kullan.",
+   "bilgi": "Gece tekne turu: 18 Kasım, 20.30–22.00. Kalkış iskelesi programda belirtilmemiştir; biletten ya da tekne şirketinden teyit edin. 6–18 numaralı duraklar 18 Kasım rotalarından sonradan eklendi; haritada işaretli değildir, konum için yol tarifi düğmesini kullan.",
    "yerler": [
     {
-     "no": 1,
-     "ad": "Kahramanlar Meydanı",
-     "alt": "Hősök tere",
+     "no": 13,
+     "ad": "Zincir Köprüsü",
+     "alt": "Széchenyi Lánchíd",
      "gunler": [
       "2026-11-18"
      ],
      "konum": [
-      47.515,
-      19.07778
+      47.499,
+      19.0434
      ],
      "temsili": false,
      "uyari": null,
      "not": [
-      "Kahramanlar Meydanı, Budapeşte'nin en geniş ve en tanınmış meydanlarından biridir. Meydan, Andrássy Caddesi'nin sonunda, Városliget parkının girişinde yer alır. Anıt kompleksi, Macarların bölgeye yerleşmesinin bininci yılı kutlamaları için tasarlanmıştır. Yapımına 1896'da başlanmış, tamamlanması ise 1929'u bulmuştur. Meydanın ortasında yaklaşık 36 metre yüksekliğinde bir sütun yükselir.",
-      "Sütunun tepesinde, Macar kraliyet tacını ve çift haçı taşıyan Başmelek Cebrail heykeli bulunur. Sütunun dibinde, Macarları Karpat Havzası'na getiren yedi kabile reisinin atlı heykelleri yer alır. Bu grubun en önünde, efsanevi lider Árpád'ın heykeli öne çıkar. Sütunun arkasında, yarım daire biçiminde iki sütunlu galeri bulunur. Galerilerde, Macar tarihinin önemli kral ve devlet adamlarının heykelleri sıralanır.",
-      "Her heykelin altındaki kabartma, o kişinin hayatından bir sahneyi anlatır. Sütunun önünde, ulusal bağımsızlık uğruna hayatını kaybedenler için bir anma taşı bulunur. Meydanın iki yanında Güzel Sanatlar Müzesi ile Sanat Galerisi karşılıklı durur. Meydan, Andrássy Caddesi ile birlikte 2002'de UNESCO Dünya Mirası Listesi'ne eklenmiştir. Ziyarette atlı heykel grubunu önden, kral heykellerini ise galerilerin yakınından inceleyebilirsiniz."
+      "Zincir Köprüsü (Széchenyi Lánchíd), Tuna Nehri üzerinde Buda ve Pest yakalarını birleştiren ilk kalıcı köprüdür. Köprü 1849'da hizmete açılmıştır. Yapımını Kont István Széchenyi başlatmıştır. Tasarım İngiliz mühendis William Tierney Clark'a aittir; inşaatı İskoç mühendis Adam Clark yönetmiştir. Köprünün ana açıklığı yaklaşık 202 metredir.",
+      "Köprünün her iki ucunda taş aslan heykelleri bulunur. Aslanları 1852'de heykeltıraş János Marschalkó yapmıştır. Aslanların dilsiz olduğuna dair yaygın bir söylenti vardır, ancak aslanların dili vardır. Köprü, İkinci Dünya Savaşı'nın sonunda geri çekilen Alman birlikleri tarafından havaya uçurulmuştur. Savaştan sonra yeniden inşa edilmiş ve 1949'da tekrar açılmıştır.",
+      "Köprünün Buda ucunda Adam Clark Meydanı ve Kale Tepesi füniküleri bulunur. Gece köprü ışıklandırılır ve Parlamento ile Buda Kalesi'nin manzarasıyla birlikte öne çıkar. Köprü yayalara açıktır ve yürüyerek geçilebilir. Rotanın sonunda bu köprüden Buda yakasına doğru bakmak, günün güzel bir kapanışı olur. Kasım akşamlarında köprü üzerinde rüzgâr ve soğuk daha belirgin olabilir."
      ],
-     "gorsel": {
-      "dosya": "img/yer/budapeste-1.webp",
-      "yazar": "Suicasmo",
-      "lisans": "CC BY-SA 4.0",
-      "kaynak": "Wikimedia Commons",
-      "sayfa": "https://commons.wikimedia.org/wiki/File:Heroes%27_Square_(Budapest)_20180824.jpg"
-     },
-     "harita_nokta": [
-      84.04,
-      30.52
+     "sonradan": true
+    },
+    {
+     "no": 14,
+     "ad": "Sıfır Kilometre Taşı",
+     "alt": "Nulla kilométerkő, Clark Ádám tér",
+     "gunler": [
+      "2026-11-18"
      ],
-     "harita_etiket": [
-      81.92,
-      24.3
+     "konum": [
+      47.4979,
+      19.0403
      ],
-     "anlati": [
-      "Meydandaki sütunun tepesinde, elinde Macar tacını tutan Cebrail heykeli bulunur.",
-      "Meleğin rüyada Macarların ilk kralı István'a görünüp tacı sunduğu anlatılır."
-     ]
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Sıfır Kilometre Taşı, Budapeşte'de Buda yakasında Clark Ádám Meydanı'nda, Zincir Köprüsü'nün Buda ucunda bulunur. Taş, Macaristan'daki ana karayollarının mesafe ölçümünün başladığı nokta olarak kabul edilir. Yani Macaristan'ın başka bir şehrine olan yol mesafeleri bu noktadan sayılır. Taş, 1975'te dikilmiş modern bir anıttır. Meydanda aynı zamanda Kale Tepesi füniküleri ve tünel girişi yer alır.",
+      "Meydanın adı, Zincir Köprüsü'nün inşaatını yöneten İskoç mühendis Adam Clark'tan gelir. Clark, köprünün Buda ucundaki Kale Tepesi'nden geçen yaklaşık 350 metrelik tüneli de yapmıştır. Tünel 1857'de açılmıştır ve bugün de araç trafiğine açıktır. Meydandan Zincir Köprüsü'ne ve Pest yakasına bakılabilir. Köprünün karşı ucunda Vigadó Meydanı ve Tuna promenadı görünür.",
+      "Bu nokta, Buda Kale Tepesi gezisinin başlangıcı olarak kullanılır. Taş küçük olduğundan çoğu zaman hızlıca geçilip fotoğraf çekilen bir duraktır. Hemen yanındaki füniküler, kale terasına çıkmanın kolay yoludur. Meydanda akşam saatlerinde köprünün ışıkları öne çıkar. Kasım akşamlarında rüzgâr serttir; sıcak giyinmek iyi olur."
+     ],
+     "sonradan": true
     },
     {
      "no": 2,
@@ -1176,6 +1178,66 @@ window.GEZI = {
      ]
     },
     {
+     "no": 15,
+     "ad": "Matthias Çeşmesi",
+     "alt": "Mátyás-kút, Buda Kalesi avlusu",
+     "gunler": [
+      "2026-11-18"
+     ],
+     "konum": [
+      47.4962,
+      19.0391
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Matthias Çeşmesi, Buda Kalesi'nin batı avlusunda yer alan bir av sahnesini gösteren anıtsal bir çeşmedir. Çeşme, heykeltıraş Alajos Stróbl tarafından yapılmış ve 1904'te açılmıştır. Merkezdeki figür, Rönesans dönemi Macar kralı Matthias Corvinus'tur. Kral, av kıyafetleriyle, etrafında av köpekleri ve avcılarla birlikte gösterilir. Çeşme, yaklaşık beş yüz yıl önceki saray yaşamına bir gönderme niteliğindedir.",
+      "Sahnede kralın yanında Galeotto Marzio adlı saray tarihçisi de yer alır. Figürlerden birinin Szép Ilonka (Güzel Ilonka) adlı genç bir kız olduğu anlatılır. Anlatıya göre Ilonka, avcı kıyafetli adamın kral olduğunu bilmeden ona âşık olmuş ve sonra gerçeği öğrenince acı çekmiştir. Bu hikâye, çeşmenin Macar halk anlatılarındaki yerini güçlendirir. Bronz heykel grubu ayrıntılı işçiliğiyle dikkat çeker.",
+      "Çeşme, Buda Kalesi'nin avlularından biri olan Hunyadi Avlusu'nda bulunur. Avluya, kale sarayının girişine yakın bir kapıdan girilir. Çeşme, kale gezisinde çoğu kez rehberlerin anlattığı bir duraktır. Akşam saatlerinde kale avluları sessizdir. Yakınında Macar Ulusal Galerisi ve Budapeşte Tarih Müzesi gibi kurumlar bulunur."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 16,
+     "ad": "Kale Tepesi Füniküleri",
+     "alt": "Budavári Sikló, Clark Ádám tér",
+     "gunler": [
+      "2026-11-18"
+     ],
+     "konum": [
+      47.4982,
+      19.0391
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Kale Tepesi Füniküleri (Budavári Sikló), Clark Ádám Meydanı'ndan Buda Kalesi terasına çıkan bir raylı sistemdir. Füniküler 1870'te hizmete açılmıştır. İkinci Dünya Savaşı'nda hasar görmüş ve sonradan yeniden yapılmıştır. Hat yaklaşık 95 metre uzunluğundadır ve oldukça diktir. Yolculuk yaklaşık bir dakika sürer.",
+      "Üst istasyon, Buda Kalesi'nin Tuna'ya bakan terasındadır. Bu teras, Pest yakasının ve Parlamento'nun geniş manzarasını sunar. Kabinler ahşap detaylarla eski çağın havasını yansıtır. Füniküler ücretlidir; fiyat ve çalışma saatleri mevsime göre değişebilir. Dönemsel bakım nedeniyle hat bazı günlerde kapalı olabilir; gitmeden kontrol etmek gerekir.",
+      "Kale Tepesi'ne yürüyerek de çıkılabilir; yol dik ama kısadır. Füniküler, yokuşu yorulmadan çıkmanın en kolay yoludur. Gün batımında terastan görülen şehir manzarası özellikle güzeldir. Kalabalık saatlerde kuyruk oluşabilir. Rotada Sıfır Kilometre Taşı'ndan sonra kale terasına çıkmak için kullanılır."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 17,
+     "ad": "Sándor Sarayı",
+     "alt": "Sándor-palota, Szent György tér",
+     "gunler": [
+      "2026-11-18"
+     ],
+     "konum": [
+      47.498,
+      19.0382
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Sándor Sarayı, Buda Kale Tepesi'nde Szent György Meydanı'nda bulunan Neo-Klasik bir saraydır. Saray, 1806 civarında Kont Vince Sándor için yaptırılmıştır. Mimarları Mihály Pollack ve Johann Aman'dır. Bugün Macaristan Cumhurbaşkanı'nın resmî konutu ve çalışma sarayıdır. Cumhurbaşkanlığı, saraya 2000'li yılların başında yerleşmiştir.",
+      "Saray, İkinci Dünya Savaşı'nda ağır hasar görmüş ve uzun süre yıkık kalmıştır. Onarımı yirminci yüzyılın sonlarından 2002'ye kadar sürmüştür. Binanın cephesi sade, sütunlu ve dengeli Neo-Klasik çizgilerle tasarlanmıştır. Sarayın önündeki avlu ve kapı görevlileri ziyaretçilerin dikkatini çeker. Kapının önünde nöbet tutan muhafızlar fotoğraf için uygun bir karedir.",
+      "Nöbet değişimi törenleri yapılabilir; saatlerini gitmeden kontrol etmek gerekir. Saray, sıradan günlerde iç mekânıyla ziyarete açık değildir. Yakınında Buda Kalesi, Matthias Çeşmesi ve Balıkçılar Tabyası bulunur. Meydandan Tuna ve Pest yakasının manzarası da izlenebilir. Rotada kale terasından Balıkçılar Tabyası'na giderken yolun üzerindedir."
+     ],
+     "sonradan": true
+    },
+    {
      "no": 3,
      "ad": "Balıkçılar Tabyası",
      "alt": "Halászbástya",
@@ -1213,42 +1275,61 @@ window.GEZI = {
      ]
     },
     {
-     "no": 5,
-     "ad": "Tuna Nehri / tekne turu",
-     "alt": "Gece tekne turu · 20.30–22.00",
+     "no": 18,
+     "ad": "Gül Baba Türbesi",
+     "alt": "Gül Baba türbéje, Rózsadomb",
      "gunler": [
       "2026-11-18"
      ],
      "konum": [
-      47.4951,
-      19.0496
+      47.516,
+      19.0349
      ],
-     "temsili": true,
-     "uyari": "Nehir çevresini temsil eder; kalkış iskelesi değildir.",
+     "temsili": false,
+     "uyari": null,
      "not": [
-      "Tuna, Volga'dan sonra Avrupa'nın en uzun ikinci nehridir. Nehir, Almanya'daki Kara Orman'dan doğar ve Karadeniz'e dökülür. Yolculuğu boyunca on ülkeden geçer ya da sınır oluşturur. Viyana, Bratislava, Budapeşte ve Belgrad, Tuna kıyısında kurulmuş dört başkenttir. Bu gezideki Viyana, Bratislava ve Budapeşte aynı nehrin kıyısındadır.",
-      "Budapeşte'de nehir, şehri batıdaki Buda ve doğudaki Peşte yakası olarak ikiye ayırır. İki yaka, 1873'te Óbuda ile birlikte tek bir şehir hâlinde birleşmiştir. Şehrin nehir üzerindeki ilk kalıcı köprüsü, 1849'da açılan Széchenyi Zincirli Köprüsü'dür. Budapeşte'nin Tuna kıyıları ve Buda Kalesi semti, 1987'den beri UNESCO Dünya Mirası Listesi'ndedir. Gece tekne turunda Parlamento, Buda Kalesi ve köprüler ışıklandırılmış olarak görülür.",
-      "Nehrin ortasındaki Margit Adası, şehrin en büyük park alanlarından biridir. Gellért Tepesi ve üzerindeki Özgürlük Anıtı, nehrin güney kesiminden görülebilir. Haritadaki 5 numara nehir çevresini temsil eder; tekne kalkış iskelesini göstermez. Kalkış yeri ve rota programda belirtilmediği için biletten ya da tekne şirketinden teyit edilmelidir. Kasım akşamlarında güvertede hava soğuk ve rüzgârlı olabileceğinden kalın giyinmek iyi olur."
+      "Gül Baba Türbesi, Budapeşte'de Buda yakasında Rózsadomb (Gül Tepesi) üzerinde bulunan bir Osmanlı dönemi türbesidir. Gül Baba, 16. yüzyılda yaşamış bir Bektaşi dervişidir ve adı 'Güller Babası' anlamına gelir. Dervişin 1541'de Buda'nın Osmanlı yönetimine geçişi sırasında öldüğü anlatılır. Türbe, 1543–1548 yılları arasında Budin Beylerbeyi Yahyapaşazade Mehmed Paşa tarafından yaptırılmıştır. Sekizgen planlı ve kubbeli yapı, Avrupa'nın en kuzeydeki Müslüman hac yerlerinden biri sayılır.",
+      "Türbe, Osmanlı'nın Macaristan'da yaklaşık 145 yıl süren hâkimiyetinden günümüze kalan nadir yapılardan biridir. Yapı, Macaristan'ın en önemli Osmanlı döneminden kalan eserlerindendir. Türkiye'nin kültür kurumlarının katkısıyla restore edilmiş ve 2018'de yeniden açılmıştır. Türbenin çevresindeki bahçe ve küçük park sakin bir ortam sunar. Türbeye çıkan Gül Baba Sokağı taş döşemelidir ve oldukça diktir.",
+      "Rózsadomb, adını bölgede yetişen güllerden alır. Tepeden Tuna ve Pest yakasının manzarası görülebilir. Türbeyi ziyaret ederken ibadet yeri olduğu için sessiz olmak ve saygılı davranmak gerekir. Ziyaret saatleri ve giriş koşulları değişebilir; gitmeden kontrol etmek gerekir. Rotada Balıkçılar Tabyası'ndan sonra yaklaşık iki kilometrelik yürüyüşle ulaşılır; yürüyüş yorucu olabileceğinden ulaşım seçeneği değerlendirilmelidir."
+     ],
+     "sonradan": true
+    },
+    {
+     "no": 1,
+     "ad": "Kahramanlar Meydanı",
+     "alt": "Hősök tere",
+     "gunler": [
+      "2026-11-18"
+     ],
+     "konum": [
+      47.515,
+      19.07778
+     ],
+     "temsili": false,
+     "uyari": null,
+     "not": [
+      "Kahramanlar Meydanı, Budapeşte'nin en geniş ve en tanınmış meydanlarından biridir. Meydan, Andrássy Caddesi'nin sonunda, Városliget parkının girişinde yer alır. Anıt kompleksi, Macarların bölgeye yerleşmesinin bininci yılı kutlamaları için tasarlanmıştır. Yapımına 1896'da başlanmış, tamamlanması ise 1929'u bulmuştur. Meydanın ortasında yaklaşık 36 metre yüksekliğinde bir sütun yükselir.",
+      "Sütunun tepesinde, Macar kraliyet tacını ve çift haçı taşıyan Başmelek Cebrail heykeli bulunur. Sütunun dibinde, Macarları Karpat Havzası'na getiren yedi kabile reisinin atlı heykelleri yer alır. Bu grubun en önünde, efsanevi lider Árpád'ın heykeli öne çıkar. Sütunun arkasında, yarım daire biçiminde iki sütunlu galeri bulunur. Galerilerde, Macar tarihinin önemli kral ve devlet adamlarının heykelleri sıralanır.",
+      "Her heykelin altındaki kabartma, o kişinin hayatından bir sahneyi anlatır. Sütunun önünde, ulusal bağımsızlık uğruna hayatını kaybedenler için bir anma taşı bulunur. Meydanın iki yanında Güzel Sanatlar Müzesi ile Sanat Galerisi karşılıklı durur. Meydan, Andrássy Caddesi ile birlikte 2002'de UNESCO Dünya Mirası Listesi'ne eklenmiştir. Ziyarette atlı heykel grubunu önden, kral heykellerini ise galerilerin yakınından inceleyebilirsiniz."
      ],
      "gorsel": {
-      "dosya": "img/yer/budapeste-5.webp",
-      "yazar": "Wilfredor",
-      "lisans": "CC0",
+      "dosya": "img/yer/budapeste-1.webp",
+      "yazar": "Suicasmo",
+      "lisans": "CC BY-SA 4.0",
       "kaynak": "Wikimedia Commons",
-      "sayfa": "https://commons.wikimedia.org/wiki/File:Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg"
+      "sayfa": "https://commons.wikimedia.org/wiki/File:Heroes%27_Square_(Budapest)_20180824.jpg"
      },
      "harita_nokta": [
-      40.05,
-      75.72
+      84.04,
+      30.52
      ],
      "harita_etiket": [
-      44.78,
-      81.92
+      81.92,
+      24.3
      ],
      "anlati": [
-      "Tekne turunda görülen Zincirli Köprü'nün iki ucunda taş aslanlar durur.",
-      "Heykeltıraş János Marschalkó'nun aslanların dilini yapmayı unuttuğu, açılışta bunu fark eden birinin bağırması üzerine utancından kendini Tuna'ya attığı anlatılır.",
-      "Gerçekte aslanların dili vardır; yalnızca aşağıdan görünmez. Heykeltıraş da bu olaydan sonra onlarca yıl daha yaşamıştır."
+      "Meydandaki sütunun tepesinde, elinde Macar tacını tutan Cebrail heykeli bulunur.",
+      "Meleğin rüyada Macarların ilk kralı István'a görünüp tacı sunduğu anlatılır."
      ]
     },
     {
@@ -1427,24 +1508,43 @@ window.GEZI = {
      ]
     },
     {
-     "no": 13,
-     "ad": "Zincir Köprüsü",
-     "alt": "Széchenyi Lánchíd",
+     "no": 5,
+     "ad": "Tuna Nehri / tekne turu",
+     "alt": "Gece tekne turu · 20.30–22.00",
      "gunler": [
       "2026-11-18"
      ],
      "konum": [
-      47.499,
-      19.0434
+      47.4951,
+      19.0496
      ],
-     "temsili": false,
-     "uyari": null,
+     "temsili": true,
+     "uyari": "Nehir çevresini temsil eder; kalkış iskelesi değildir.",
      "not": [
-      "Zincir Köprüsü (Széchenyi Lánchíd), Tuna Nehri üzerinde Buda ve Pest yakalarını birleştiren ilk kalıcı köprüdür. Köprü 1849'da hizmete açılmıştır. Yapımını Kont István Széchenyi başlatmıştır. Tasarım İngiliz mühendis William Tierney Clark'a aittir; inşaatı İskoç mühendis Adam Clark yönetmiştir. Köprünün ana açıklığı yaklaşık 202 metredir.",
-      "Köprünün her iki ucunda taş aslan heykelleri bulunur. Aslanları 1852'de heykeltıraş János Marschalkó yapmıştır. Aslanların dilsiz olduğuna dair yaygın bir söylenti vardır, ancak aslanların dili vardır. Köprü, İkinci Dünya Savaşı'nın sonunda geri çekilen Alman birlikleri tarafından havaya uçurulmuştur. Savaştan sonra yeniden inşa edilmiş ve 1949'da tekrar açılmıştır.",
-      "Köprünün Buda ucunda Adam Clark Meydanı ve Kale Tepesi füniküleri bulunur. Gece köprü ışıklandırılır ve Parlamento ile Buda Kalesi'nin manzarasıyla birlikte öne çıkar. Köprü yayalara açıktır ve yürüyerek geçilebilir. Rotanın sonunda bu köprüden Buda yakasına doğru bakmak, günün güzel bir kapanışı olur. Kasım akşamlarında köprü üzerinde rüzgâr ve soğuk daha belirgin olabilir."
+      "Tuna, Volga'dan sonra Avrupa'nın en uzun ikinci nehridir. Nehir, Almanya'daki Kara Orman'dan doğar ve Karadeniz'e dökülür. Yolculuğu boyunca on ülkeden geçer ya da sınır oluşturur. Viyana, Bratislava, Budapeşte ve Belgrad, Tuna kıyısında kurulmuş dört başkenttir. Bu gezideki Viyana, Bratislava ve Budapeşte aynı nehrin kıyısındadır.",
+      "Budapeşte'de nehir, şehri batıdaki Buda ve doğudaki Peşte yakası olarak ikiye ayırır. İki yaka, 1873'te Óbuda ile birlikte tek bir şehir hâlinde birleşmiştir. Şehrin nehir üzerindeki ilk kalıcı köprüsü, 1849'da açılan Széchenyi Zincirli Köprüsü'dür. Budapeşte'nin Tuna kıyıları ve Buda Kalesi semti, 1987'den beri UNESCO Dünya Mirası Listesi'ndedir. Gece tekne turunda Parlamento, Buda Kalesi ve köprüler ışıklandırılmış olarak görülür.",
+      "Nehrin ortasındaki Margit Adası, şehrin en büyük park alanlarından biridir. Gellért Tepesi ve üzerindeki Özgürlük Anıtı, nehrin güney kesiminden görülebilir. Haritadaki 5 numara nehir çevresini temsil eder; tekne kalkış iskelesini göstermez. Kalkış yeri ve rota programda belirtilmediği için biletten ya da tekne şirketinden teyit edilmelidir. Kasım akşamlarında güvertede hava soğuk ve rüzgârlı olabileceğinden kalın giyinmek iyi olur."
      ],
-     "sonradan": true
+     "gorsel": {
+      "dosya": "img/yer/budapeste-5.webp",
+      "yazar": "Wilfredor",
+      "lisans": "CC0",
+      "kaynak": "Wikimedia Commons",
+      "sayfa": "https://commons.wikimedia.org/wiki/File:Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg"
+     },
+     "harita_nokta": [
+      40.05,
+      75.72
+     ],
+     "harita_etiket": [
+      44.78,
+      81.92
+     ],
+     "anlati": [
+      "Tekne turunda görülen Zincirli Köprü'nün iki ucunda taş aslanlar durur.",
+      "Heykeltıraş János Marschalkó'nun aslanların dilini yapmayı unuttuğu, açılışta bunu fark eden birinin bağırması üzerine utancından kendini Tuna'ya attığı anlatılır.",
+      "Gerçekte aslanların dili vardır; yalnızca aşağıdan görünmez. Heykeltıraş da bu olaydan sonra onlarca yıl daha yaşamıştır."
+     ]
     }
    ],
    "kapak": "img/yer/budapeste-4.webp",
@@ -1761,10 +1861,17 @@ window.GEZI = {
    "saat": "14.30",
    "ad": "Budapeşte şehir turu",
    "yerler": [
-    "budapeste-1",
+    "budapeste-13",
+    "budapeste-14",
     "budapeste-2",
-    "budapeste-3"
-   ]
+    "budapeste-15",
+    "budapeste-16",
+    "budapeste-17",
+    "budapeste-3",
+    "budapeste-18",
+    "budapeste-1"
+   ],
+   "not": "Buda rotası Google Haritalar'dan eklendi: Zincir Köprüsü → Sıfır Kilometre Taşı → Buda Kalesi → Matthias Çeşmesi → Füniküler → Sándor Sarayı → Balıkçılar Tabyası → Gül Baba Türbesi. Kahramanlar Meydanı bu rotada görünmüyor"
   },
   {
    "tarih": "2026-11-18",
